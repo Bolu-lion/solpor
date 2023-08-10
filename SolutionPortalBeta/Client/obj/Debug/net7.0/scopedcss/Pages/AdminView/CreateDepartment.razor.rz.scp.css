@@ -1,0 +1,107 @@
+.containerd[b-7u3ru2c3vi] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+    .containerd .top[b-7u3ru2c3vi] {
+        
+        padding: 1rem 2rem;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+        .containerd .top .title[b-7u3ru2c3vi] {
+            font-size: 40px;
+            color: white;
+            font-weight: 700;
+        }
+
+.main[b-7u3ru2c3vi] {
+    background-color: white;
+    padding: 1.7rem 3rem;
+    display: grid;
+    gap: 0.8rem;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0px 19px 23px 7px rgba(0, 0, 0, 0.1);
+}
+
+    .main label[b-7u3ru2c3vi] {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .main .inpttxt[b-7u3ru2c3vi] {
+        display: flex;
+    }
+
+        .main .inpttxt input[b-7u3ru2c3vi] {
+            padding: .6rem 1.5rem;
+            border-radius: 0.7rem 0rem 0rem 0.7rem;
+            border: 1px solid lightgray;
+            border-right: none;
+            outline: none;
+            height:80%;
+            font-size: 20px;
+            width: 90%;
+        }
+
+        .main .inpttxt .button[b-7u3ru2c3vi] {
+            width: 10%;
+         
+            display: flex;
+        }
+
+            .main .inpttxt .button button[b-7u3ru2c3vi] {
+                height: 80%;
+                width: 100%;
+                border-radius: 0rem 0.7rem 0.7rem 0rem;
+            }
+
+.containerd .button[b-7u3ru2c3vi] {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+    .containerd .button button[b-7u3ru2c3vi] {
+        width:15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+        height: 3.5rem;
+        outline: none;
+        background-blend-mode: darken;
+        border: none;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+        .containerd .button button:hover[b-7u3ru2c3vi] {
+            color: black;
+        }
+
+.dept-list[b-7u3ru2c3vi] {
+    width: 70%;
+    padding: 2rem;
+    border-radius: 10px;
+    display: grid;
+    gap: 0.5rem;
+    background-color: white;
+    box-shadow: 0px 19px 23px 7px rgba(0, 0, 0, 0.1);
+}
+
+    .dept-list div[b-7u3ru2c3vi] {
+        font-size: 25px;
+    }

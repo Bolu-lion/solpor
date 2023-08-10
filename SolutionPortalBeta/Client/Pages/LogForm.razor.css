@@ -1,0 +1,148 @@
+﻿.f-container {
+    background-color: transparent;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+    .f-container .main {
+        height: 100%;
+        width: 80%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* background-color: red; */
+    }
+
+        .f-container .main .profile-icon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem;
+            cursor: pointer;
+            /* background-color: aqua; */
+        }
+
+.profile-icon .icon {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.profile-icon img {
+    border-radius: 50%;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .top .title {
+        background-color: blanchedalmond;
+        
+        background-blend-mode: darken;
+        height: 5rem;
+        width: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 50px;
+        font-size: 50px;
+        color: white;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+
+.mainform {
+    /* background-color: beige; */
+    display: grid;
+    place-items: center;
+}
+
+    .mainform form {
+        background-color: whitesmoke;
+        width: 80%;
+        padding: 1.7rem 3rem;
+        display: grid;
+        gap: 0.5rem;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.295);
+    }
+
+        .mainform form .form-input {
+            /* background-color: rebeccapurple; */
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+            .mainform form .form-input label {
+                font-size: 20px;
+                font-weight: 700;
+                width: 20%;
+            }
+
+            .mainform form .form-input input,
+            .mainform form .form-input select,
+            .mainform form .form-input textarea {
+                padding: 15px;
+                width: 60%;
+                outline: none;
+                border-radius: 10px;
+                border: 1px solid #d0cdc5;
+            }
+
+                .mainform form .form-input input:hover,
+                .mainform form .form-input select:hover,
+                .mainform form .form-input textarea:hover,
+                .mainform form .form-input input:focus,
+                .mainform form .form-input select:focus,
+                .mainform form .form-input textarea:focus {
+                    border: 1px solid black;
+                }
+
+                .mainform form .form-input input::selection,
+                .mainform form .form-input select::selection,
+                .mainform form .form-input textarea::selection {
+                    background-color: black;
+                    color: white;
+                }
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+    .bottom .btmbutton {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .bottom .btmbutton button {
+            padding: 0 50px;
+            height: 3.5rem;
+            outline: none;
+            
+            background-blend-mode: darken;
+            border: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 10px;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+            .bottom .btmbutton button:hover {
+                color: black;
+            }

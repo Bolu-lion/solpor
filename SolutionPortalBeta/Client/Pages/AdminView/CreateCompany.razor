@@ -1,0 +1,61 @@
+﻿@page "/createcompany"
+@using SolutionPortalBeta.Shared
+@inject HttpClient Http
+@inject IJSRuntime JsRuntime
+@inject ICompanyService CompanyService
+
+<div class="containerr">
+    <div class="top bckgmt"><div class="title">Register Company</div></div>
+    <div class="main">
+        <div>
+            <label for="companyName">Company Name</label>
+            <input type="text"
+                   name="companyName"
+                   id=""
+                   placeholder="Enter company name" @bind="rre"/>
+        </div>
+        <div>
+            <label for="companyName">Company Alias</label>
+            <input type="text"
+                   name="companyAlias"
+                   id=""
+                   placeholder="Enter company alias" @bind="company.Alias" />
+        </div>
+    </div>
+    <div class="button">
+        <button class="bckgmt" @onclick="Save">Submit</button>
+    </div>
+</div>
+
+@code {
+
+    CompanyModel company = new CompanyModel();
+    public static string? rre;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+    }
+    protected async Task Save()
+    {
+        if(company != null)
+        {
+            company.Name = rre;
+            await JsRuntime.InvokeVoidAsync("alert", rre);
+            await JsRuntime.InvokeVoidAsync("alert", "oga e work!");
+            await CompanyService.CreateCompany(company);
+        }
+        else{
+            await JsRuntime.InvokeVoidAsync("alert", "oga e no work!");
+        }
+        
+
+        //var response = await Http.PostAsJsonAsync("api/company", company);
+        //CompanyModel currentCompany = await response.Content.ReadFromJsonAsync<CompanyModel>();
+        //if (currentCompany?.id > 0)
+        //{
+        //    await JsRuntime.InvokeVoidAsync("alert", "Successfully created!");
+
+        //}
+    }
+}

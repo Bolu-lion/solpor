@@ -1,0 +1,70 @@
+﻿main {
+    padding: 2rem 4rem .5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+main .top {
+    padding: 1rem 2rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+    main .top .title {
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+    }
+    main .create-btn{
+        display:flex;
+        justify-content:flex-end
+    }
+        main .create-btn button {
+            padding: 1rem;
+            border-radius: 10px;
+            outline:none;
+            border:none;
+            color:white;
+            width:15%;
+        }
+        main .create-btn button:hover{
+            font-weight:600;
+        }
+
+    main .list-container {
+        background-color: whitesmoke;
+        padding: 2rem 1.5rem;
+        border-radius: 10px;
+        display: grid;
+        gap: 1rem;
+    }
+        main .list-container div {
+            display: flex;
+            gap: 1rem;
+            justify-content:space-between;
+            align-items:center;
+            background-color: white;
+            padding:1rem;
+            border-radius:.7rem;
+        }
+        main .list-container div p{
+            font-size:30px;
+            font-weight:600;
+        }
+            main .list-container div a {
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+                font-size: 20px;
+                padding: 1rem;
+                border-radius: .7rem;
+                width:19%;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+                main .list-container div a:hover {
+                    font-weight: 700;
+                }

@@ -1,0 +1,17 @@
+﻿@inject NavigationManager _nav
+
+<button @onclick="navBack" class="btn btn-primary">
+	Back to @Page
+</button>
+
+@code {
+	[Parameter]
+	public string Page { get; set; }
+	[Parameter]
+	public string Route { get; set; }
+
+	private void navBack()
+	{
+		_nav.NavigateTo(Route);
+	}
+}

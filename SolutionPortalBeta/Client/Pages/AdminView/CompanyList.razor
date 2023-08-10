@@ -1,0 +1,35 @@
+﻿@page "/companies"
+@using SolutionPortalBeta.Shared;
+@inject HttpClient _httpClient
+@inject NavigationManager _nav
+
+<div class="containerm">
+    <Sidebar/>
+    <main>
+        <div class="top bckgm"><div class="title">Company List</div></div>
+        <div class="create-btn"><button class="bckgmd" @onclick="gotocreate">Create Company</button></div>
+        <div class="list-container">
+            @foreach (var company in companies.OrderBy(company => company.Name))
+            {
+                <div>
+                    <p>@company.Name</p>
+                    <a href="createdepartment/@company.id" class="bckgmt">Add Department</a>
+                </div>
+            }
+        </div>
+    </main>
+</div>
+
+@code {
+    List<CompanyModel> companies = new List<CompanyModel>();
+    public void gotocreate()
+    {
+        _nav.NavigateTo("createcompany");
+    }
+    protected override async Task OnInitializedAsync()
+    {
+
+        var response = await _httpClient.GetAsync("api/Company/");
+        companies = await response.Content.ReadFromJsonAsync<List<CompanyModel>>();
+    }
+}

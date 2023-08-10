@@ -1,0 +1,16 @@
+﻿main {
+    padding: 2rem 4rem .5rem;
+}
+ .top {
+    padding: 1rem 2rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+     .top .title {
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+    }

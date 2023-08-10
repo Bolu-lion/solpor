@@ -1,0 +1,29 @@
+﻿@page "/post"
+@inject NavigationManager _nav
+
+<div class="p-container">
+    <div class="main">
+        <div class="profile-icon">
+            <div class="icon" @onclick="navToHome">iCON</div>
+            <img src="nic.jpg" alt="" width="45" height="45" />
+        </div>
+        <div class="top">
+            <div class="backbtn" @onclick="navToFaq">
+                <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="title">Lorem Ipsum</div>
+        </div>
+        <div class="post"></div>
+    </div>
+</div>
+
+@code {
+    private void navToHome()
+    {
+        _nav.NavigateTo("/");
+    }
+    private void navToFaq()
+    {
+        _nav.NavigateTo("/faq");
+    }
+}

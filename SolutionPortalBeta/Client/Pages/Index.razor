@@ -1,0 +1,59 @@
+﻿@page "/"
+@inject NavigationManager _nav
+
+<div class="p-container">
+    <div class="main">
+        <div class="profile-icon">
+            <div class="icon">iCON</div>
+            <img src="nic.jpg" alt="" width="45" height="45" />
+        </div>
+
+        <div class="search">
+            <input type="text" @bind-value="inputString" @bind-value:event="oninput" />
+            <button>Search</button>
+        </div>
+        <div class="listDiv">
+            @if (!string.IsNullOrEmpty(inputString) || !string.IsNullOrWhiteSpace(inputString))
+            {
+                @foreach (var link in documents)
+                {
+                    @if (link.Contains(inputString))
+                    {
+                        <h4 class="linkList"> <a href="@link">@link</a></h4>
+                    }
+                }
+            }
+        </div>              
+        <div class="actions">
+            <div class="action-btn log" @onclick="navToForm">
+                <span>Log Complaint</span>
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="action-btn quick" @onclick="navToFaqs">
+                <span> Quick Links</span>
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code{
+    private void navToForm()
+    {
+        _nav.NavigateTo("/logform");
+    }
+    private void navToFaqs()
+    {
+        _nav.NavigateTo("/faq");
+    }
+    public string? inputString { get; set; }
+
+    private List<string> documents = new List<string>()
+    {
+        "How to create a new customer",
+        "How to generate payment",
+        "Show all actions on an item",
+        "Check history on an item",
+        "How to make sales order"
+    };
+}

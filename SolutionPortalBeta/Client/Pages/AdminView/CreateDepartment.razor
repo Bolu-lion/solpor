@@ -1,0 +1,84 @@
+﻿@page "/createdepartment"
+@inject IJSRuntime JSRuntime
+@using SolutionPortalBeta.Shared
+@inject HttpClient Http
+@inject IDepartmentService DepartmentService
+@inject ICompanyService CompanyService
+
+<div class="containerd">
+    <div class="top bckgmt"><div class="title">Create Department</div></div>
+    <h4>@companyName</h4>
+    <div class="main">
+        <label for="companyName">Department Name</label>
+        <div class="inpttxt">
+            <input type="text"
+                   name="companyName"
+                   id=""
+                   placeholder="Enter department name" 
+                   @bind="department.Name"/>
+            <div class="button">
+                <button class="bckgmt" @onclick="save">Add</button>
+            </div>
+        </div>
+        <input @bind="Id"/>
+    </div>
+    <div class="dept-list">
+       @* @foreach( var dept in DepartmentService.Departments)
+        {
+            <div class="dept-name">@dept.Name   </div>
+        }*@
+@*       
+        <div class="dept-name">Department Name</div>
+        <div class="dept-name">Department Name</div>
+        <div class="dept-name">Department Name</div>*@
+    </div>
+    <div class="button">
+        <button class="bckgmt">Submit</button>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int Id{ get; set; }
+
+    CompanyModel company = new CompanyModel();
+
+    public DepartmentModel department { get; set; } = new DepartmentModel();
+
+    public string companyName { get; set; }
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    await JSRuntime.InvokeVoidAsync("alert", Id);
+    //}
+    protected override async Task OnInitializedAsync()
+    {
+        //var currentCompany = await CompanyService.GetCompanyById(Id);
+        //companyName = currentCompany.Name; 
+
+    }
+
+    protected async Task save()
+    {
+        if (department != null)
+        {
+            department.CompanyId = Id;
+            await JSRuntime.InvokeVoidAsync("alert", "oga e work!");
+            await DepartmentService.AddDepartment(department);
+
+            department = new DepartmentModel();
+        }
+        //else
+        //{
+        //    await JSRuntime.InvokeVoidAsync("alert", "oga e no work!");
+        //}
+        //var response = await Http.PostAsJsonAsync("api/department", department);
+        //DepartmentModel currentDept = await response.Content.ReadFromJsonAsync<DepartmentModel>();
+        //if (currentDept?.Id > 0)
+        //{
+        //    department.CompanyId = Id;
+        //    await JSRuntime.InvokeVoidAsync("alert", "Successfully created!");
+
+        //}
+    }
+}

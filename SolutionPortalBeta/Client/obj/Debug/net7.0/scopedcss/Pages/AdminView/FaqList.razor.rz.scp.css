@@ -1,0 +1,16 @@
+main[b-8e4v93fhdr] {
+    padding: 2rem 4rem .5rem;
+}
+ .top[b-8e4v93fhdr] {
+    padding: 1rem 2rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+     .top .title[b-8e4v93fhdr] {
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+    }

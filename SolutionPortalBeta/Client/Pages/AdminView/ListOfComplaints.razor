@@ -1,0 +1,67 @@
+﻿@page "/complaintlist"
+@using SolutionPortalBeta.Shared;
+@inject HttpClient _httpClient;
+
+<div class="containerm">
+    <Sidebar/>
+    <main>
+        <div class="top bckgm"><div class="title">Complaints</div></div>
+        <div class="recent-orders">
+            @*<div class="topp">
+                <BackTo Page="Dashborad" Route="admin"></BackTo>
+             </div>*@
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Complaint Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var p in complaintList.OrderByDescending(p => p.Id))
+                    {
+                        <tr>
+                            <td>@p.Product</td>
+                            <td>@p.Description</td>
+                            <td class="warning">@CheckStatus(p.IsCompleted)</td>
+                            <td>@p.DateCreated</td>
+                            <td class="primary"><a href="#">Details</a></td>
+                        
+                        </tr>
+
+                    }
+
+                </tbody>
+            </table>
+            
+        </div>
+    </main>
+    
+</div>
+<br />
+
+
+@code {
+    List<UserCompliantModel> complaintList = new List<UserCompliantModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var response = await _httpClient.GetAsync("api/UserComplaint/");
+        complaintList = await response.Content.ReadFromJsonAsync<List<UserCompliantModel>>();
+    }
+
+    private string CheckStatus(bool Status)
+    {
+
+        if (Status)
+        {
+            return "Resolved";
+        }
+        else
+        {
+            return "Pending";
+        }
+    }
+}

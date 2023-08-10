@@ -1,0 +1,101 @@
+﻿@page "/faq"
+@inject NavigationManager _nav
+
+<div class="q-container">
+    <div class="main">
+        <div class="profile-icon">
+            <div class="icon" @onclick="navToHome">iCON</div>
+            <img src="nic.jpg" alt="" width="45" height="45" />
+        </div>
+        <div class="backbtn" @onclick="navToHome">
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="search">
+            <input type="text" />
+            <button>Search</button>
+        </div>
+        <div class="links">
+            <div class="link" @onclick="navToPost">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+            <div class="link">
+                <h2 class="maintxt">Lorem Ipsum</h2>
+                <small class="subtxt">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    modi.
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void navToHome()
+    {
+        _nav.NavigateTo("/");
+    }
+    private void navToPost()
+    {
+        _nav.NavigateTo("/post");
+    }
+}

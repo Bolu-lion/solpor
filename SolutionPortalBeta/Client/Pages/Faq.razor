@@ -1,4 +1,6 @@
 ﻿@page "/faq"
+@using SolutionPortalBeta.Shared;
+@inject HttpClient _httpClient
 @inject NavigationManager _nav
 
 <div class="q-container">
@@ -15,81 +17,25 @@
             <button>Search</button>
         </div>
         <div class="links">
-            <div class="link" @onclick="navToPost">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
-            <div class="link">
-                <h2 class="maintxt">Lorem Ipsum</h2>
-                <small class="subtxt">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                    modi.
-                </small>
-            </div>
+            @foreach (var faq in fAQs.OrderBy(faq => faq.Id))
+            {
+                <div class="link" @onclick="navToPost">
+                    <h2 class="maintxt">@faq.Title</h2>
+                    <small class="subtxt">@faq.Description</small>
+                </div>
+            }
         </div>
     </div>
 </div>
 
 @code {
+    List<FAQModel> fAQs = new List<FAQModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await _httpClient.GetAsync("api/Faq/");
+        fAQs = await response.Content.ReadFromJsonAsync<List<FAQModel>>();
+    }
     private void navToHome()
     {
         _nav.NavigateTo("/");

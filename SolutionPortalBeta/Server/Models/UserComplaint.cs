@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SolutionPortalBeta.Server.Models
 {
-	[Table("UserComplaint", Schema = "dbo")]
+	[Table("UserComplaint")]
 	public class UserComplaint
 	{
 		[Required]

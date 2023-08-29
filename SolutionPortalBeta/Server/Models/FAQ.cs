@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SolutionPortalBeta.Server.Models
 {
-    [Table("FAQ", Schema = "dbo")]
+    [Table("FAQ")]
     public class FAQ
     {
         [Required]
@@ -13,7 +13,7 @@ namespace SolutionPortalBeta.Server.Models
         [Required]
         public string Title { get; set; }
 
-        [Required]
+        //[Required]
         public string Description { get; set; }
         [Required]
         public string Content { get; set; }

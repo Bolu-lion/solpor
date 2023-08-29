@@ -42,7 +42,7 @@ namespace SolutionPortalBeta.Client.Services.DepartmentServices
         public async Task AddDepartment(DepartmentModel department)
         {
             await _http.PostAsJsonAsync("api/department", department);
-            _navigationManager.NavigateTo("admin");
+            _navigationManager.NavigateTo("companies");
         }
 
         public async Task DeleteDepartment(int id)

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SolutionPortalBeta.Server.Models
 {
@@ -8,9 +9,10 @@ namespace SolutionPortalBeta.Server.Models
         public string Name { get; set; }
         public string? UserName { get; set; }
 
-        [ForeignKey("Company")]
+        //[ForeignKey("Company")]
+        [Required]
         public int CompanyId { get; set;}
-        public Company? Company { get; set;}
+        //public Company Company { get; set;}
     }
 }
 

@@ -1,4 +1,7 @@
 ﻿@page "/faqlist"
+@using SolutionPortalBeta.Shared;
+@inject NavigationManager nav
+@inject HttpClient _httpClient
 
 <div class="containerm">
     @*<button class="btn btn-primary">Create New Faq</button>
@@ -6,9 +9,28 @@
     <Sidebar/>
     <main>
         <div class="top bckgm"><div class="title">FAQs list</div></div>
+        <div class="create-btn"><button class="bckgmd" @onclick="gotoFaq" >Create FAQ</button></div>
+        <div class="list-container">
+            @foreach (var faq in fAQs.OrderBy(faq=>faq.Id))
+            {
+                <a>
+                    <h3>@faq.Title</h3>
+                    <p>@faq.Description</p>
+                </a>
+            }
+        </div>
     </main>
 </div>
 
 @code {
-
+    List<FAQModel> fAQs = new List<FAQModel>();
+    public void gotoFaq()
+    {
+        nav.NavigateTo("createfaq");
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await _httpClient.GetAsync("api/Faq/");
+        fAQs = await response.Content.ReadFromJsonAsync<List<FAQModel>>();
+    }
 }

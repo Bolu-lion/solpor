@@ -13,7 +13,7 @@
             {
                 <div>
                     <p>@company.Name</p>
-                    <a href="createdepartment/@company.id" class="bckgmt">Add Department</a>
+                    <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Add Department</a>
                 </div>
             }
         </div>
@@ -28,7 +28,6 @@
     }
     protected override async Task OnInitializedAsync()
     {
-
         var response = await _httpClient.GetAsync("api/Company/");
         companies = await response.Content.ReadFromJsonAsync<List<CompanyModel>>();
     }

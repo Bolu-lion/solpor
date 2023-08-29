@@ -58,12 +58,22 @@ namespace SolutionPortalBeta.Server.Controllers
         {
             _departmentService = departmentService;
         }
-
-        [HttpPost]
-        public async Task<IActionResult> AddDepartment([FromBody] Department department)
+        [HttpGet]
+        public async Task<List<Department>> GetAll()
         {
-            var createdDepartment = await _departmentService.AddDepartment(department);
-            return Ok(createdDepartment);
+            return await _departmentService.GetAllDepartment();
+        }
+        [HttpGet("{id}")]
+        public async Task<Department> Get(int id)
+        {
+            return await _departmentService.GetDepartmentById(id);
+        }
+        [HttpPost]
+        public async Task<Department?> AddDepartment([FromBody] Department department)
+        {
+            //var createdDepartment = await _departmentService.AddDepartment(department);
+            //return Ok(createdDepartment);
+            return await _departmentService.AddDepartment(department);
         }
 
         [HttpGet("{id}")]

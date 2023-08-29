@@ -6,7 +6,8 @@ namespace SolutionPortalBeta.Server.AppDbContext
 {
 	public class ApplicationDbContext : DbContext
 	{
-		
+
+		static readonly string connectionString = "Server=localhost; User ID=root; Database=solpor;Password=@Adelaja101";		
 			public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 			public DbSet<UserComplaint>  UserComplaints { get; set; }
 			public DbSet<FAQ> FAQs { get; set; }
@@ -18,6 +19,10 @@ namespace SolutionPortalBeta.Server.AppDbContext
         {
 			modelBuilder.Entity<FAQ>();
 			base.OnModelCreating(modelBuilder);
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
     }
 }

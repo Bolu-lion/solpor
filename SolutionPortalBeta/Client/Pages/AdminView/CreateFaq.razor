@@ -1,0 +1,63 @@
+﻿@page "/createfaq"
+@inject HttpClient Http
+@inject IJSRuntime JsRuntime
+@inject IFaqService FaqService
+@using SolutionPortalBeta.Shared
+
+<div class="containerr">
+    <div class="top bckgmt"><div class="title">Register Company</div></div>
+    <div class="main">
+        <div>
+            <label for="companyName">Title</label>
+            <input type="text"
+                   name="faqtitle"
+                   id=""
+                   placeholder="Enter FAQ title" @bind="faq.Title"/>
+        </div>
+        <div>
+            <label for="companyName">Description</label>
+            <input type="text"
+                   name="faqdesc"
+                   id=""
+                   placeholder="Enter FAQ description" @bind="faq.Description"/>
+        </div>
+        <div>
+            <label for="companyName">Content</label>
+            <textarea type="text"
+                   name="faqcnt"
+                   id=""
+                   placeholder="Enter FAQ content" @bind="faq.Content"/>
+        </div>
+    </div>
+    <div class="button">
+        <button class="bckgmt" @onclick="Save">Submit</button>
+    </div>
+</div>
+
+@code {
+    FAQModel faq = new FAQModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+    }
+    protected async Task Save()
+    {
+        if(faq is not null)
+        {
+            await FaqService.AddFAQ(faq);
+            await JsRuntime.InvokeVoidAsync("alert", "e go");
+        }
+        
+        //if (company != null)
+        //{
+        //    company.Name = rre;
+        //    await JsRuntime.InvokeVoidAsync("alert", rre);
+        //    await JsRuntime.InvokeVoidAsync("alert", "oga e work!");
+        //    await CompanyService.CreateCompany(company);
+        //}
+        //else
+        //{
+        //    await JsRuntime.InvokeVoidAsync("alert", "oga e no work!");
+        //}
+    }
+}

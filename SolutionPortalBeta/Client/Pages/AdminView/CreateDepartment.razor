@@ -1,9 +1,8 @@
-﻿@page "/createdepartment"
+﻿@page "/createdepartment/{companyName}/{id:int}"
 @inject IJSRuntime JSRuntime
 @using SolutionPortalBeta.Shared
 @inject HttpClient Http
 @inject IDepartmentService DepartmentService
-@inject ICompanyService CompanyService
 
 <div class="containerd">
     <div class="top bckgmt"><div class="title">Create Department</div></div>
@@ -16,21 +15,22 @@
                    id=""
                    placeholder="Enter department name" 
                    @bind="department.Name"/>
+            <input type="text"
+                   name="companyName"
+                   id=""
+                   placeholder="Enter department username"
+            @bind="department.UserName" />
             <div class="button">
                 <button class="bckgmt" @onclick="save">Add</button>
             </div>
         </div>
-        <input @bind="Id"/>
+        <input @bind=id/>
     </div>
     <div class="dept-list">
-       @* @foreach( var dept in DepartmentService.Departments)
+        @foreach( var dept in departments.OrderBy(dept => dept.Id))
         {
-            <div class="dept-name">@dept.Name   </div>
-        }*@
-@*       
-        <div class="dept-name">Department Name</div>
-        <div class="dept-name">Department Name</div>
-        <div class="dept-name">Department Name</div>*@
+            <div class="dept-name">@dept.Name</div>
+        }
     </div>
     <div class="button">
         <button class="bckgmt">Submit</button>
@@ -38,47 +38,33 @@
 </div>
 
 @code {
-    [Parameter]
-    public int Id{ get; set; }
-
     CompanyModel company = new CompanyModel();
+    public static string? depName;
 
-    public DepartmentModel department { get; set; } = new DepartmentModel();
+    [Parameter]
+    public int id { get; set; }
 
-    public string companyName { get; set; }
+    public DepartmentModel department = new DepartmentModel();
 
-    //protected override async Task OnInitializedAsync()
-    //{
-    //    await JSRuntime.InvokeVoidAsync("alert", Id);
-    //}
+    List<DepartmentModel> departments = new List<DepartmentModel>();
+
+    [Parameter]
+    public string companyName{ get; set; }
+
     protected override async Task OnInitializedAsync()
     {
-        //var currentCompany = await CompanyService.GetCompanyById(Id);
-        //companyName = currentCompany.Name; 
-
+        var response = await Http.GetAsync("api/department/");
+        departments = await response.Content.ReadFromJsonAsync<List<DepartmentModel>>();
     }
 
     protected async Task save()
     {
+        var depid = id;
         if (department != null)
         {
-            department.CompanyId = Id;
-            await JSRuntime.InvokeVoidAsync("alert", "oga e work!");
+            department.CompanyId = id;
             await DepartmentService.AddDepartment(department);
-
-            department = new DepartmentModel();
+            await JSRuntime.InvokeVoidAsync("alert", "oga e work!");
         }
-        //else
-        //{
-        //    await JSRuntime.InvokeVoidAsync("alert", "oga e no work!");
-        //}
-        //var response = await Http.PostAsJsonAsync("api/department", department);
-        //DepartmentModel currentDept = await response.Content.ReadFromJsonAsync<DepartmentModel>();
-        //if (currentDept?.Id > 0)
-        //{
-        //    department.CompanyId = Id;
-        //    await JSRuntime.InvokeVoidAsync("alert", "Successfully created!");
-
-        //}
     }
 }

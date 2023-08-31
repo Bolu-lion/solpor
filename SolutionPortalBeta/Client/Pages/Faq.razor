@@ -19,10 +19,10 @@
         <div class="links">
             @foreach (var faq in fAQs.OrderBy(faq => faq.Id))
             {
-                <div class="link" @onclick="navToPost">
+                <a class="link" href="/post/@faq.Id">
                     <h2 class="maintxt">@faq.Title</h2>
                     <small class="subtxt">@faq.Description</small>
-                </div>
+                </a>
             }
         </div>
     </div>
@@ -40,8 +40,5 @@
     {
         _nav.NavigateTo("/");
     }
-    private void navToPost()
-    {
-        _nav.NavigateTo("/post");
-    }
+
 }

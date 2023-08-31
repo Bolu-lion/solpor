@@ -1,5 +1,8 @@
-﻿@page "/post"
+﻿@page "/post/{Id:int}"
 @inject NavigationManager _nav
+@using Markdig 
+@using SolutionPortalBeta.Shared
+@inject IFaqService FaqService
 
 <div class="p-container">
     <div class="main">
@@ -11,13 +14,33 @@
             <div class="backbtn" @onclick="navToFaq">
                 <i class="fa-sharp fa-solid fa-arrow-left"></i>
             </div>
-            <div class="title">Lorem Ipsum</div>
+            <div class="title"><h2>@title</h2></div>
         </div>
-        <div class="post"></div>
+        <div class="post">
+            @((MarkupString)content)
+        </div>
     </div>
 </div>
 
 @code {
+    [Parameter]
+    public int Id {get; set;}
+
+    public string title {get; set;}
+    public string content {get; set;}
+
+     FAQModel faq = new FAQModel();
+
+    protected override async Task OnInitializedAsync(){
+        var currentFaq = await FaqService.GetFAQbyId(Id);
+        if(currentFaq != null){
+         title = currentFaq.Title.ToString();
+         var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+         content =Markdown.ToHtml(currentFaq.Content);
+        }
+    }
+
+
     private void navToHome()
     {
         _nav.NavigateTo("/");

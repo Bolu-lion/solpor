@@ -1,0 +1,7 @@
+**/net7.0/
+.wasm
+.dll
+.gz
+
+launch.json
+task.json

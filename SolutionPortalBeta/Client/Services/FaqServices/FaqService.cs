@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using SolutionPortalBeta.Shared;
 using System.Net.Http.Json;
+using System.Net;
 
 namespace SolutionPortalBeta.Client.Services.FaqServices
 {
@@ -34,9 +35,14 @@ namespace SolutionPortalBeta.Client.Services.FaqServices
             if (result is not null) { FAQs = result; }
         }
 
-        public Task<FAQModel?> GetFAQbyId(int id)
+        public async Task<FAQModel?> GetFAQbyId(int id)
         {
-            throw new NotImplementedException();
+            var result = await _http.GetAsync($"api/Faq/{id}");
+            if (result.StatusCode == HttpStatusCode.OK)
+            {
+                return await result.Content.ReadFromJsonAsync<FAQModel>();
+            }
+            return null;
         }
 
         public Task UpdateFAQ(int id, FAQModel faq)

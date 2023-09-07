@@ -2,6 +2,8 @@
 .wasm
 .dll
 .gz
+.cache
+.editorconfig
 
 launch.json
 task.json

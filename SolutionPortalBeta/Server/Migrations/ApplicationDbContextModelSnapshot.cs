@@ -28,10 +28,6 @@ namespace SolutionPortalBeta.Server.Migrations
                     b.Property<int>("ComplaintId")
                         .HasColumnType("int");
 
-                    b.Property<string>("ContentType")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("FileName")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -39,9 +35,6 @@ namespace SolutionPortalBeta.Server.Migrations
                     b.Property<string>("FilePath")
                         .IsRequired()
                         .HasColumnType("longtext");
-
-                    b.Property<long>("FileSize")
-                        .HasColumnType("bigint");
 
                     b.HasKey("AttachmentId");
 

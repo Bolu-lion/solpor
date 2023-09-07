@@ -12,17 +12,9 @@ namespace SolutionPortalBeta.Shared
     {
         public int Id { get; set; }
 
-		[Required]
-        [Display(Name ="Role")]
-        public string Role { get; set; }
-
         [Required]
-        [Display(Name = "Product")]
-        public string Product { get; set; }
-
-        [Required]
-        [Display(Name = "Name")]
-        public string Name { get; set; }
+        [Display(Name = "Title")]
+        public string Title { get; set; }
 
         [Required]
         [Display(Name = "Description")]

@@ -1,0 +1,26 @@
+﻿@inject NavigationManager _nav
+
+<button @onclick="navToForm">Log Complaint</button>
+@if (modal)
+{
+    <div class="modal">
+        <div class="modal-content">
+            <div class="closemodal">
+                <button class="close-modal" @onclick="toggleModal">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+            </div>
+            <h1>Log Complaint</h1>
+        </div>
+    </div>
+}
+
+@code {
+    public bool modal = false;
+    public void setModal() { modal = !modal; }
+    public void toggleModal(){ setModal(); }
+    private void navToForm()
+    {
+        _nav.NavigateTo("/logform");
+    }
+}

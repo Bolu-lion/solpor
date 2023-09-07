@@ -34,6 +34,7 @@
     protected override async Task OnInitializedAsync(){
         var currentFaq = await FaqService.GetFAQbyId(Id);
         if(currentFaq != null){
+           
          title = currentFaq.Title.ToString();
          var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
          content =Markdown.ToHtml(currentFaq.Content);

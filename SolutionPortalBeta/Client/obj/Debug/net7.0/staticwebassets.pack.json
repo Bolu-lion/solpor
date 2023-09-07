@@ -81,6 +81,14 @@
       "PackagePath": "staticwebassets\\icon-512.png"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo.png",
+      "PackagePath": "staticwebassets\\images\\R3_Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo_Dark.png",
+      "PackagePath": "staticwebassets\\images\\R3_Logo_Dark.png"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\bg-sidebar-desktop.png",
       "PackagePath": "staticwebassets\\images\\bg-sidebar-desktop.png"
     },
@@ -91,6 +99,18 @@
     {
       "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\bg-sidebar-mobile2.png",
       "PackagePath": "staticwebassets\\images\\bg-sidebar-mobile2.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\hh.png",
+      "PackagePath": "staticwebassets\\images\\hh.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\leftty.png",
+      "PackagePath": "staticwebassets\\images\\leftty.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\lg.png",
+      "PackagePath": "staticwebassets\\images\\lg.png"
     },
     {
       "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\nic.jpg",

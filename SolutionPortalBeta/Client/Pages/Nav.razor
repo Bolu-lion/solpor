@@ -1,0 +1,42 @@
+﻿@inject IJSRuntime JsRuntime
+
+<div class="nav">
+    <div class="logo">
+        <img src="images/R3_Logo_Dark.png" alt="logo" height=50 />
+    </div>
+    <div class="right">
+        <div class="notif">
+            <span class="material-symbols-rounded">notifications</span>
+        </div>
+        <LogBtn/>
+    </div>
+</div>
+
+@code {
+    public int Width { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        //await JsRuntime.InvokeAsync<WindowDimension>("getWindowDimensions");
+    }
+    public class BrowserService
+    {
+        private readonly IJSRuntime _js;
+
+        public BrowserService(IJSRuntime js)
+        {
+            _js = js;
+        }
+
+        public async Task<WindowDimension> GetDimensions()
+        {
+            return await _js.InvokeAsync<WindowDimension>("getWindowDimensions");
+        }
+
+    }
+    public class WindowDimension
+    {
+        public int Width { get; set; }
+        public int Height { get; set; }
+    }
+}

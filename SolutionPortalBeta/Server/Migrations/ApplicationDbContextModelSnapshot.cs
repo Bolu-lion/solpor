@@ -19,6 +19,37 @@ namespace SolutionPortalBeta.Server.Migrations
                 .HasAnnotation("ProductVersion", "7.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("SolutionPortalBeta.Server.Models.Attachment", b =>
+                {
+                    b.Property<int>("AttachmentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ComplaintId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ContentType")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<long>("FileSize")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("AttachmentId");
+
+                    b.HasIndex("ComplaintId");
+
+                    b.ToTable("Attachment");
+                });
+
             modelBuilder.Entity("SolutionPortalBeta.Server.Models.Company", b =>
                 {
                     b.Property<int>("id")
@@ -100,21 +131,24 @@ namespace SolutionPortalBeta.Server.Migrations
                     b.Property<bool>("IsCompleted")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Product")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Role")
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
                     b.ToTable("UserComplaint");
+                });
+
+            modelBuilder.Entity("SolutionPortalBeta.Server.Models.Attachment", b =>
+                {
+                    b.HasOne("SolutionPortalBeta.Server.Models.UserComplaint", "Complaint")
+                        .WithMany("Attachments")
+                        .HasForeignKey("ComplaintId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Complaint");
                 });
 
             modelBuilder.Entity("SolutionPortalBeta.Server.Models.Department", b =>
@@ -129,6 +163,11 @@ namespace SolutionPortalBeta.Server.Migrations
             modelBuilder.Entity("SolutionPortalBeta.Server.Models.Company", b =>
                 {
                     b.Navigation("Departments");
+                });
+
+            modelBuilder.Entity("SolutionPortalBeta.Server.Models.UserComplaint", b =>
+                {
+                    b.Navigation("Attachments");
                 });
 #pragma warning restore 612, 618
         }

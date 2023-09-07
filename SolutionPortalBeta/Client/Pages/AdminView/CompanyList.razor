@@ -9,11 +9,12 @@
         <div class="top bckgm"><div class="title">Company List</div></div>
         <div class="create-btn"><button class="bckgmd" @onclick="gotocreate">Create Company</button></div>
         <div class="list-container">
-            @foreach (var company in companies.OrderBy(company => company.Name))
+            @foreach (var company in companies.OrderBy(company => company.id))
             {
                 <div>
                     <p>@company.Name</p>
                     <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Add Department</a>
+                    <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Update Company</a>
                 </div>
             }
         </div>

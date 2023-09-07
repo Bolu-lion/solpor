@@ -38,22 +38,18 @@
 </div>
 
 @code {
-    CompanyModel company = new CompanyModel();
-    public static string? depName;
-
     [Parameter]
     public int id { get; set; }
+    [Parameter]
+    public string companyName { get; set; }
 
     public DepartmentModel department = new DepartmentModel();
 
     List<DepartmentModel> departments = new List<DepartmentModel>();
 
-    [Parameter]
-    public string companyName{ get; set; }
-
     protected override async Task OnInitializedAsync()
     {
-        var response = await Http.GetAsync("api/department/");
+        var response = await Http.GetAsync($"api/department/company/{id}");
         departments = await response.Content.ReadFromJsonAsync<List<DepartmentModel>>();
     }
 

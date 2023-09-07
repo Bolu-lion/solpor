@@ -1,0 +1,37 @@
+﻿@page "/"
+@inject NavigationManager nav
+@using Microsoft.AspNetCore.Components.Web
+
+    
+<div class="login">
+    <div class="login-left">
+        <img src="images/R3_Logo_Dark.png" alt="logo" height=150 />
+        
+    </div>
+    <div class="login-right">
+        <div class="logo">
+            <img src="images/lg.png" alt="logo" height=80 />
+        </div>
+        <form class="loginform">
+            <div class="form-input">
+                <label>Username</label>
+                <input />
+            </div>
+            <div class="form-input">
+                <label>Password</label>
+                <input type="password" />
+            </div>
+            <button class="form-button" @onclick="navigateHome">
+                Login   
+            </button>
+        </form>
+    </div>
+</div>
+
+
+@code {
+    public void navigateHome()
+    {
+        nav.NavigateTo("/home");
+    }
+}

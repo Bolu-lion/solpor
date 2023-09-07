@@ -31,7 +31,7 @@ namespace SolutionPortalBeta.Client.Services.DepartmentServices
 
         public async Task<List<DepartmentModel>> GetDepartmentsByCompanyId(int id)
         {
-            var result = await _http.GetFromJsonAsync<List<DepartmentModel>>($"api/department/{id}");
+            var result = await _http.GetFromJsonAsync<List<DepartmentModel>>($"api/department/company/{id}");
             if (result is not null)
                 Departments = result;
             return null;
@@ -42,7 +42,7 @@ namespace SolutionPortalBeta.Client.Services.DepartmentServices
         public async Task AddDepartment(DepartmentModel department)
         {
             await _http.PostAsJsonAsync("api/department", department);
-            _navigationManager.NavigateTo("companies");
+            //_navigationManager.NavigateTo("companies");
         }
 
         public async Task DeleteDepartment(int id)

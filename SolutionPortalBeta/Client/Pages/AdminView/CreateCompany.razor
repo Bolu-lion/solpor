@@ -2,9 +2,10 @@
 @using SolutionPortalBeta.Shared
 @inject HttpClient Http
 @inject IJSRuntime JsRuntime
+@inject IDepartmentService DepartmentService
 @inject ICompanyService CompanyService
 
-<div class="containerr">
+@*<div class="containerr">
     <div class="top bckgmt"><div class="title">Register Company</div></div>
     <div class="main">
         <div>
@@ -21,18 +22,101 @@
                    id=""
                    placeholder="Enter company alias" @bind="company.Alias" />
         </div>
+        <label for="companyName">Department Name</label>
+        <div class="inpttxt">
+            <input type="text"
+                   name="companyName"
+                   id=""
+                   placeholder="Enter department name"
+            @bind="department.Name" />
+            <input type="text"
+                   name="companyName"
+                   id=""
+                   placeholder="Enter department username"
+            @bind="department.UserName" />
+            <div class="button">
+                <button class="bckgmt" @onclick="SaveDept">Add</button>
+            </div>
+        </div>
     </div>
     <div class="button">
         <button class="bckgmt" @onclick="Save">Submit</button>
     </div>
-</div>
+</div>*@
+
+<h1>Create Company</h1>
+
+<EditForm Model="@company" OnValidSubmit="CreateCompanyx">
+    <!-- Company information fields -->
+    <div class="form-group">
+        <label for="name">Company Name:</label>
+        <InputText id="name" @bind-Value="company.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="name">Company Alias:</label>
+        <InputText id="name" @bind-Value="company.Alias" class="form-control" />
+    </div>
+
+    <!-- Department input fields -->
+    <h3>Departments</h3>
+    <div class="form-group">
+        <label for="departmentName">Department Name:</label>
+        <InputText id="departmentName" @bind-Value="departmentName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="departmentName">Department Username:</label>
+        <InputText id="departmentName" @bind-Value="departmentAlias" class="form-control" />
+    </div>
+
+    <button type="button" class="btn btn-primary" @onclick="AddDepartment">Add Department</button>
+
+    <ul>
+        @foreach (var department in company.Departments)
+        {
+            <li>@department.Name</li>
+        }
+    </ul>
+
+    <button type="submit" class="btn btn-success">Create Company</button>
+</EditForm>
 
 @code {
+    private CompanyModel company = new CompanyModel();
+    public DepartmentModel department = new DepartmentModel();
+    private string departmentName = "";
+    private string departmentAlias = "";
+    public int depId = 0;
 
-    CompanyModel company = new CompanyModel();
+    private void AddDepartment()
+    {
+        if (!string.IsNullOrWhiteSpace(departmentName) && !string.IsNullOrWhiteSpace(departmentAlias))
+        {
+            department.Name = departmentName;
+            department.UserName = departmentAlias;
+            department.Id = depId++;
+            company.Departments.Add(department);
+            departmentName = "";
+            departmentAlias = "";
+        }
+    }
+
+    private async Task CreateCompanyx()
+    {
+        await CompanyService.CreateCompany(company);
+        
+        foreach(var dept in company.Departments)
+        {
+            dept.CompanyId = company.id;
+            await DepartmentService.AddDepartment(dept);
+        }
+    }
+}
+
+
+@*@code {
+    CompanyModel company = new CompanyModel()
+    public DepartmentModel department = new DepartmentModel();
     public static string? rre;
-
-
     protected override async Task OnInitializedAsync()
     {
     }
@@ -48,14 +132,13 @@
         else{
             await JsRuntime.InvokeVoidAsync("alert", "oga e no work!");
         }
-        
-
-        //var response = await Http.PostAsJsonAsync("api/company", company);
-        //CompanyModel currentCompany = await response.Content.ReadFromJsonAsync<CompanyModel>();
-        //if (currentCompany?.id > 0)
-        //{
-        //    await JsRuntime.InvokeVoidAsync("alert", "Successfully created!");
-
-        //}
     }
-}
+    protected async Task SaveDept()
+    {
+        if (department != null)
+        {
+            await DepartmentService.AddDepartment(department);
+            await JsRuntime.InvokeVoidAsync("alert", "department added");
+        }
+    }
+}*@

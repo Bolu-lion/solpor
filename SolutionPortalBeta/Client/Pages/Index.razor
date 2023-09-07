@@ -1,7 +1,36 @@
-﻿@page "/"
+﻿@page "/home"
 @inject NavigationManager _nav
 
-<div class="p-container">
+<div class="main">
+      <Nav/>
+      <div class="section">
+        <div class="search">
+          <input type="text" placeholder="Search " />
+          <span class="material-symbols-rounded">search</span>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="article-container">
+          <h1>FAQs</h1>
+          <div class="articles">
+                @foreach (var document in documents)
+                {
+                    <div class="article">
+                        <h2>
+                            @document
+                        </h2>
+                    </div>
+                }
+                
+          </div>
+        </div>
+        <div class="recent-con">
+          <h1>Recent Complaints</h1>
+          
+        </div>
+      </div>
+    </div>
+@*<div class="p-container">
     <div class="main">
         <div class="profile-icon">
             <div class="icon">iCON</div>
@@ -35,7 +64,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>*@
 
 @code{
     private void navToForm()

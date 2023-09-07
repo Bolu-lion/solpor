@@ -28,10 +28,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja1RvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,9 +68,25 @@ build_metadata.AdditionalFiles.CssScope = b-dalomws2ey
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFxLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-55edcrhtbr
 
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rff38p5woc
+
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/LogBtn.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nQnRuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-jt67obe6kc
+
 [C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/LogForm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nRm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-qvmdl33rat
+
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mkjkmvv6jb
+
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Nav.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmF2LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-qtq3fvzey5
 
 [C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Post.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdC5yYXpvcg==

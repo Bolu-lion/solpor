@@ -57,7 +57,6 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Product Name</th>
                         <th>Complaint Description</th>
                         <th>Status</th>
                     </tr>
@@ -66,7 +65,6 @@
                    @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
                     {
                         <tr>
-                            <td>@p.Product</td>
                             <td>@p.Description</td>
                             <td class="warning">@CheckStatus(p.IsCompleted)</td>
                             <td class="primary"><a href="#">Details</a></td>

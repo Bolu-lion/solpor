@@ -3,49 +3,43 @@
 @inject NavigationManager _nav
 @inject IJSRuntime JsRuntime
 @inject HttpClient Http
+@using System.IO
 
 <div class="f-container">
-    <div class="main">
-        <div class="profile-icon">
-            <div class="icon">iCON</div>
-            <img src="nic.jpg" alt="" width="45" height="45" />
+    <h1>Log Complaint</h1>
+    <EditForm Model="complaint" class="logform">
+        <div class="forminput">
+            <label>Complaint Title</label>
+            <input type="text" required @bind="complaint.Title" />
         </div>
-        <div class="top"><div class="title bckgmt">Log Complaint</div></div>
-        <div class="mainform">
-            <EditForm Model="complaint"  method="post">
-                <div class="form-input">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" placeholder="Enter Title" @bind="complaint.Title"/>
-                </div>
-                
-                <div class="form-input">
-                    <label for="complaint">Complaint</label>
-                    <textarea name="complaint"
-                              id="complaint"
-                              rows="10"
-                              placeholder="Kindly let us know what problem you're facing" @bind="complaint.Description"></textarea>
-                </div>
-                <div class="form-input">
-                    <label for="Attachment">Attachment:</label>
-                    <InputFile ></InputFile>
-                </div>
-                <div class="form-input">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" @bind="complaint.Title" />
-                </div>
-            </EditForm>
+        <div class="forminput">
+            <label>Complaint Description</label>
+            <textarea rows=10 @bind="complaint.Description" />
         </div>
-        <div class="bottom">
-            <div class="btmbutton ">
-                <button @onclick="Save" class="bckgmt">Submit</button>
+        <div class="forminput">
+            <div class="filein">
+                <label>Attachments (@fileNames.Count)</label>
+                <InputFile multiple OnChange="getFileName" />
+            </div>
+            <div class="input-file">
+                @foreach (var fileName in fileNames)
+                {
+                    <span>@fileName</span>
+                }
             </div>
         </div>
-    </div>
+        <button class="submit-modal" type="submit">
+            Submit
+        </button>
+    </EditForm>
 </div>
 
 @code {
     UserCompliantModel complaint = new UserCompliantModel();
-    private ElementReference fileInput;
+
+    public List<string> fileNames = new List<string>();
+    public int filecount;
+    //private string FileName { get; set; }
     protected override async Task OnInitializedAsync()
     {
     }
@@ -56,7 +50,16 @@
         if (userCompliant?.Id > 0)
         {
             await JsRuntime.InvokeVoidAsync("alert", "Sent Successfully!");
-
         }
+    }
+    private void getFileName(InputFileChangeEventArgs e)
+    {
+        filecount = e.FileCount;
+        var files = e.GetMultipleFiles(4);
+        foreach (var file in files)
+        {
+            fileNames.Add(file.Name);
+        }
+        
     }
 }

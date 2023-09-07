@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,5 +28,8 @@ namespace SolutionPortalBeta.Shared
         [Required]
         [Display(Name ="Is Completed")]
         public bool IsCompleted { get; set; } = false;
+
+        [Display(Name = "Attachments")]
+        public List<Attachment>? Attachments { get; set; }
     }
 }

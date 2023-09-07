@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hKfD0DMyO8XJyJvhkEOQ5Z+HeB7C8U/r6VJiQI4R6c7W5capzuu7/ZxXE1uK7UB/3Un9qfcoXTy5wJzE5KU1LA==",
+  "dgSpecHash": "GcnN1Z0IJbDkyvf0UUg0BK/JvfIJdCJKN7woE/oZFEkVK08dwxXnH4vgyoo4Q53ljKOyATYUHn0SHYeiCPm9WQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\markdig\\0.32.0\\markdig.0.32.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.10\\microsoft.aspnetcore.authorization.7.0.10.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.10\\microsoft.aspnetcore.components.7.0.10.nupkg.sha512",

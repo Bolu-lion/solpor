@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aCrEuyYmAA8DEm7kPJdi37bdifQcmfiy40E6xdC93Kw=",
+  "Hash": "8vSt+Nypvw4Vebm9+RptT/ygpht7vw2Ex+TfKtFei2Y=",
   "Source": "SolutionPortalBeta.Server",
   "BasePath": "_content/SolutionPortalBeta.Server",
   "Mode": "Default",
@@ -7201,6 +7201,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net7.0\\service-worker-assets.js.build"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\.gitignore",
+      "SourceId": "SolutionPortalBeta.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": ".gitignore",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.gitignore"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\app.css",

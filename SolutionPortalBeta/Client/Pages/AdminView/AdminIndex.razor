@@ -135,7 +135,6 @@
 
     protected override async Task OnInitializedAsync()
     {
-
         var response = await _httpClient.GetAsync("api/UserComplaint/");
         complaintList = await response.Content.ReadFromJsonAsync<List<UserCompliantModel>>();
     }

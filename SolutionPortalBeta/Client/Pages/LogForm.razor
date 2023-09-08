@@ -7,7 +7,7 @@
 
 <div class="f-container">
     <h1>Log Complaint</h1>
-    <form Model="complaint" class="logform">
+    <form Model="complaint" class="logform" @onsubmit="Save">
         <div class="forminput">
             <label>Complaint Title</label>
             <input type="text" required @bind="complaint.Title" />

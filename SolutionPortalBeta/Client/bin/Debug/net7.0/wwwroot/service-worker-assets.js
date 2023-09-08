@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-awDCvHaHqrkvtI+6uDDqsLcSLOCbJW02NMCXqHxVau8=",
+      "hash": "sha256-wswa\/\/EYsAeTjuaMXH\/euAvYs6AnhYkzRBpdwRfQKrU=",
       "url": "css\/app.css"
     },
     {
@@ -97,7 +97,7 @@
       "url": "images\/R3_Logo_Dark.png"
     },
     {
-      "hash": "sha256-8pqg7VI8lUQeAB3Ng2kGGXzJr\/OL8THdc4DSdlHeL+w=",
+      "hash": "sha256-bRbdHc5dKp\/SRcqjcj+ht\/3NAbM5JPyXNec8p73MNhY=",
       "url": "index.html"
     },
     {
@@ -105,7 +105,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-Mc7vX54HOgK7fumT0tNmsMEbLGnumBbWU0H6UlV0abA=",
+      "hash": "sha256-IElOnhqDhYfwF2+HP9gvaZr8MDR\/ZdXNHSCdIdy95Hw=",
       "url": "SolutionPortalBeta.Client.styles.css"
     },
     {
@@ -937,11 +937,11 @@
       "url": "_framework\/SolutionPortalBeta.Shared.pdb"
     },
     {
-      "hash": "sha256-dh7bT4KBDlvF\/ODJZ5azjoB3b+mUqICmFUvOLwYHVB8=",
+      "hash": "sha256-rAjkHgoFIsyhRCX0KsDa\/ghpv5XEDNPGS+gBlgJ3syM=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
-      "hash": "sha256-xZZaN2zlPgNrgCrroOsyQc342BjM0tF8NNw+YVBMEDE=",
+      "hash": "sha256-+HvMqLqbb3QjqNlNtn\/jNNSLnNvqVSuyGF7kiXRWsL0=",
       "url": "_framework\/SolutionPortalBeta.Client.pdb"
     },
     {
@@ -949,7 +949,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-8mDUX+QzAseEh6mJuul9CXM9DtC8dG2iv0+x+ysDlOk=",
+      "hash": "sha256-DVWZNDuQ39pzJanjAR8TgWuJjb\/zu2FRQOt08s35nH8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -957,5 +957,5 @@
       "url": "_content\/BlazorInputFile\/inputfile.js"
     }
   ],
-  "version": "PBcpHjgi"
+  "version": "V4riolbP"
 };

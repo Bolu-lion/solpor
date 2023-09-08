@@ -1,5 +1,7 @@
 ﻿@page "/home"
+@using SolutionPortalBeta.Shared
 @inject NavigationManager _nav
+@inject HttpClient _httpClient
 
 <div class="main">
       <Nav/>
@@ -13,12 +15,14 @@
         <div class="article-container">
           <h1>FAQs</h1>
           <div class="articles">
-                @foreach (var document in documents)
+                @foreach (var faq in fAQs.OrderBy(faq => faq.Id))
                 {
                     <div class="article">
+                        <a href="/post/@faq.Id">
                         <h2>
-                            @document
+                            @faq.Title
                         </h2>
+                        </a>
                     </div>
                 }
                 
@@ -67,6 +71,7 @@
 </div>*@
 
 @code{
+   List<FAQModel> fAQs = new List<FAQModel>();
     private void navToForm()
     {
         _nav.NavigateTo("/logform");
@@ -75,6 +80,14 @@
     {
         _nav.NavigateTo("/faq");
     }
+
+    protected override async Task OnInitializedAsync(){
+        var response = await _httpClient.GetAsync("api/Faq/");
+        fAQs = await response.Content.ReadFromJsonAsync<List<FAQModel>>();
+    }
+
+    
+
     public string? inputString { get; set; }
 
     private List<string> documents = new List<string>()

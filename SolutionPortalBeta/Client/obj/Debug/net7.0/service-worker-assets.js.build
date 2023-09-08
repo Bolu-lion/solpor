@@ -105,7 +105,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-ItyTI080R5rtFsz7jw7jTNpAqKY623GqoiRYbOKAas8=",
+      "hash": "sha256-IElOnhqDhYfwF2+HP9gvaZr8MDR\/ZdXNHSCdIdy95Hw=",
       "url": "SolutionPortalBeta.Client.styles.css"
     },
     {
@@ -933,6 +933,10 @@
       "url": "_framework\/SolutionPortalBeta.Shared.dll"
     },
     {
+      "hash": "sha256-Mt5oxKZ8detCBFqgUDHCwxAK0PDTVk1QROCIGowV2eU=",
+      "url": "_framework\/SolutionPortalBeta.Shared.pdb"
+    },
+    {
       "hash": "sha256-rAjkHgoFIsyhRCX0KsDa\/ghpv5XEDNPGS+gBlgJ3syM=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
@@ -953,5 +957,5 @@
       "url": "_content\/BlazorInputFile\/inputfile.js"
     }
   ],
-  "version": "g5fsEvXm"
+  "version": "V4riolbP"
 };

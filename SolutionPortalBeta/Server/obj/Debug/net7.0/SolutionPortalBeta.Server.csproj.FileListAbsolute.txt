@@ -115,6 +115,7 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\SolutionPortalBeta.Server.pdb
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\BlazorInputFile.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\Google.Protobuf.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\Humanizer.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\K4os.Compression.LZ4.dll
@@ -210,4 +211,3 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\net7.0\SolutionPortalBeta.Server.pdb
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\net7.0\SolutionPortalBeta.Server.genruntimeconfig.cache
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\net7.0\ref\SolutionPortalBeta.Server.dll
-C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\BlazorInputFile.dll

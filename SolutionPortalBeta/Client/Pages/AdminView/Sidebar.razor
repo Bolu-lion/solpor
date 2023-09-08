@@ -1,40 +1,27 @@
 ﻿@inject NavigationManager _nav
 
+
 <aside>
-    <div class="sidebar">
-        <a  class="active" @onclick="goToDashborad">
-            <span class="material-symbols-rounded">
-                grid_view
-            </span>
+    <div class="side-bar">
+        <a @onclick="goToDashborad">
+            <span class="material-symbols-rounded"> grid_view </span>
             <h5>Dashboard</h5>
         </a>
-        <a  @onclick="goToCompanies">
-            <span class="material-symbols-rounded">
-                group
-            </span>
+        <a @onclick="goToCompanies">
+            <span class="material-symbols-rounded"> group </span>
             <h5>Companies</h5>
         </a>
-        <a  @onclick="goToFaqs">
-            <span class="material-symbols-rounded">
-                receipt_long
-            </span>
-            <h5>FAQs</h5>
-        </a>
-        <a  @onclick="goToComplaints">
-            <span class="material-symbols-rounded">
-                report
-            </span>
+        <a @onclick="goToComplaints">
+            <span class="material-symbols-rounded">receipt_long </span>
             <h5>Complaints</h5>
         </a>
-        <a href="#">
-            <span class="material-symbols-rounded">
-                logout
-            </span>
-            <h5>Logout</h5>
+        <a @onclick="goToFaqs">
+            <span class="material-symbols-rounded"> report</span>
+            <h5>FAQs</h5>
         </a>
-
     </div>
 </aside>
+
 
 @code {
     public void goToCompanies()

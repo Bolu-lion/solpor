@@ -871,6 +871,7 @@ C:\Users\Tinuke\source\repos\SolutionPortalBeta\SolutionPortalBeta\Client\obj\De
 C:\Users\Tinuke\source\repos\SolutionPortalBeta\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\PTOjkH52.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\blazor.boot.json
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\BlazorInputFile.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\dotnet.7.0.9.xyvtova2q0.js
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\dotnet.timezones.blat
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\dotnet.wasm
@@ -1135,6 +1136,7 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\System.Net.WebHeaderCollection.dll.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\System.Private.Xml.dll.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\System.Runtime.Serialization.Json.dll.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\BlazorInputFile.dll.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\System.Numerics.Vectors.dll.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.dll.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\System.Net.Security.dll.gz
@@ -1293,6 +1295,7 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\SolutionPortalBeta.Client.staticwebassets.runtime.json
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\SolutionPortalBeta.Client.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\SolutionPortalBeta.Client.pdb
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\BlazorInputFile.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\Markdig.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
@@ -1505,6 +1508,7 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\SolutionPortalBeta.Client.AssemblyInfo.cs
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\SolutionPortalBeta.Client.csproj.CoreCompileInputs.cache
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\SolutionPortalBeta.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\CTD2R++c.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\PvZBVAA8.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\60+Uy3+U.gz
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\TCThRklv.gz
@@ -1730,7 +1734,11 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\ListOfComplaints.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\Sidebar.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Faq.razor.rz.scp.css
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\LogBtn.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\LogForm.razor.rz.scp.css
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Login.razor.rz.scp.css
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Nav.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Post.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
@@ -1743,6 +1751,7 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\refint\SolutionPortalBeta.Client.dll
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\SolutionPortalBeta.Client.pdb
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\ref\SolutionPortalBeta.Client.dll
+<<<<<<< HEAD
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Login.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Nav.razor.rz.scp.css
@@ -2657,3 +2666,5 @@ C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\bui
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\AWsN+1z3.gz
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\OGGRGTHn.gz
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\Lq58c7lb.gz
+=======
+>>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16

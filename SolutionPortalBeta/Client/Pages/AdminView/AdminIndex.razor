@@ -4,8 +4,7 @@
 @*@using SolutionPortal.Shared*@
 @inject HttpClient _httpClient
 
-@*<button class="btn btn-primary" @onclick="moveto">FAQs</button>*@
-<div class="containerm">
+@*<div class="containerm">
     <Sidebar/>
     <main>
         <div class="top bckgm"><div class="title">Dashboard</div></div>
@@ -19,7 +18,6 @@
                         <h1>Total Complaints</h1>
                         <h3>@complaintList.Count() </h3>
                     </div>
-
                 </div>
                 <small class="text-muted">Last 24 Hours</small>
             </div>
@@ -78,8 +76,58 @@
            
         </div>
     </main>
-    <!-------------END OF MAIN---------->
-
+</div>*@
+<div class="admin-main">
+    <Sidebar/>
+    <section>
+        <div class="stats">
+            <div class="total">
+                <span class="material-symbols-outlined"> analytics </span>
+                <div class="middle">
+                    <div class="left">
+                        <h1>Total Complaints</h1>
+                        <h3>3</h3>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+            </div>
+            <div class="resolved">
+                <span class="material-symbols-outlined"> done </span>
+                <div class="middle">
+                    <div class="left">
+                        <h1>Resolved Complaints</h1>
+                        <h3>3</h3>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+            </div>
+            <div class="unresolved">
+                <span class="material-symbols-outlined"> priority_high </span>
+                <div class="middle">
+                    <div class="left">
+                        <h1>Unresolved Complaints</h1>
+                        <h3>3</h3>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+            </div>
+        </div>
+        <div class="complaint-list">
+            <h1>Recent Complaints</h1>
+            <div class="c-list">
+                @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
+                {
+                    <div class="c-list-item">
+                        <div class="t-row">
+                            <h2>@p.Description</h2>
+                            <small>@p.DateCreated</small>
+                        </div>
+                        <span class="status">@CheckStatus(p.IsCompleted)</span>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
 </div>
 
 @code {
@@ -87,7 +135,6 @@
 
     protected override async Task OnInitializedAsync()
     {
-
         var response = await _httpClient.GetAsync("api/UserComplaint/");
         complaintList = await response.Content.ReadFromJsonAsync<List<UserCompliantModel>>();
     }

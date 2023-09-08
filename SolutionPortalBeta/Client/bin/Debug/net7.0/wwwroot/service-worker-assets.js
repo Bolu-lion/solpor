@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-awDCvHaHqrkvtI+6uDDqsLcSLOCbJW02NMCXqHxVau8=",
+      "hash": "sha256-wswa\/\/EYsAeTjuaMXH\/euAvYs6AnhYkzRBpdwRfQKrU=",
       "url": "css\/app.css"
     },
     {
@@ -97,7 +97,7 @@
       "url": "images\/R3_Logo_Dark.png"
     },
     {
-      "hash": "sha256-8pqg7VI8lUQeAB3Ng2kGGXzJr\/OL8THdc4DSdlHeL+w=",
+      "hash": "sha256-bRbdHc5dKp\/SRcqjcj+ht\/3NAbM5JPyXNec8p73MNhY=",
       "url": "index.html"
     },
     {
@@ -105,7 +105,11 @@
       "url": "manifest.json"
     },
     {
+<<<<<<< HEAD
       "hash": "sha256-R7PVP+pKP47KR+JFq+iO2Be3EAtWqpqth6JpIl17EfI=",
+=======
+      "hash": "sha256-IElOnhqDhYfwF2+HP9gvaZr8MDR\/ZdXNHSCdIdy95Hw=",
+>>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
       "url": "SolutionPortalBeta.Client.styles.css"
     },
     {
@@ -961,11 +965,19 @@
       "url": "_framework\/SolutionPortalBeta.Shared.pdb"
     },
     {
+<<<<<<< HEAD
       "hash": "sha256-+Fy8ucr7uYy5FHdSlhbPMsqIwkd1akvnnW3EaybTGQ8=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
       "hash": "sha256-IQ2xBFDEiYms6Lo4+Vjpmmk6ImfGWkm8BGNQjFu5vD4=",
+=======
+      "hash": "sha256-rAjkHgoFIsyhRCX0KsDa\/ghpv5XEDNPGS+gBlgJ3syM=",
+      "url": "_framework\/SolutionPortalBeta.Client.dll"
+    },
+    {
+      "hash": "sha256-+HvMqLqbb3QjqNlNtn\/jNNSLnNvqVSuyGF7kiXRWsL0=",
+>>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
       "url": "_framework\/SolutionPortalBeta.Client.pdb"
     },
     {
@@ -973,7 +985,11 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
+<<<<<<< HEAD
       "hash": "sha256-gS5Xg\/RF56jCnpzzywcYc8aDoJsiKFi6GSP4l69ozJQ=",
+=======
+      "hash": "sha256-DVWZNDuQ39pzJanjAR8TgWuJjb\/zu2FRQOt08s35nH8=",
+>>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -981,5 +997,9 @@
       "url": "_content\/BlazorInputFile\/inputfile.js"
     }
   ],
+<<<<<<< HEAD
   "version": "hHzpVuds"
+=======
+  "version": "V4riolbP"
+>>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
 };

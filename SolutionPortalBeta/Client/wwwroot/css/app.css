@@ -363,6 +363,12 @@ main {
     place-items:center;
     /*min-width:100vw;*/
 }
+.admin-main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15rem auto;
+    width: 100%;
+}
 code {
     font-family: "Space Grotesk", sans-serif;
 }

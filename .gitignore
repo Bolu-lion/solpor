@@ -1,9 +1,15 @@
+# paths / folders to ignore
 **/net7.0/
+**/bin/
+**obj/
+
+# files with specified extensions should be ignored
 .wasm
 .dll
 .gz
 .cache
 .editorconfig
 
+# task and launch json files for vs code to be ignored
 launch.json
 task.json

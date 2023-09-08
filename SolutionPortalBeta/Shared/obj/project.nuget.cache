@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "T7bRNYYl5GLUBngNO3Vu4COi937Uc9EmgPz6HM4GbBv3d7t9Q0a3PVn6cAcD549sGq73O6FhZAm1QwgWe9g3vA==",
+  "dgSpecHash": "N0JjDLJtVGAIUzYosa9brQqwTVICLZf4PEOsv5RkzhbA4AjVYShHdKM2/ns3BFqT66UhyCRJKwjuEJ60SYY2Gw==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\markdig\\0.32.0\\markdig.0.32.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.0-preview3.19555.2\\microsoft.aspnetcore.authorization.3.1.0-preview3.19555.2.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.0-preview3.19555.2\\microsoft.aspnetcore.components.3.1.0-preview3.19555.2.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.0-preview3.19555.2\\microsoft.aspnetcore.components.analyzers.3.1.0-preview3.19555.2.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.1.0-preview3.19555.2\\microsoft.aspnetcore.components.forms.3.1.0-preview3.19555.2.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.components.web\\3.1.0-preview3.19555.2\\microsoft.aspnetcore.components.web.3.1.0-preview3.19555.2.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.0-preview3.19555.2\\microsoft.aspnetcore.metadata.3.1.0-preview3.19555.2.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
@@ -16,6 +23,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.jsinterop\\3.1.0-preview3.19553.2\\microsoft.jsinterop.3.1.0-preview3.19553.2.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.net.http.json\\7.0.1\\system.net.http.json.7.0.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"

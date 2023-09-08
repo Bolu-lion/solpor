@@ -10,3 +10,4 @@ namespace  SolutionPortalBeta.Server.Service
 		Task<List<Attachment>> GetAttachmentByCompliantId(int ComplaintId);
     }
 }
+

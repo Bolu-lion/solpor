@@ -46,6 +46,25 @@
           }
         }
       },
+      "BlazorInputFile/0.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.0-preview3.19555.2",
+          "Microsoft.AspNetCore.Components.Web": "3.1.0-preview3.19555.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/BlazorInputFile.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/BlazorInputFile.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorInputFile.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorInputFile.props": {}
+        }
+      },
       "Google.Protobuf/3.21.9": {
         "type": "package",
         "compile": {
@@ -1698,6 +1717,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "BlazorInputFile": "0.2.0",
           "Markdig": "0.32.0",
           "Microsoft.AspNetCore.Components.Authorization": "7.0.10",
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.10",
@@ -1716,6 +1736,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "BlazorInputFile": "0.2.0",
           "Markdig": "0.32.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "System.Net.Http.Json": "7.0.1"
@@ -1766,6 +1787,24 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "BlazorInputFile/0.2.0": {
+      "sha512": "wsPTwoA9fkHOxjEh0W0brNeTaVBaMCFwfBLehbRhfW+RzlIrYtlJ5qFpT5f377Ej6ELk+xeoUrkDBx9c8JF7DQ==",
+      "type": "package",
+      "path": "blazorinputfile/0.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazorinputfile.0.2.0.nupkg.sha512",
+        "blazorinputfile.nuspec",
+        "build/BlazorInputFile.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorInputFile.props",
+        "buildTransitive/BlazorInputFile.props",
+        "lib/netstandard2.0/BlazorInputFile.dll",
+        "lib/netstandard2.1/BlazorInputFile.dll",
+        "staticwebassets/inputfile.js"
       ]
     },
     "Google.Protobuf/3.21.9": {
@@ -4760,6 +4799,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BlazorInputFile >= 0.2.0",
       "Markdig >= 0.32.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 7.0.10",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
@@ -4825,6 +4865,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "BlazorInputFile": {
+            "target": "Package",
+            "version": "[0.2.0, )"
+          },
           "Markdig": {
             "target": "Package",
             "version": "[0.32.0, )"

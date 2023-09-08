@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-XvqJRUl\/3o7TWYhmmZmzjl\/MxpCwPX13wduKwCu\/v2I=",
+      "hash": "sha256-awDCvHaHqrkvtI+6uDDqsLcSLOCbJW02NMCXqHxVau8=",
       "url": "css\/app.css"
     },
     {
@@ -97,7 +97,7 @@
       "url": "images\/R3_Logo_Dark.png"
     },
     {
-      "hash": "sha256-Fi3hw9TkvpiBeTdVS7L2JeTmMVp0P1rC7hyDGL3a9Q0=",
+      "hash": "sha256-8pqg7VI8lUQeAB3Ng2kGGXzJr\/OL8THdc4DSdlHeL+w=",
       "url": "index.html"
     },
     {
@@ -105,8 +105,12 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-2t936pkbtGhyD81X9bW4xoeavsrIeKHs9PMLy+7RAxI=",
+      "hash": "sha256-gbpr85QJSWFe0f5SSuQ8Nnt25JedC6u4d\/2EBgEu\/KY=",
       "url": "SolutionPortalBeta.Client.styles.css"
+    },
+    {
+      "hash": "sha256-C0KrMmLQQE68cd1+FNwIOW89nNGbOH48hRxQAoSBaaA=",
+      "url": "_framework\/BlazorInputFile.dll"
     },
     {
       "hash": "sha256-\/OHBGJDFwFENvDYSXQ4QGozJaA3js46HvXZ5IWM9qpg=",
@@ -925,19 +929,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Vg50mMwg9tXEx\/FtVd5bUsmY+d987NN9kqXvH1AUbf0=",
+      "hash": "sha256-MXGye6EksNKm4ID+Ng5DNz7uZRA2alJfEd2MLyZT0VE=",
       "url": "_framework\/SolutionPortalBeta.Shared.dll"
     },
     {
-      "hash": "sha256-9q6izNkl7+eFE3QybdYvkdITIZWbCbOxXmxLkoDzBmY=",
+      "hash": "sha256-Mt5oxKZ8detCBFqgUDHCwxAK0PDTVk1QROCIGowV2eU=",
       "url": "_framework\/SolutionPortalBeta.Shared.pdb"
     },
     {
-      "hash": "sha256-7wPYBA5QR4pzQaV04JrV6nxvJ5DQ4x5j6\/VycRGGNYs=",
+      "hash": "sha256-GlfKU+1UnAUMRmM2iecAyK1tiMysq4c2ULEQ2jd\/ptg=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
-      "hash": "sha256-mWj2bnr\/f0aI4SjCwNR6zEm6uJpke5eyt8F1Kc76Yq4=",
+      "hash": "sha256-zlUkPTSQuKaWzfJtnia\/MZlaObeByOAU5wjBzUVj1Rg=",
       "url": "_framework\/SolutionPortalBeta.Client.pdb"
     },
     {
@@ -945,9 +949,13 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-iH54SWS4rmaJkGeRH6Zj+S5NwgI0GzAXeX7EetUydkA=",
+      "hash": "sha256-pue\/S+JogAYRXXeLo4PrIiCqOq3XpVbpSYB9Sv2e58w=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-\/n8hxridi+BE7KMcprL53dUE3gYZvzuPp3syUZ07ims=",
+      "url": "_content\/BlazorInputFile\/inputfile.js"
     }
   ],
-  "version": "5YaM8fpS"
+  "version": "b2fbR53d"
 };

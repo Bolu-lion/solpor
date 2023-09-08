@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "BlazorInputFile.dll": "sha256-C0KrMmLQQE68cd1+FNwIOW89nNGbOH48hRxQAoSBaaA=",
       "Markdig.dll": "sha256-\/OHBGJDFwFENvDYSXQ4QGozJaA3js46HvXZ5IWM9qpg=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-t7KDwXpfEy\/UbmAIpuMJI0h+MMOTr8jLi1ei0lP44QI=",
       "Microsoft.AspNetCore.Components.dll": "sha256-CCnE1pQ8XDRrJWlqnelqinQo1pisIEK3lPSLNsOThy8=",
@@ -204,15 +205,15 @@
       "mscorlib.dll": "sha256-t1RT9mknsQ54H+sVa1vtMhjv3D8ZjiAGoLzHvuIObPw=",
       "netstandard.dll": "sha256-5SHKPh1PcuJjq4lIo7ymdIyhb9d3++oMAjr46auhUSc=",
       "System.Private.CoreLib.dll": "sha256-eH+XIsCUG5oZ0k8AIzNtRLTCLiV\/8Zv0RFCPMsIkdYY=",
-      "SolutionPortalBeta.Shared.dll": "sha256-Vg50mMwg9tXEx\/FtVd5bUsmY+d987NN9kqXvH1AUbf0=",
-      "SolutionPortalBeta.Client.dll": "sha256-7wPYBA5QR4pzQaV04JrV6nxvJ5DQ4x5j6\/VycRGGNYs="
+      "SolutionPortalBeta.Shared.dll": "sha256-MXGye6EksNKm4ID+Ng5DNz7uZRA2alJfEd2MLyZT0VE=",
+      "SolutionPortalBeta.Client.dll": "sha256-1f3UEJdbhM\/Rfz1u3NrzxeiSIWNb66889Az4ZD8waaI="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "SolutionPortalBeta.Shared.pdb": "sha256-9q6izNkl7+eFE3QybdYvkdITIZWbCbOxXmxLkoDzBmY=",
-      "SolutionPortalBeta.Client.pdb": "sha256-mWj2bnr\/f0aI4SjCwNR6zEm6uJpke5eyt8F1Kc76Yq4="
+      "SolutionPortalBeta.Shared.pdb": "sha256-Mt5oxKZ8detCBFqgUDHCwxAK0PDTVk1QROCIGowV2eU=",
+      "SolutionPortalBeta.Client.pdb": "sha256-UaPubdR3aPySbz6jLh5x7nNLBuBF+E1QUaMan69eu\/Q="
     },
     "runtime": {
       "dotnet.7.0.9.xyvtova2q0.js": "sha256-dUIY5Mz0ozZWqtTfBb7ArJKbdh5IIp8BXeq6UjK4u\/c=",

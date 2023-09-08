@@ -210,3 +210,4 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\net7.0\SolutionPortalBeta.Server.pdb
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\net7.0\SolutionPortalBeta.Server.genruntimeconfig.cache
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\net7.0\ref\SolutionPortalBeta.Server.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\BlazorInputFile.dll

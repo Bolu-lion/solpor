@@ -71,9 +71,9 @@
     <button type="button" class="btn btn-primary" @onclick="AddDepartment">Add Department</button>
 
     <ul>
-        @foreach (var department in company.Departments)
+        @foreach (var department in Departments.Keys)
         {
-            <li>@department.Name</li>
+            <li>@department</li>
         }
     </ul>
 
@@ -85,30 +85,37 @@
     public DepartmentModel department = new DepartmentModel();
     private string departmentName = "";
     private string departmentAlias = "";
-    public int depId = 0;
+    Dictionary<string, string> Departments = new Dictionary<string, string>();
 
     private void AddDepartment()
     {
         if (!string.IsNullOrWhiteSpace(departmentName) && !string.IsNullOrWhiteSpace(departmentAlias))
-        {
+        {     
+            Departments.Add(departmentName, departmentAlias);
             department.Name = departmentName;
             department.UserName = departmentAlias;
-            department.Id = depId++;
             company.Departments.Add(department);
-            departmentName = "";
-            departmentAlias = "";
+            
         }
+        departmentName = "";
+        departmentAlias = "";
     }
 
     private async Task CreateCompanyx()
     {
-        await CompanyService.CreateCompany(company);
-        
-        foreach(var dept in company.Departments)
+         CompanyService.CreateCompany(company);
+        if (company?.id > 0)
         {
-            dept.CompanyId = company.id;
-            await DepartmentService.AddDepartment(dept);
+            foreach (var dept in Departments)
+            {
+                department.CompanyId = company.id;
+                department.Name = dept.Key;
+                department.UserName = dept.Value;
+                await DepartmentService.AddDepartment(department);
+            }
+            await JsRuntime.InvokeVoidAsync("alert", "Sent Successfully!");
         }
+       
     }
 }
 

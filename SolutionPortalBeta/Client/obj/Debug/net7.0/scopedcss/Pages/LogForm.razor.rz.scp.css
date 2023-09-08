@@ -1,45 +1,45 @@
-.f-container[b-qvmdl33rat] {
+/*.f-container {
     background-color: transparent;
     height: 100vh;
     display: grid;
     place-items: center;
 }
 
-    .f-container .main[b-qvmdl33rat] {
+    .f-container .main {
         height: 100%;
         width: 80%;
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        /* background-color: red; */
-    }
+        gap: 2rem;*/
+/* background-color: red; */
+/*}
 
-        .f-container .main .profile-icon[b-qvmdl33rat] {
+        .f-container .main .profile-icon {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0rem;
-            cursor: pointer;
-            /* background-color: aqua; */
-        }
+            cursor: pointer;*/
+/* background-color: aqua; */
+/*}
 
-.profile-icon .icon[b-qvmdl33rat] {
+.profile-icon .icon {
     font-weight: 700;
     font-size: 20px;
 }
 
-.profile-icon img[b-qvmdl33rat] {
+.profile-icon img {
     border-radius: 50%;
 }
 
-.top[b-qvmdl33rat] {
+.top {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-    .top .title[b-qvmdl33rat] {
+    .top .title {
         background-color: blanchedalmond;
         
         background-blend-mode: darken;
@@ -57,13 +57,13 @@
         border-radius: 10px;
     }
 
-.mainform[b-qvmdl33rat] {
-    /* background-color: beige; */
-    display: grid;
+.mainform {*/
+/* background-color: beige; */
+/*display: grid;
     place-items: center;
 }
 
-    .mainform form[b-qvmdl33rat] {
+    .mainform form {
         background-color: whitesmoke;
         width: 80%;
         padding: 1.7rem 3rem;
@@ -73,22 +73,22 @@
         box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.295);
     }
 
-        .mainform form .form-input[b-qvmdl33rat] {
-            /* background-color: rebeccapurple; */
-            display: flex;
+        .mainform form .form-input {*/
+/* background-color: rebeccapurple; */
+/*display: flex;
             justify-content: center;
             align-items: baseline;
         }
 
-            .mainform form .form-input label[b-qvmdl33rat] {
+            .mainform form .form-input label {
                 font-size: 20px;
                 font-weight: 700;
                 width: 20%;
             }
 
-            .mainform form .form-input input[b-qvmdl33rat],
-            .mainform form .form-input select[b-qvmdl33rat],
-            .mainform form .form-input textarea[b-qvmdl33rat] {
+            .mainform form .form-input input,
+            .mainform form .form-input select,
+            .mainform form .form-input textarea {
                 padding: 15px;
                 width: 60%;
                 outline: none;
@@ -96,39 +96,39 @@
                 border: 1px solid #d0cdc5;
             }
 
-                .mainform form .form-input input:hover[b-qvmdl33rat],
-                .mainform form .form-input select:hover[b-qvmdl33rat],
-                .mainform form .form-input textarea:hover[b-qvmdl33rat],
-                .mainform form .form-input input:focus[b-qvmdl33rat],
-                .mainform form .form-input select:focus[b-qvmdl33rat],
-                .mainform form .form-input textarea:focus[b-qvmdl33rat] {
+                .mainform form .form-input input:hover,
+                .mainform form .form-input select:hover,
+                .mainform form .form-input textarea:hover,
+                .mainform form .form-input input:focus,
+                .mainform form .form-input select:focus,
+                .mainform form .form-input textarea:focus {
                     border: 1px solid black;
                 }
 
-                .mainform form .form-input input[b-qvmdl33rat]::selection,
-                .mainform form .form-input select[b-qvmdl33rat]::selection,
-                .mainform form .form-input textarea[b-qvmdl33rat]::selection {
+                .mainform form .form-input input::selection,
+                .mainform form .form-input select::selection,
+                .mainform form .form-input textarea::selection {
                     background-color: black;
                     color: white;
                 }
 
-textarea[b-qvmdl33rat] {
+textarea {
     resize: none;
     overflow: auto;
 }
 
-.bottom[b-qvmdl33rat] {
+.bottom {
     display: flex;
     justify-content: center;
 }
 
-    .bottom .btmbutton[b-qvmdl33rat] {
+    .bottom .btmbutton {
         width: 80%;
         display: flex;
         justify-content: flex-end;
     }
 
-        .bottom .btmbutton button[b-qvmdl33rat] {
+        .bottom .btmbutton button {
             padding: 0 50px;
             height: 3.5rem;
             outline: none;
@@ -143,6 +143,83 @@ textarea[b-qvmdl33rat] {
             cursor: pointer;
         }
 
-            .bottom .btmbutton button:hover[b-qvmdl33rat] {
+            .bottom .btmbutton button:hover {
                 color: black;
-            }
+            }*/
+.f-container[b-qvmdl33rat] {
+    background-color: transparent;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.logform[b-qvmdl33rat] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgba(156, 155, 155, 0.5);
+    box-shadow: 5px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+.forminput[b-qvmdl33rat] {
+    display: grid;
+    gap: 0.5rem;
+    width: 95%;
+    place-items: center;
+}
+
+    .forminput label[b-qvmdl33rat] {
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%
+    }
+
+    .forminput input[b-qvmdl33rat] {
+        text-transform: capitalize;
+    }
+
+    .forminput input[b-qvmdl33rat],
+    .forminput textarea[b-qvmdl33rat] {
+        border: 1px solid rgba(156, 155, 155, 0.5);
+        padding: 0.3rem 0.7rem;
+        font-size: 17px;
+        outline: none;
+        border-radius: 0.3rem;
+        resize: none;
+        width: 100%;
+    }
+
+.input-file[b-qvmdl33rat] {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+    .input-file span[b-qvmdl33rat] {
+        color: darkred;
+    }
+
+.filein[b-qvmdl33rat] {
+    display: flex;
+    /*justify-content:space-between;*/
+    width: 100%
+}
+
+.submit-modal[b-qvmdl33rat] {
+    width: 30%;
+}
+
+@media screen and (max-width: 720px) {
+    .logform[b-qvmdl33rat] {
+        width: 100%;
+    }
+}

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "SolutionPortalBeta.Server/1.0.0": {
         "dependencies": {
+          "BlazorInputFile": "0.2.0",
           "Markdig": "0.32.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "7.0.10",
           "Microsoft.EntityFrameworkCore": "7.0.10",
@@ -55,6 +56,18 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.6.0.0",
             "fileVersion": "1.600.22.20503"
+          }
+        }
+      },
+      "BlazorInputFile/0.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.10",
+          "Microsoft.AspNetCore.Components.Web": "7.0.10"
+        },
+        "runtime": {
+          "lib/netstandard2.1/BlazorInputFile.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -943,6 +956,7 @@
       },
       "SolutionPortalBeta.Client/1.0.0": {
         "dependencies": {
+          "BlazorInputFile": "0.2.0",
           "Markdig": "0.32.0",
           "Microsoft.AspNetCore.Components.Authorization": "7.0.10",
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.10",
@@ -956,6 +970,7 @@
       },
       "SolutionPortalBeta.Shared/1.0.0": {
         "dependencies": {
+          "BlazorInputFile": "0.2.0",
           "Markdig": "0.32.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "System.Net.Http.Json": "7.0.1"
@@ -985,6 +1000,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "BlazorInputFile/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wsPTwoA9fkHOxjEh0W0brNeTaVBaMCFwfBLehbRhfW+RzlIrYtlJ5qFpT5f377Ej6ELk+xeoUrkDBx9c8JF7DQ==",
+      "path": "blazorinputfile/0.2.0",
+      "hashPath": "blazorinputfile.0.2.0.nupkg.sha512"
     },
     "Google.Protobuf/3.21.9": {
       "type": "package",

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9hb1rAoMufwFIlrFxGSswGDS/U4asynX2/PISluZk1lms94pyoc11J+L3sozFg/tB/SslG1exfJ+9HY+/SzuzQ==",
+  "dgSpecHash": "vxL1MN8R+VHiWQWPFp2cNZe9T2flwXo/ZSPNdvNf9tDvQ7YXeUAEvhK5teOhTNMelyuPtyVyU4I0x440hhs08A==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Server\\SolutionPortalBeta.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",

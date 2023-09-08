@@ -7,7 +7,7 @@ namespace SolutionPortalBeta.Server.AppDbContext
     public class ApplicationDbContext : DbContext
     {
 
-        static readonly string connectionString = "Server=localhost; User ID=root; Database=solpor;Password=@Adelaja101";
+        static readonly string connectionString = "Server=localhost; User ID=root; Database=solpor;Password=kayode";
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<UserComplaint> UserComplaints { get; set; }
         public DbSet<FAQ> FAQs { get; set; }

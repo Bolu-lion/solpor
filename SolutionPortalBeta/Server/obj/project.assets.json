@@ -4803,6 +4803,7 @@
       "Markdig >= 0.32.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 7.0.10",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10",
       "MySql.Data >= 8.1.0",
@@ -4814,24 +4815,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Server\\SolutionPortalBeta.Server.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Server\\SolutionPortalBeta.Server.csproj",
       "projectName": "SolutionPortalBeta.Server",
-      "projectPath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Server\\SolutionPortalBeta.Server.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Server\\obj\\",
+      "projectPath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Server\\SolutionPortalBeta.Server.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4839,18 +4835,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj": {
-              "projectPath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj"
+            "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj"
             },
-            "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj": {
-              "projectPath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj"
+            "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj"
             }
           }
         }
@@ -4878,6 +4874,12 @@
             "version": "[7.0.10, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.10, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.10, )"
           },
@@ -4927,7 +4929,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

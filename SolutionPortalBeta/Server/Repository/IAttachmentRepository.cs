@@ -1,11 +1,13 @@
+using SolutionPortalBeta.Server.Models;
+
 namespace SolutionPortalBeta.Server.Repository
 {
 	public interface IAttachmentRepository<T>
 	{
-		public Task<T> CreateAsync(T _object);
-		public Task<List<T>> GetAllAsync();
-		public Task<T> GetByIdAsync(int Id);
-        public Task<List<T>> GetByComplaintId(int Id);
+		public Task<Attachment> CreateAsync(T _object);
+		public Task<List<Attachment>> GetAllAsync();
+		public Task<Attachment> GetByIdAsync(int Id);
+        public Task<List<Attachment>> GetByComplaintId(int Id);
 
     }
 }

@@ -4,21 +4,21 @@ using System;
 
 namespace SolutionPortalBeta.Server.AppDbContext
 {
-	public class ApplicationDbContext : DbContext
-	{
+    public class ApplicationDbContext : DbContext
+    {
 
-		static readonly string connectionString = "Server=localhost; User ID=root; Database=solpor;Password=@Adelaja101";		
-			public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-			public DbSet<UserComplaint>  UserComplaints { get; set; }
-			public DbSet<FAQ> FAQs { get; set; }
-			public DbSet<Company> Companies { get; set; }
-
+        static readonly string connectionString = "Server=localhost; User ID=root; Database=solpor;Password=@Adelaja101";
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+        public DbSet<UserComplaint> UserComplaints { get; set; }
+        public DbSet<FAQ> FAQs { get; set; }
+        public DbSet<Company> Companies { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Attachment> Attachments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-			modelBuilder.Entity<FAQ>();
-			base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<FAQ>();
+            base.OnModelCreating(modelBuilder);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

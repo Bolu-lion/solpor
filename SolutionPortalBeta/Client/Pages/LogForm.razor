@@ -7,7 +7,7 @@
 
 <div class="f-container">
     <h1>Log Complaint</h1>
-    <EditForm Model="complaint" class="logform">
+    <form Model="complaint" class="logform">
         <div class="forminput">
             <label>Complaint Title</label>
             <input type="text" required @bind="complaint.Title" />
@@ -31,18 +31,14 @@
         <button class="submit-modal" type="submit">
             Submit
         </button>
-    </EditForm>
+    </form>
 </div>
 
 @code {
     UserCompliantModel complaint = new UserCompliantModel();
-
     public List<string> fileNames = new List<string>();
     public int filecount;
-    //private string FileName { get; set; }
-    protected override async Task OnInitializedAsync()
-    {
-    }
+    protected override async Task OnInitializedAsync(){}
     protected async Task Save()
     {
         var response = await Http.PostAsJsonAsync("api/usercomplaint", complaint);
@@ -60,6 +56,5 @@
         {
             fileNames.Add(file.Name);
         }
-        
     }
 }

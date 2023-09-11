@@ -21,7 +21,7 @@ namespace SolutionPortalBeta.Client.Services.CompanyServices
         public async Task CreateCompany(CompanyModel company)
         {
             await _http.PostAsJsonAsync("api/Company", company);
-            //_navigationManager.NavigateTo("companies");
+            _navigationManager.NavigateTo("companies");
         }
 
         public async Task DeleteCompany(int id)

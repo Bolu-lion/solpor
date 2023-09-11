@@ -28,7 +28,7 @@
             <button @onclick="gotocreate">Create Company</button>
         </div>
         <div class="company-list">
-            @foreach (var company in companies.OrderBy(company => company.id).Take(10))
+            @foreach (var company in companies.OrderBy(company => company.id).Take(5))
             {
                 <div class="company">
                     <h3>@company.Name</h3>

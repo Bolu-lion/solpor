@@ -40,7 +40,7 @@ namespace SolutionPortalBeta.Server.Migrations
 
                     b.HasIndex("ComplaintId");
 
-                    b.ToTable("Attachment");
+                    b.ToTable("Attachments");
                 });
 
             modelBuilder.Entity("SolutionPortalBeta.Server.Models.Company", b =>
@@ -123,6 +123,9 @@ namespace SolutionPortalBeta.Server.Migrations
 
                     b.Property<bool>("IsCompleted")
                         .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Response")
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Title")
                         .IsRequired()

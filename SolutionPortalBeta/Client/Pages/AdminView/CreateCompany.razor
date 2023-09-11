@@ -5,81 +5,68 @@
 @inject IDepartmentService DepartmentService
 @inject ICompanyService CompanyService
 
-@*<div class="containerr">
-    <div class="top bckgmt"><div class="title">Register Company</div></div>
-    <div class="main">
-        <div>
-            <label for="companyName">Company Name</label>
-            <input type="text"
-                   name="companyName"
-                   id=""
-                   placeholder="Enter company name" @bind="rre"/>
+@*<div class="admin-main">
+    <h1>Create Company</h1>
+    <EditForm Model="@company" OnValidSubmit="CreateCompanyx">
+        <!-- Company information fields -->
+        <div class="form-group">
+            <label for="name">Company Name:</label>
+            <InputText id="name" @bind-Value="company.Name" class="form-control" />
         </div>
-        <div>
-            <label for="companyName">Company Alias</label>
-            <input type="text"
-                   name="companyAlias"
-                   id=""
-                   placeholder="Enter company alias" @bind="company.Alias" />
+        <div class="form-group">
+            <label for="name">Company Alias:</label>
+            <InputText id="name" @bind-Value="company.Alias" class="form-control" />
         </div>
-        <label for="companyName">Department Name</label>
-        <div class="inpttxt">
-            <input type="text"
-                   name="companyName"
-                   id=""
-                   placeholder="Enter department name"
-            @bind="department.Name" />
-            <input type="text"
-                   name="companyName"
-                   id=""
-                   placeholder="Enter department username"
-            @bind="department.UserName" />
-            <div class="button">
-                <button class="bckgmt" @onclick="SaveDept">Add</button>
-            </div>
+        <!-- Department input fields -->
+        <h3>Departments</h3>
+        <div class="form-group">
+            <label for="departmentName">Department Name:</label>
+            <InputText id="departmentName" @bind-Value="departmentName" class="form-control" />
         </div>
-    </div>
-    <div class="button">
-        <button class="bckgmt" @onclick="Save">Submit</button>
-    </div>
+        <div class="form-group">
+            <label for="departmentName">Department Username:</label>
+            <InputText id="departmentName" @bind-Value="departmentAlias" class="form-control" />
+        </div>
+        <button type="button" class="btn btn-primary" @onclick="AddDepartment">Add Department</button>
+        <ul>
+            @foreach (var department in Departments.Keys)
+            {
+                <li>@department</li>
+            }
+        </ul>
+        <button type="submit" class="btn btn-success">Create Company</button>
+    </EditForm>
 </div>*@
-
-<h1>Create Company</h1>
-
-<EditForm Model="@company" OnValidSubmit="CreateCompanyx">
-    <!-- Company information fields -->
-    <div class="form-group">
-        <label for="name">Company Name:</label>
-        <InputText id="name" @bind-Value="company.Name" class="form-control" />
+<div class="create-com">
+    <div>
+        <h1 class="title">Create Company</h1>
     </div>
-    <div class="form-group">
-        <label for="name">Company Alias:</label>
-        <InputText id="name" @bind-Value="company.Alias" class="form-control" />
+    <div class="create-com-form">
+        <form>
+            <div class="form-group">
+                <label for="name">Company Name:</label>
+                <input type="text" id="name" class="form-control" @bind="company.Name"/>
+            </div>
+            <div class="form-group">
+                <label for="name">Company Alias:</label>
+                <input type="text" id="alias" class="form-control" @bind="company.Alias" />
+            </div>
+@*            <h3>Add Departments</h3>
+            <div class="dept-add">
+                <div class="form-group">
+                    <label for="departmentName">Department Name:</label>
+                    <input type="text" id="departmentName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="name">Department Username:</label>
+                    <input type="text" id="name" class="form-control" />
+                </div>
+                
+            </div>*@
+            <button type="submit" @onclick="CreateCompanyx">Create Company</button>
+        </form>
     </div>
-
-    <!-- Department input fields -->
-    <h3>Departments</h3>
-    <div class="form-group">
-        <label for="departmentName">Department Name:</label>
-        <InputText id="departmentName" @bind-Value="departmentName" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label for="departmentName">Department Username:</label>
-        <InputText id="departmentName" @bind-Value="departmentAlias" class="form-control" />
-    </div>
-
-    <button type="button" class="btn btn-primary" @onclick="AddDepartment">Add Department</button>
-
-    <ul>
-        @foreach (var department in Departments.Keys)
-        {
-            <li>@department</li>
-        }
-    </ul>
-
-    <button type="submit" class="btn btn-success">Create Company</button>
-</EditForm>
-
+</div>
 @code {
     private CompanyModel company = new CompanyModel();
     public DepartmentModel department = new DepartmentModel();
@@ -90,12 +77,12 @@
     private void AddDepartment()
     {
         if (!string.IsNullOrWhiteSpace(departmentName) && !string.IsNullOrWhiteSpace(departmentAlias))
-        {     
+        {
             Departments.Add(departmentName, departmentAlias);
             department.Name = departmentName;
             department.UserName = departmentAlias;
             company.Departments.Add(department);
-            
+
         }
         departmentName = "";
         departmentAlias = "";
@@ -103,49 +90,18 @@
 
     private async Task CreateCompanyx()
     {
-         CompanyService.CreateCompany(company);
+        await CompanyService.CreateCompany(company);
+        
         if (company?.id > 0)
         {
-            foreach (var dept in Departments)
-            {
-                department.CompanyId = company.id;
-                department.Name = dept.Key;
-                department.UserName = dept.Value;
-                await DepartmentService.AddDepartment(department);
-            }
+            //foreach (var dept in Departments)
+            //{
+            //    department.CompanyId = company.id;
+            //    department.Name = dept.Key;
+            //    department.UserName = dept.Value;
+            //    await DepartmentService.AddDepartment(department);
+            //}
             await JsRuntime.InvokeVoidAsync("alert", "Sent Successfully!");
         }
-       
     }
 }
-
-
-@*@code {
-    CompanyModel company = new CompanyModel()
-    public DepartmentModel department = new DepartmentModel();
-    public static string? rre;
-    protected override async Task OnInitializedAsync()
-    {
-    }
-    protected async Task Save()
-    {
-        if(company != null)
-        {
-            company.Name = rre;
-            await JsRuntime.InvokeVoidAsync("alert", rre);
-            await JsRuntime.InvokeVoidAsync("alert", "oga e work!");
-            await CompanyService.CreateCompany(company);
-        }
-        else{
-            await JsRuntime.InvokeVoidAsync("alert", "oga e no work!");
-        }
-    }
-    protected async Task SaveDept()
-    {
-        if (department != null)
-        {
-            await DepartmentService.AddDepartment(department);
-            await JsRuntime.InvokeVoidAsync("alert", "department added");
-        }
-    }
-}*@

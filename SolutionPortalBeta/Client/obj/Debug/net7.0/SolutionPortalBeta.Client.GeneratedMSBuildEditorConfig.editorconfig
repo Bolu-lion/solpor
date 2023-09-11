@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/CreateFaq.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XENyZWF0ZUZhcS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/BackTo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja1RvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope = b-kv8hjw2cwh
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XENyZWF0ZURlcGFydG1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-7u3ru2c3vi
 
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/CreateFaq.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XENyZWF0ZUZhcS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-60rwi1kqsc
+
 [C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/FaqList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XEZhcUxpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-8e4v93fhdr
@@ -63,6 +63,10 @@ build_metadata.AdditionalFiles.CssScope = b-3z5ydb55y6
 [C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/Sidebar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XFNpZGViYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-dalomws2ey
+
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/ViewComplaint.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XFZpZXdDb21wbGFpbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-l91eoogrch
 
 [C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Faq.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFxLnJhem9y

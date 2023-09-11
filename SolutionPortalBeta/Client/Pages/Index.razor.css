@@ -90,15 +90,16 @@ h2 {
 }
 
 .article {
-  /* background-color: aliceblue; */
-  padding: 1rem;
-  display: grid;
-  gap: 0.3rem;
-  /* border: 1px solid #05829e; */
-  border: 1px solid rgba(156, 155, 155, 0.5);
-  border-radius: 0.3rem;
-  /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); */
-  cursor: pointer;
+    /* background-color: aliceblue; */
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    gap: 0.3rem;
+    /* border: 1px solid #05829e; */
+    border: 1px solid rgba(156, 155, 155, 0.5);
+    border-radius: 0.3rem;
+    /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
 }
 
 .article h2 {
@@ -120,11 +121,84 @@ h2 {
 }
 
 .recent-con {
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 30%;
+}
+.recents {
+    border: 1px dashed rgba(128, 128, 128, 0.686);
+    display: grid;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+.recent {
+    padding: 1rem;
+    display: grid;
+    gap: 0.3rem;
+    /* border: 1px solid #05829e; */
+    /* border: 1px solid rgba(156, 155, 155, 0.5); */
+    border-radius: 0.3rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+    .recent span {
+        font-size: 12px;
+        color: rgba(128, 128, 128, 0.686);
+    }
+
+    .recent h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #0a5169;
+        text-transform:capitalize;
+    }
+
+    .recent:hover {
+        background-color: #05829e;
+        transform: scale(99%);
+        box-shadow: none;
+    }
+
+        .recent:hover span {
+            color: gainsboro;
+        }
+
+        .recent:hover h3 {
+            color: white;
+        }
+
+.recent-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .recent-head small {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+        .recent-head small.status-done {
+            color: #05829e;
+        }
+
+.recent:hover small.status-done {
+    color: aquamarine;
+}
+
+.recent-head small.status-pending {
+    color: rgb(221, 168, 10);
+}
+
+.recent:hover small.status-pending {
+    color: yellow;
 }
 
 @media screen and (max-width: 1050px) {
@@ -158,4 +232,7 @@ h2 {
   .main {
     width: 100%;
   }
+    .main-container {
+        width:100%;
+    }
 }

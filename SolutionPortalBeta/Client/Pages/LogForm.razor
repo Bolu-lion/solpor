@@ -46,7 +46,13 @@
         if (userCompliant?.Id > 0)
         {
             await JsRuntime.InvokeVoidAsync("alert", "Sent Successfully!");
+            goBack();
         }
+    }
+
+    public void goBack()
+    {
+        _nav.NavigateTo("home");
     }
     private void getFileName(InputFileChangeEventArgs e)
     {

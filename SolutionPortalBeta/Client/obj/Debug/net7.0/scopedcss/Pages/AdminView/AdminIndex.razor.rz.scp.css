@@ -188,9 +188,8 @@ section[b-tlor3qs2yp] {
     font-size: 15px;
     font-weight: 700;
 }
-.war
-@media screen and (max-width: 850px)[b-tlor3qs2yp] {
-    .stats > div {
+@media screen and (max-width: 850px) {
+    .stats > div[b-tlor3qs2yp] {
         min-width: 100%;
         padding: 1rem;
     }
@@ -208,8 +207,19 @@ section[b-tlor3qs2yp] {
     .left h1[b-tlor3qs2yp] {
         font-size: 25px;
     }
-
+    .complaint-list[b-tlor3qs2yp]{
+        gap:1rem;
+    }
+    .complaint-list h1[b-tlor3qs2yp] {
+        font-size: 30px;
+    }
     .middle[b-tlor3qs2yp] {
         gap: 0.3rem;
+    }
+    .t-row h2[b-tlor3qs2yp]{
+        font-size: 15px;
+    }
+    .c-list-item .status[b-tlor3qs2yp]{
+        font-size:12px;
     }
 }

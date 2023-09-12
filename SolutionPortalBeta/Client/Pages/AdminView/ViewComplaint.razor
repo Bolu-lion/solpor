@@ -1,6 +1,7 @@
 ﻿@page "/viewcomplaint"
 @inject NavigationManager nav
 @using SolutionPortalBeta.Shared
+@inject HttpClient Http
 
 <div class="modal-container @modalDisplay">
     <div class="modal">
@@ -67,6 +68,7 @@
     }
 
     private async Task SubmitComplaint(){
+         
 
     }
 }

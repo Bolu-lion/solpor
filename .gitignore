@@ -17,3 +17,7 @@ task.json
 *.vsidx
 /SolutionPortalBeta/Client/obj/Debug/net7.0/SolutionPortalBeta.Client.csproj.AssemblyReference.cache
 /SolutionPortalBeta/Server/obj/Debug/net7.0/SolutionPortalBeta.Server.csproj.AssemblyReference.cache
+SolutionPortalBeta/Server/obj/Debug/net7.0/SolutionPortalBeta.Server.GeneratedMSBuildEditorConfig.editorconfig
+SolutionPortalBeta/Shared/obj/Debug/net7.0/SolutionPortalBeta.Shared.assets.cache
+SolutionPortalBeta/Shared/obj/Debug/net7.0/SolutionPortalBeta.Shared.csproj.AssemblyReference.cache
+SolutionPortalBeta/Shared/obj/Debug/net7.0/SolutionPortalBeta.Shared.GeneratedMSBuildEditorConfig.editorconfig

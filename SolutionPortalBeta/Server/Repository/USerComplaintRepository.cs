@@ -35,7 +35,12 @@ namespace SolutionPortalBeta.Server.Repository
 		{
 			return await _dbcontext.UserComplaints.FirstOrDefaultAsync(x => x.Id == Id);
 		}
-
+		
+		public async Task UpdateAsync(UserComplaint _object)
+        {
+            _dbcontext.UserComplaints.Update(_object);
+            await _dbcontext.SaveChangesAsync();
+        }
          
     }
 }

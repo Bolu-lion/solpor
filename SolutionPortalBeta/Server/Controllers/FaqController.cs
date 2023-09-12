@@ -37,7 +37,7 @@ namespace SolutionPortalBeta.Server.Controllers
             return true;
         }
         [HttpPut("{id}")]
-        public async Task<bool> UpdatePerson(int id, [FromBody] FAQ Object)
+        public async Task<bool> UpdateFAQ(int id, [FromBody] FAQ Object)
         {
             await _faqService.UpdateFAQ(id, Object);
             return true;

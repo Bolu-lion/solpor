@@ -9,5 +9,6 @@ namespace SolutionPortalBeta.Server.Service
 		Task<List<UserComplaint>> GetAllComplaint();
 		Task<UserComplaint> GetComplaint(int id);
 		Task<List<UserComplaint>> GetComplaintByDate(DateTime date);
+	    Task<bool> UpdateComplaint(int id, UserComplaint userComplaint);
 	}
 }

@@ -35,5 +35,11 @@ namespace SolutionPortalBeta.Server.Controllers
 		{
 			return await _userComplaintService.GetComplaintByDate(DateTime.Parse(date));
 		}
+		[HttpPut("{id}")]
+		public async Task<bool> UpdateComplaint(int id, [FromBody] UserComplaint userComplaint)
+		{
+			await _userComplaintService.UpdateComplaint(id, userComplaint);
+			return true;
+		}
 	}
 }

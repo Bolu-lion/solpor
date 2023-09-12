@@ -31,5 +31,20 @@ namespace SolutionPortalBeta.Server.Service
         {
             return await _userComplaint.GetByDateAsync(date);
         }
+
+		public async Task<bool> UpdateComplaint(int id, UserComplaint userComplaint)
+        {
+            var data = await _userComplaint.GetByIdAsync(id);
+            if (data != null)
+            {
+                data.Response = userComplaint.Response;
+				userComplaint.IsCompleted = true;
+                await _userComplaint.UpdateAsync(data);
+                return true;
+            }
+            else
+                return false;
+        }
+
     }
 }

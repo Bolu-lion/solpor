@@ -105,7 +105,11 @@
       "url": "manifest.json"
     },
     {
+<<<<<<< Updated upstream
       "hash": "sha256-FduK+x6d3P7Fx7kBz1pi2sf\/PF7PvvLDGhYNnIMAU3M=",
+=======
+      "hash": "sha256-IElOnhqDhYfwF2+HP9gvaZr8MDR\/ZdXNHSCdIdy95Hw=",
+>>>>>>> Stashed changes
       "url": "SolutionPortalBeta.Client.styles.css"
     },
     {
@@ -961,11 +965,19 @@
       "url": "_framework\/SolutionPortalBeta.Shared.pdb"
     },
     {
+<<<<<<< Updated upstream
       "hash": "sha256-ARitgToC3ocKh+XjSs5CEYQXiLJEpXPyH2cJsZe\/D5E=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
       "hash": "sha256-c\/CgiwaUCx\/ImZ\/WumiDTq6ebayyYggci1s2bL3F+FA=",
+=======
+      "hash": "sha256-+vzhmIv6Rr4qWgOGKD5iT6j2g4qV2\/K7d1VzzA1thTA=",
+      "url": "_framework\/SolutionPortalBeta.Client.dll"
+    },
+    {
+      "hash": "sha256-fdj2bbLzZuyNILhtGPTlDJ0DXzXarkDJCn\/2lh+yPjk=",
+>>>>>>> Stashed changes
       "url": "_framework\/SolutionPortalBeta.Client.pdb"
     },
     {
@@ -973,7 +985,11 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
+<<<<<<< Updated upstream
       "hash": "sha256-83JVUBaDGv4VhgprVLXDMs5KeLSAHXywr6cE0EPGLz0=",
+=======
+      "hash": "sha256-WJbD9Zg6\/SO+0As0lMTRmitiqFKJ2TBHk3SjPAETHKc=",
+>>>>>>> Stashed changes
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -981,5 +997,9 @@
       "url": "_content\/BlazorInputFile\/inputfile.js"
     }
   ],
+<<<<<<< Updated upstream
   "version": "oBNJtNOV"
+=======
+  "version": "OFUHTecV"
+>>>>>>> Stashed changes
 };

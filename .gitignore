@@ -13,3 +13,5 @@
 # task and launch json files for vs code to be ignored
 launch.json
 task.json
+/.vs/SolutionPortalBeta/FileContentIndex/b4698c3c-57e8-43a3-9c08-b59b90d8ddeb.vsidx
+*.vsidx

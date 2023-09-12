@@ -49,18 +49,18 @@
                 else{
                     @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
                     {
-                        <div class="c-list-item" @onclick="setModal">
+                        <div class="c-list-item" @onclick="() => setModal( p.Id, p.Title, p.Description, p.DateCreated, p.IsCompleted )">
                             <div class="t-row">
                                 <h2>@p.Description</h2>
                                 <small>@p.DateCreated</small>
                             </div>
                             <span class="status">@CheckStatus(p.IsCompleted)</span>
-                            @if (viewModal)
-                            {
-                                <ViewComplaint Title="@p.Title" Description="@p.Description" Date="@p.DateCreated" Status="@p.IsCompleted"/>
-                            }
                         </div>
                     }
+                }
+                @if (viewModal)
+                {
+                    <ViewComplaint CId="@ComplaintId" Title="@ComplaiantTitle" Description="@ComplaintDescription" Date="@ComplaintDate" Status="@CompliantStatus" />
                 }
             </div><a href="complaintlist">Show All</a>
         </div>
@@ -69,9 +69,21 @@
 
 @code {
     public bool viewModal = false;
-    public void setModal()
+    public int ComplaintId {get; set;}
+    public string ComplaiantTitle {get; set;}
+    public string ComplaintDescription {get; set;}
+    public DateTime ComplaintDate {get; set;}
+    public bool CompliantStatus {get; set;}
+
+
+    public void setModal(int Id, string ModalTitle, string ModalDescription, DateTime ModalDate, bool ModalStatus)
     {
         viewModal = !viewModal;
+        ComplaintId = Id;
+        ComplaiantTitle = ModalTitle;
+        ComplaintDescription = ModalDescription;
+        ComplaintDate= ModalDate;
+        CompliantStatus = ModalStatus ;
     }
 
     List<UserCompliantModel> complaintList = new List<UserCompliantModel>();

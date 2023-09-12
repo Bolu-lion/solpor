@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "JY3CJfZ6aI+zcRBDriZo3LbcZSOFyPxQkuPWTUgWQIr0noXt0n4Gws3AdlyJLHunM3FxQcssP8X8N/qaOhSBew==",
-=======
-  "dgSpecHash": "sOdFzRyG65a2UPNiV6C3ak3n92fk5hKqy2QQYR2ZYd2p6E+Ug7aoS07ThPtT/na802FX+Rrn8oyin+vc/D3FJQ==",
->>>>>>> 56e82b4fc3aaae70a4eb402cfa70f582eba84e70
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Server\\SolutionPortalBeta.Server.csproj",
   "expectedPackageFiles": [
@@ -109,5 +105,12 @@
     "C:\\Users\\user\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\zstdsharp.port\\0.7.1\\zstdsharp.port.0.7.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Server\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -1,160 +1,164 @@
 ﻿.modal-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: grid;
-    background-color: rgba(0, 0, 0, 0.234);
-    height: 100vh;
-    width: 100%;
-    z-index: 1000;
-    display: grid;
-    place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.234);
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+}
+
+.none {
+  display: none;
 }
 
 .modal {
-    background-color: whitesmoke;
-    width: 80%;
-    height: 90%;
-    border-radius: 1rem;
-    display: grid;
-    place-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+  background-color: whitesmoke;
+  width: 80%;
+  height: 90%;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
 .closebtn {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .modal-container span {
-    background-color: rgb(95, 158, 160);
-    border-radius: 0.2rem;
-    display: grid;
-    place-items: center;
-    padding: 0.1rem;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
+  background-color: rgb(95, 158, 160);
+  border-radius: 0.2rem;
+  display: grid;
+  place-items: center;
+  padding: 0.1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
 }
 .modal-content {
-    width: 95%;
-    height: 95%;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  width: 95%;
+  height: 95%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-    .modal-header h3 {
-        font-size: 30px;
-        flex: 1;
-    }
+.modal-header h3 {
+  font-size: 30px;
+  flex: 1;
+}
 
-    .modal-header .time-stat {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-    }
+.modal-header .time-stat {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 
-        .modal-header .time-stat p {
-            font-size: 13px;
-            font-weight: bold;
-        }
+.modal-header .time-stat p {
+  font-size: 13px;
+  font-weight: bold;
+}
 
-        .modal-header .time-stat small {
-            font-size: 12px;
-        }
+.modal-header .time-stat small {
+  font-size: 12px;
+}
 
 .modal-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
 }
 
 .modal-desc {
-    display: grid;
-    place-items: center;
-    gap: 0.5rem;
-    width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  width: 100%;
 }
 
-    .modal-desc label {
-        font-size: 20px;
-        font-weight: bold;
-        width: 100%;
-        font-family: "Space Grotesk", sans-serif;
-    }
+.modal-desc label {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
 
-    .modal-desc textarea {
-        width: 100%;
-        resize: none;
-        border-radius: 0.3rem;
-        padding: 1rem;
-        height: 120px;
-        overflow: auto;
-    }
+.modal-desc textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  height: 120px;
+  overflow: auto;
+}
 
 .modal-atch {
-    display: flex;
-    gap: 2rem;
-    width: 100%;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
 }
 
 .modal-atchs {
-    display: flex;
-    gap: 0.4rem;
+  display: flex;
+  gap: 0.4rem;
 }
 
 .modal-res {
-    display: grid;
-    place-items: center;
-    gap: 0.5rem;
-    width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  width: 100%;
 }
 
-    .modal-res h3 {
-        font-size: 23px;
-        font-weight: bold;
-        width: 100%;
-        font-family: "Space Grotesk", sans-serif;
-    }
+.modal-res h3 {
+  font-size: 23px;
+  font-weight: bold;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
 
-    .modal-res textarea {
-        width: 100%;
-        resize: none;
-        border-radius: 0.3rem;
-        padding: 1rem;
-    }
+.modal-res textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
 
 .modal-main button {
-    width: 20%;
+  width: 20%;
 }
 textarea {
-    border: 1px solid rgba(156, 155, 155, 0.5);
-    padding: 1rem;
-    outline: none;
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
+  border: 1px solid rgba(156, 155, 155, 0.5);
+  padding: 1rem;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 
 @keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0;
-    }
+  from {
+    top: -300px;
+    opacity: 0;
+  }
 
-    to {
-        top: 0;
-        opacity: 1;
-    }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }

@@ -105,15 +105,7 @@
       "url": "manifest.json"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "hash": "sha256-R7PVP+pKP47KR+JFq+iO2Be3EAtWqpqth6JpIl17EfI=",
-=======
-      "hash": "sha256-IElOnhqDhYfwF2+HP9gvaZr8MDR\/ZdXNHSCdIdy95Hw=",
->>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
-=======
-      "hash": "sha256-xgnFoRSIaYMtS9nWKCAdx3KFtp\/+W158TLxoeD6o+W4=",
->>>>>>> 56e82b4fc3aaae70a4eb402cfa70f582eba84e70
+      "hash": "sha256-FduK+x6d3P7Fx7kBz1pi2sf\/PF7PvvLDGhYNnIMAU3M=",
       "url": "SolutionPortalBeta.Client.styles.css"
     },
     {
@@ -969,27 +961,11 @@
       "url": "_framework\/SolutionPortalBeta.Shared.pdb"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "hash": "sha256-+Fy8ucr7uYy5FHdSlhbPMsqIwkd1akvnnW3EaybTGQ8=",
+      "hash": "sha256-ARitgToC3ocKh+XjSs5CEYQXiLJEpXPyH2cJsZe\/D5E=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
-      "hash": "sha256-IQ2xBFDEiYms6Lo4+Vjpmmk6ImfGWkm8BGNQjFu5vD4=",
-=======
-      "hash": "sha256-rAjkHgoFIsyhRCX0KsDa\/ghpv5XEDNPGS+gBlgJ3syM=",
-      "url": "_framework\/SolutionPortalBeta.Client.dll"
-    },
-    {
-      "hash": "sha256-+HvMqLqbb3QjqNlNtn\/jNNSLnNvqVSuyGF7kiXRWsL0=",
->>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
-=======
-      "hash": "sha256-EF6iPpoZhT6T2hRkr3JpUyd69KDoYTLHpNZa9K4tE9s=",
-      "url": "_framework\/SolutionPortalBeta.Client.dll"
-    },
-    {
-      "hash": "sha256-jVPRRlI1yhNkFwiZ0HVUeSdOdQvX5p70cxzqJN48iHQ=",
->>>>>>> 56e82b4fc3aaae70a4eb402cfa70f582eba84e70
+      "hash": "sha256-c\/CgiwaUCx\/ImZ\/WumiDTq6ebayyYggci1s2bL3F+FA=",
       "url": "_framework\/SolutionPortalBeta.Client.pdb"
     },
     {
@@ -997,15 +973,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "hash": "sha256-gS5Xg\/RF56jCnpzzywcYc8aDoJsiKFi6GSP4l69ozJQ=",
-=======
-      "hash": "sha256-DVWZNDuQ39pzJanjAR8TgWuJjb\/zu2FRQOt08s35nH8=",
->>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
-=======
-      "hash": "sha256-xUUC5auGWExrQz4LZwGSKJ009\/MeMlH1Kd++NSlavp0=",
->>>>>>> 56e82b4fc3aaae70a4eb402cfa70f582eba84e70
+      "hash": "sha256-83JVUBaDGv4VhgprVLXDMs5KeLSAHXywr6cE0EPGLz0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1013,13 +981,5 @@
       "url": "_content\/BlazorInputFile\/inputfile.js"
     }
   ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "version": "hHzpVuds"
-=======
-  "version": "V4riolbP"
->>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
-=======
-  "version": "onXnHg4C"
->>>>>>> 56e82b4fc3aaae70a4eb402cfa70f582eba84e70
+  "version": "oBNJtNOV"
 };

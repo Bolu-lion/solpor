@@ -212,7 +212,6 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\net7.0\SolutionPortalBeta.Server.genruntimeconfig.cache
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\obj\Debug\net7.0\ref\SolutionPortalBeta.Server.dll
 <<<<<<< HEAD
-C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\BlazorInputFile.dll
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\appsettings.json
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.dll

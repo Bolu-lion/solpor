@@ -1,6 +1,8 @@
 ﻿@page "/viewcomplaint"
+@inject NavigationManager nav
+@using SolutionPortalBeta.Shared
 
-<div class="modal-container">
+<div class="modal-container @modalDisplay">
     <div class="modal">
         <div class="modal-content">
             <div class="closebtn">
@@ -34,6 +36,12 @@
 
 
 @code {
+
+    private UserCompliantModel userCompliant = new UserCompliantModel();
+    protected override async Task OnInitializedAsync()
+    {
+        ShowModal();
+    }
     private string modalDisplay = "none";
     [Parameter]
     public string Title { get; set; }
@@ -43,6 +51,9 @@
     public DateTime Date { get; set; }
     [Parameter]
     public bool Status { get; set; }
+    [Parameter]
+    public int CId {get; set;}
+    
 
     private void ShowModal()
     {
@@ -52,5 +63,10 @@
     private void CloseModal()
     {
         modalDisplay = "none";
+        nav.NavigateTo("/admin");
+    }
+
+    private async Task SubmitComplaint(){
+
     }
 }

@@ -4,81 +4,8 @@
 @*@using SolutionPortal.Shared*@
 @inject HttpClient _httpClient
 
-@*<div class="containerm">
-    <Sidebar/>
-    <main>
-        <div class="top bckgm"><div class="title">Dashboard</div></div>
-        <div class="insights">
-            <div class="sales">
-                <span class="material-symbols-outlined">
-                    analytics
-                </span>
-                <div class="middle">
-                    <div class="left">
-                        <h1>Total Complaints</h1>
-                        <h3>@complaintList.Count() </h3>
-                    </div>
-                </div>
-                <small class="text-muted">Last 24 Hours</small>
-            </div>
-            <!------------------END OF SALES------------------>
-            <div class="expenses">
-                <span class="material-symbols-outlined">
-                    priority_high
-                </span>
-                <div class="middle">
-                    <div class="left">
-                        <h1>Unresolved Complaints</h1>
-                        <h3>@complaintList.Count(t => !t.IsCompleted)</h3>
-                    </div>
-
-                </div>
-                <small class="text-muted">Last 24 Hours</small>
-            </div>
-            <!------------------END OF EXPENSES------------------>
-            <div class="income">
-                <span class="material-symbols-outlined">
-                    done
-                </span>
-                <div class="middle">
-                    <div class="left">
-                        <h1>Resolved Complaints</h1>
-                        <h3>@complaintList.Count(t => t.IsCompleted)</h3>
-                    </div>
-                </div>
-                <small class="text-muted">Last 24 Hours</small>
-            </div>
-            <!------------------END OF INCOME------------------>
-        </div>
-        <div class="recent-orders">
-            <div class="top bckgmt"><div class="title">Recent Orders</div></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Complaint Description</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                   @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
-                    {
-                        <tr>
-                            <td>@p.Description</td>
-                            <td class="warning">@CheckStatus(p.IsCompleted)</td>
-                            <td class="primary"><a href="#">Details</a></td>
-                        </tr>
-                    
-                    }
-
-                </tbody>
-            </table>
-            <a href="complaintlist">Show All</a>
-           
-        </div>
-    </main>
-</div>*@
 <div class="admin-main">
-    <Sidebar/>
+    <Sidebar />
     <section>
         <div class="stats">
             <div class="total">
@@ -86,7 +13,7 @@
                 <div class="middle">
                     <div class="left">
                         <h1>Total Complaints</h1>
-                        <h3>3</h3>
+                        <h3>@complaintList.Count() </h3>
                     </div>
                     <small>Last 24 Hours</small>
                 </div>
@@ -96,7 +23,7 @@
                 <div class="middle">
                     <div class="left">
                         <h1>Resolved Complaints</h1>
-                        <h3>3</h3>
+                        <h3>@complaintList.Count(t => t.IsCompleted)</h3>
                     </div>
                     <small class="text-muted">Last 24 Hours</small>
                 </div>
@@ -106,7 +33,7 @@
                 <div class="middle">
                     <div class="left">
                         <h1>Unresolved Complaints</h1>
-                        <h3>3</h3>
+                        <h3>@complaintList.Count(t => !t.IsCompleted)</h3>
                     </div>
                     <small class="text-muted">Last 24 Hours</small>
                 </div>
@@ -115,22 +42,38 @@
         <div class="complaint-list">
             <h1>Recent Complaints</h1>
             <div class="c-list">
-                @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
+                @if (complaintList is null)
                 {
-                    <div class="c-list-item">
-                        <div class="t-row">
-                            <h2>@p.Description</h2>
-                            <small>@p.DateCreated</small>
-                        </div>
-                        <span class="status">@CheckStatus(p.IsCompleted)</span>
-                    </div>
+                    <h3>Loading...</h3>
                 }
-            </div>
+                else{
+                    @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
+                    {
+                        <div class="c-list-item" @onclick="setModal">
+                            <div class="t-row">
+                                <h2>@p.Description</h2>
+                                <small>@p.DateCreated</small>
+                            </div>
+                            <span class="status">@CheckStatus(p.IsCompleted)</span>
+                            @if (viewModal)
+                            {
+                                <ViewComplaint Title="@p.Title" Description="@p.Description" Date="@p.DateCreated" Status="@p.IsCompleted"/>
+                            }
+                        </div>
+                    }
+                }
+            </div><a href="complaintlist">Show All</a>
         </div>
     </section>
 </div>
 
 @code {
+    public bool viewModal = false;
+    public void setModal()
+    {
+        viewModal = !viewModal;
+    }
+
     List<UserCompliantModel> complaintList = new List<UserCompliantModel>();
 
     protected override async Task OnInitializedAsync()
@@ -154,6 +97,10 @@
     public void moveto()
     {
         _nav.NavigateTo("faqlist");
+    }
+    public void viewComplaint()
+    {
+        _nav.NavigateTo("viewcomplaint");
     }
 
     public async Task GetCompliantsByDate(DateTime SelectedDate)

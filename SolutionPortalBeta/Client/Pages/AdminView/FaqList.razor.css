@@ -1,16 +1,60 @@
-﻿main {
-    padding: 2rem 4rem .5rem;
-}
- .top {
-    padding: 1rem 2rem;
+﻿.faq-container {
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+h1.title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    width: 100%;
 }
 
-     .top .title {
-        font-size: 40px;
+.create-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+}
+
+.faq-list {
+    background-color: white;
+    border: 1px solid rgba(156, 155, 155, 0.5);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.faq {
+    background-color: whitesmoke;
+    border: 1px solid rgba(156, 155, 155, 0.5);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.manage-comp {
+    display: flex;
+    gap: 1rem;
+}
+
+    .manage-comp .mg-btn {
+        background-color: rgb(95, 158, 160);
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
         color: white;
-        font-weight: 700;
     }
+
+.mg-btn:hover {
+    transform: scale(95%);
+}

@@ -3,31 +3,17 @@
 @inject HttpClient _httpClient
 @inject NavigationManager _nav
 
-<div class="q-container">
-    <div class="main">
-        <div class="profile-icon">
-            <div class="icon" @onclick="navToHome">iCON</div>
-            <img src="nic.jpg" alt="" width="45" height="45" />
-        </div>
-        <div class="backbtn" @onclick="navToHome">
-            <i class="fa-sharp fa-solid fa-arrow-left"></i>
-        </div>
-        <div class="search">
-            <input type="text" />
-            <button>Search</button>
-        </div>
-        <div class="links">
-            @foreach (var faq in fAQs.OrderBy(faq => faq.Id))
-            {
-                <a class="link" href="/post/@faq.Id">
-                    <h2 class="maintxt">@faq.Title</h2>
-                    <small class="subtxt">@faq.Description</small>
-                </a>
-            }
-        </div>
+<div class="faq-container">
+    <h1 class="title">FAQ List</h1>
+    <div class="faq-list">
+        @foreach (var faq in fAQs.OrderBy(faq => faq.Id))
+        {
+            <a class="faq" href="/post/@faq.Id">
+                <h3>@faq.Title</h3>
+            </a>
+        }
     </div>
 </div>
-
 @code {
     List<FAQModel> fAQs = new List<FAQModel>();
 

@@ -4,7 +4,7 @@
 @inject HttpClient Http
 @inject IDepartmentService DepartmentService
 
-<div class="containerd">
+@*<div class="containerd">
     <div class="top bckgmt"><div class="title">Create Department</div></div>
     <h4>@companyName</h4>
     <div class="main">
@@ -24,7 +24,6 @@
                 <button class="bckgmt" @onclick="save">Add</button>
             </div>
         </div>
-        <input @bind=id/>
     </div>
     <div class="dept-list">
         @foreach( var dept in departments.OrderBy(dept => dept.Id))
@@ -34,6 +33,18 @@
     </div>
     <div class="button">
         <button class="bckgmt">Submit</button>
+    </div>
+</div>*@
+<div class="create-com">
+    <h1 class="title">Create Company</h1>
+    <div class="create-com-form">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Department Name:</label>
+                <input type="text" id="name" class="form-control" />
+            </div>
+            <button>Add Department</button>
+        </form>
     </div>
 </div>
 

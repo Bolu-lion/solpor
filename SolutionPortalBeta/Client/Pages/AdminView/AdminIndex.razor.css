@@ -188,7 +188,6 @@ section {
     font-size: 15px;
     font-weight: 700;
 }
-.war
 @media screen and (max-width: 850px) {
     .stats > div {
         min-width: 100%;
@@ -208,8 +207,19 @@ section {
     .left h1 {
         font-size: 25px;
     }
-
+    .complaint-list{
+        gap:1rem;
+    }
+    .complaint-list h1 {
+        font-size: 30px;
+    }
     .middle {
         gap: 0.3rem;
+    }
+    .t-row h2{
+        font-size: 15px;
+    }
+    .c-list-item .status{
+        font-size:12px;
     }
 }

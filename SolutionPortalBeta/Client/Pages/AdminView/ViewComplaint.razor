@@ -1,0 +1,56 @@
+﻿@page "/viewcomplaint"
+
+<div class="modal-container">
+    <div class="modal">
+        <div class="modal-content">
+            <div class="closebtn">
+                <span class="material-symbols-rounded" @onclick="CloseModal"> close </span>
+            </div>
+            <div class="modal-header">
+                <h3>@Title</h3>
+                <div class="time-stat">
+                    <small>@Date</small>
+                    <p>Pending</p>
+                </div>
+            </div>
+            <div class="modal-main">
+                <div class="modal-desc">
+                    <label for="description">Description</label>
+                    <textarea rows="10" disabled>@Description</textarea>
+                </div>
+                <div class="modal-atch">
+                    <h4>Attachements:</h4>
+                    <div class="modal-atchs">Screenshot12342.png</div>
+                </div>
+                <div class="modal-res">
+                    <h3>Response</h3>
+                    <textarea rows="10"></textarea>
+                </div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private string modalDisplay = "none";
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public string Description { get; set; }
+    [Parameter]
+    public DateTime Date { get; set; }
+    [Parameter]
+    public bool Status { get; set; }
+
+    private void ShowModal()
+    {
+        modalDisplay = "block";
+    }
+
+    private void CloseModal()
+    {
+        modalDisplay = "none";
+    }
+}

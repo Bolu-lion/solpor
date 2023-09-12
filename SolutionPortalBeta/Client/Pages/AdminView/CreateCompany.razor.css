@@ -1,4 +1,4 @@
-﻿.containerr {
+﻿/*.containerr {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,4 +76,82 @@
 
         .containerr .button button:hover {
             color: black;
+        }*/
+h1.title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    /* width: 100%; */
+}
+
+.create-com {
+    background-color: whitesmoke;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.create-com-form {
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+    .create-com-form form {
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        display: grid;
+        gap: 2rem;
+        width: 100%;
+        background-color: white;
+        border: 1px solid rgba(156, 155, 155, 0.5);
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        width: 95%;
+        padding: 2rem;
+        border-radius: 1rem;
+        display: grid;
+        gap: 1rem;
+    }
+
+.form-group {
+    display: grid;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 1rem;
+    width: 100%;
+}
+
+    .form-group input {
+        border: 1px solid rgba(156, 155, 155, 0.5);
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        padding: 0.6rem 1rem;
+        border-radius: 0.4rem;
+        outline: none;
+        font-size: 16px;
+        width: 100%;
+    }
+
+        .form-group input:focus {
+            box-shadow: none;
         }
+
+.dept-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+    .dept-add .form-group {
+        width: 100%;
+    }
+
+@media screen and (max-width: 850px) {
+    .create-com-form {
+        width: 100%;
+    }
+}

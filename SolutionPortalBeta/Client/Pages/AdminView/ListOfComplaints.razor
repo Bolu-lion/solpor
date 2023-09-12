@@ -2,14 +2,11 @@
 @using SolutionPortalBeta.Shared;
 @inject HttpClient _httpClient;
 
-<div class="containerm">
+@*<div class="admin-main">
     <Sidebar/>
-    <main>
+    <div>
         <div class="top bckgm"><div class="title">Complaints</div></div>
         <div class="recent-orders">
-            @*<div class="topp">
-                <BackTo Page="Dashborad" Route="admin"></BackTo>
-             </div>*@
             <table>
                 <thead>
                     <tr>
@@ -27,20 +24,44 @@
                             <td class="warning">@CheckStatus(p.IsCompleted)</td>
                             <td>@p.DateCreated</td>
                             <td class="primary"><a href="#">Details</a></td>
-                        
                         </tr>
-
                     }
-
                 </tbody>
             </table>
-            
         </div>
-    </main>
-    
+    </div>
+</div>*@
+<div class="admin-main">
+    <Sidebar/>
+    <div class="comp-list">
+        <h1 class="title">Complaints</h1>
+        <div class="recent-orders">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Complaint Description</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var p in complaintList.OrderByDescending(p => p.Id))
+                    {
+                        <tr>
+                            <td>@p.Title</td>
+                            <td>@p.Description</td>
+                            <td class="warning">@CheckStatus(p.IsCompleted)</td>
+                            <td>@p.DateCreated</td>
+                            <td class="primary"><a href="#">Details</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
-<br />
-
 
 @code {
     List<UserCompliantModel> complaintList = new List<UserCompliantModel>();

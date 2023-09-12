@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "JY3CJfZ6aI+zcRBDriZo3LbcZSOFyPxQkuPWTUgWQIr0noXt0n4Gws3AdlyJLHunM3FxQcssP8X8N/qaOhSBew==",
+=======
+  "dgSpecHash": "sOdFzRyG65a2UPNiV6C3ak3n92fk5hKqy2QQYR2ZYd2p6E+Ug7aoS07ThPtT/na802FX+Rrn8oyin+vc/D3FJQ==",
+>>>>>>> 56e82b4fc3aaae70a4eb402cfa70f582eba84e70
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Server\\SolutionPortalBeta.Server.csproj",
   "expectedPackageFiles": [

@@ -1730,9 +1730,11 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\CompanyList.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\CreateCompany.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\CreateDepartment.razor.rz.scp.css
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\CreateFaq.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\FaqList.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\ListOfComplaints.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\Sidebar.razor.rz.scp.css
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\ViewComplaint.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Faq.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\LogBtn.razor.rz.scp.css

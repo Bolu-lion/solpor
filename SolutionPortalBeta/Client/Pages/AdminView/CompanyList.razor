@@ -3,23 +3,45 @@
 @inject HttpClient _httpClient
 @inject NavigationManager _nav
 
-<div class="containerm">
+@*<div class="admin-main">
     <Sidebar/>
-    <main>
-        <div class="top bckgm"><div class="title">Company List</div></div>
+    <div>
+        <div class="top bckgm"><h1 class="title">Company List</h1></div>
         <div class="create-btn"><button class="bckgmd" @onclick="gotocreate">Create Company</button></div>
         <div class="list-container">
-            @foreach (var company in companies.OrderBy(company => company.Name))
+            @foreach (var company in companies.OrderBy(company => company.id))
             {
                 <div>
                     <p>@company.Name</p>
-                    <a href="createdepartment/@company.id" class="bckgmt">Add Department</a>
+                    <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Add Department</a>
+                    <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Update Company</a>
                 </div>
             }
         </div>
-    </main>
-</div>
-
+    </div>
+</div>*@
+<div class="admin-main">
+    <Sidebar />
+    <div class="company-container">
+        <h1 class="title">Company List</h1>
+        <div class="create-btn">
+            <button @onclick="gotocreate">Create Company</button>
+        </div>
+        <div class="company-list">
+            @foreach (var company in companies.OrderBy(company => company.id).Take(5))
+            {
+                <div class="company">
+                    <h3>@company.Name</h3>
+                    <div class="manage-comp">
+                        <a class="mg-btn" href="createdepartment/@company.Name/@company.id">Add Department</a>
+                        <a class="mg-btn" href="createdepartment/@company.Name/@company.id">Update Company</a>
+                    </div>
+                </div>
+            }
+            
+        </div>
+    </div>
+</div>  
 @code {
     List<CompanyModel> companies = new List<CompanyModel>();
     public void gotocreate()
@@ -28,7 +50,6 @@
     }
     protected override async Task OnInitializedAsync()
     {
-
         var response = await _httpClient.GetAsync("api/Company/");
         companies = await response.Content.ReadFromJsonAsync<List<CompanyModel>>();
     }

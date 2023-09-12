@@ -1,43 +1,72 @@
-﻿@page "/"
+﻿@page "/home"
+@using SolutionPortalBeta.Shared
 @inject NavigationManager _nav
+@inject HttpClient _httpClient
 
-<div class="p-container">
-    <div class="main">
-        <div class="profile-icon">
-            <div class="icon">iCON</div>
-            <img src="nic.jpg" alt="" width="45" height="45" />
-        </div>
-
+<div class="main">
+    <Nav />
+    <div class="section">
         <div class="search">
-            <input type="text" @bind-value="inputString" @bind-value:event="oninput" />
-            <button>Search</button>
+            <input type="text" placeholder="Search " />
+            <span class="material-symbols-rounded">search</span>
         </div>
-        <div class="listDiv">
-            @if (!string.IsNullOrEmpty(inputString) || !string.IsNullOrWhiteSpace(inputString))
-            {
-                @foreach (var link in documents)
+    </div>
+    <div class="main-container">
+        <div class="article-container">
+            <h1>FAQs</h1>
+            <div class="articles">
+                @if (fAQs.Count == 0)
                 {
-                    @if (link.Contains(inputString))
+                    <p>Loading</p>
+                }
+                else
+                {
+                    @foreach (var faq in fAQs.OrderBy(faq => faq.Id))
                     {
-                        <h4 class="linkList"> <a href="@link">@link</a></h4>
+                        <div class="article">
+                            <a href="/post/@faq.Id">
+                                <h2>
+                                    @faq.Title
+                                </h2>
+                            </a>
+                        </div>
+                    }
+                    <a href="/faq">Show all</a>
+                }
+                
+            </div>
+        </div>
+        <div class="recent-con">
+            <h1>Recent Complaints</h1>
+            <div class="recents">
+                @if (complaintList.Count == 0)
+                {
+                    <p>Loading</p>
+                }else{
+                    @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
+                    {
+                        <div class="recent">
+                            <div class="recent-head">
+                                <span class="time">
+                                    @p.DateCreated
+                                </span>
+                                <small class="status-pending">
+                                    @CheckStatus(p.IsCompleted)
+                                </small>
+                            </div>
+                            <h3>@p.Title</h3>
+                        </div>
                     }
                 }
-            }
-        </div>              
-        <div class="actions">
-            <div class="action-btn log" @onclick="navToForm">
-                <span>Log Complaint</span>
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
-            </div>
-            <div class="action-btn quick" @onclick="navToFaqs">
-                <span> Quick Links</span>
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                
             </div>
         </div>
     </div>
 </div>
 
-@code{
+@code {
+    List<FAQModel> fAQs = new List<FAQModel>();
+    List<UserCompliantModel> complaintList = new List<UserCompliantModel>();
     private void navToForm()
     {
         _nav.NavigateTo("/logform");
@@ -46,6 +75,34 @@
     {
         _nav.NavigateTo("/faq");
     }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await _httpClient.GetAsync("api/Faq/");
+        fAQs = await response.Content.ReadFromJsonAsync<List<FAQModel>>();
+        await Task.Delay(3000);
+        var uresponse = await _httpClient.GetAsync("api/UserComplaint/");
+        complaintList = await uresponse.Content.ReadFromJsonAsync<List<UserCompliantModel>>();
+    }
+
+    public async void fetchComplaints()
+    {
+        var response = await _httpClient.GetAsync("api/UserComplaint/");
+        complaintList = await response.Content.ReadFromJsonAsync<List<UserCompliantModel>>();
+    }
+    
+    private string CheckStatus(bool Status)
+    {
+        if (Status)
+        {
+            return "Resolved";
+        }
+        else
+        {
+            return "Pending";
+        }
+    }
+
     public string? inputString { get; set; }
 
     private List<string> documents = new List<string>()

@@ -14,8 +14,8 @@ namespace SolutionPortalBeta.Shared
         public string Name { get; set; }
         public string? UserName { get; set; }
 
-        [ForeignKey("CompanyModel")]
+        //[ForeignKey("CompanyModel")]
         public int CompanyId { get; set; }
-        public CompanyModel? Company { get; set; }
+        //public CompanyModel? Company { get; set; }
     }
 }

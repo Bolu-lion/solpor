@@ -1,0 +1,121 @@
+﻿.login {
+    height: 100vh;
+    overflow: hidden !important;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    background-image: url(../images/hh.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}   
+.login-left {
+    /* background-image: radial-gradient(
+    circle 975px at 2.6% 48.3%,
+    rgba(0, 8, 120, 1) 0%,
+    rgba(95, 184, 224, 1) 99.7%
+  ); */
+    /* background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat; */
+    display: grid;
+    place-items: center;
+}
+
+.login-right {
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.229);
+}
+
+    .login-right .logo {
+        display: none;
+    }
+
+form.loginform {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    min-height: 50%;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+    display: grid;
+    gap: 0.5rem;
+}
+
+    .form-input label {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+    }
+
+    .form-input input {
+        outline: none;
+        border: 1px solid ghostwhite;
+        padding: 0.5rem 0.7rem;
+        font-size: 15px;
+        border-radius: 0.3rem;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+.form-button {
+    border-radius: 0.3rem;
+    padding: 0.8rem 0.7rem;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    
+    background-image: url(../images/hh.png);
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all ease 400ms;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.05em;
+}
+
+    .form-button:hover {
+        transform: scaleX(95%);
+        transition: all ease 400ms;
+        font-weight: 700;
+    }
+
+@media screen and (max-width: 900px) {
+    .login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-left {
+        display: none;
+    }
+
+    .login-right {
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        height: 100vh;
+    }
+
+        .login-right .logo {
+            display: flex;
+        }
+
+    form {
+        min-height: 50%;
+        min-width: 70%;
+    }
+}

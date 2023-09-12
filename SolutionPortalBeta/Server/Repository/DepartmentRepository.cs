@@ -4,18 +4,18 @@ using SolutionPortalBeta.Server.Models;
 
 namespace SolutionPortalBeta.Server.Repository
 {
-    public class DepartmentRepository : IDepartmentRepository
+    public class DepartmentRepository : IDepartmentRepository<Department>
     {
-        private readonly ApplicationDbContext _dbContext;
+        ApplicationDbContext _dbContext;
         public DepartmentRepository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }
         public async Task<Department> CreateDepartment(Department department)
         {
-            _dbContext.Departments.Add(department);
-            await _dbContext.SaveChangesAsync();
-            return department;
+            var obj = await _dbContext.Departments.AddAsync(department);
+            _dbContext.SaveChanges();
+            return obj.Entity;
         }
 
         public async Task DeleteDepartment(int Id)

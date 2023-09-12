@@ -1,0 +1,106 @@
+﻿button {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    background-image: url("../images/hh.png");
+    background-size: cover;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+    button:hover {
+        transform: scale(95%);
+    }
+
+.closemodal {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.close-modal {
+    /* background-image: none; */
+    background-color: red;
+    padding: 0.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(78, 78, 78, 0.616);
+    height: 100%;
+    z-index: 100;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+.logform {
+    display: grid;
+    gap: 1rem;
+    width: 80%;
+    height: 100%;
+}
+
+.forminput {
+    display: grid;
+    gap: 0.5rem;
+}
+
+    .forminput label {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .forminput input {
+        text-transform: capitalize;
+    }
+
+    .forminput input,
+    .forminput textarea {
+        border: 1px solid rgba(156, 155, 155, 0.5);
+        padding: 0.7rem;
+        font-size: 17px;
+        outline: none;
+        border-radius: 0.3rem;
+        resize: none;
+    }
+
+@media screen and (max-width: 720px) {
+    button {
+        padding: 0.4;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+        .modal-content h1 {
+            font-size: 20px;
+        }
+
+    .logform {
+        width: 100%;
+    }
+}

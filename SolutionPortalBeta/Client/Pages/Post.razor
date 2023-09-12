@@ -1,23 +1,42 @@
-﻿@page "/post"
+﻿@page "/post/{Id:int}"
 @inject NavigationManager _nav
+@using Markdig 
+@using SolutionPortalBeta.Shared
+@inject IFaqService FaqService
 
-<div class="p-container">
-    <div class="main">
-        <div class="profile-icon">
-            <div class="icon" @onclick="navToHome">iCON</div>
-            <img src="nic.jpg" alt="" width="45" height="45" />
-        </div>
-        <div class="top">
-            <div class="backbtn" @onclick="navToFaq">
-                <i class="fa-sharp fa-solid fa-arrow-left"></i>
+<div class="post-container">
+    <div class="post-main">
+        <div class="post-header">
+            <div class="back-title">
+                <div class="go-back" @onclick="navToFaq">
+                    <span class="material-symbols-rounded"> arrow_back </span>
+                </div>
+                <h1 class="title">@title</h1>
             </div>
-            <div class="title">Lorem Ipsum</div>
         </div>
-        <div class="post"></div>
+        <div class="post-content">@((MarkupString)content)</div>
     </div>
 </div>
-
 @code {
+    [Parameter]
+    public int Id {get; set;}
+
+    public string title {get; set;}
+    public string content {get; set;}
+
+     FAQModel faq = new FAQModel();
+
+    protected override async Task OnInitializedAsync(){
+        var currentFaq = await FaqService.GetFAQbyId(Id);
+        if(currentFaq != null){
+           
+         title = currentFaq.Title.ToString();
+         var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+         content =Markdown.ToHtml(currentFaq.Content);
+        }
+    }
+
+
     private void navToHome()
     {
         _nav.NavigateTo("/");

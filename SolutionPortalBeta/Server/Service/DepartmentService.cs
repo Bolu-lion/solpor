@@ -6,9 +6,9 @@ namespace SolutionPortalBeta.Server.Service
 {
     public class DepartmentService : IDepartmentService
     {
-        private readonly IDepartmentRepository _departmentRepository;
+        private readonly IDepartmentRepository<Department> _departmentRepository;
 
-        public DepartmentService(IDepartmentRepository departmentRepository)
+        public DepartmentService(IDepartmentRepository<Department> departmentRepository)
         {
             _departmentRepository = departmentRepository;
         }
@@ -46,7 +46,7 @@ namespace SolutionPortalBeta.Server.Service
             {
                 data.Name = department.Name;
                 data.UserName = department.UserName;
-                data.Company = department.Company;
+                //data.Company = department.Company;
                 await _departmentRepository.UpdateDepartment(data);
                 return true;
             }

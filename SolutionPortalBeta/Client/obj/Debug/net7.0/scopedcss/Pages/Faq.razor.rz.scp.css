@@ -1,106 +1,47 @@
-.q-container[b-55edcrhtbr] {
-    background-color: transparent;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-    .q-container .main[b-55edcrhtbr] {
-        height: 100%;
-        width: 80%;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0rem;
-        /* background-color: red; */
-    }
-
-        .q-container .main .profile-icon[b-55edcrhtbr] {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0rem;
-            cursor: pointer;
-            /* background-color: aqua; */
-        }
-
-.profile-icon .icon[b-55edcrhtbr] {
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.profile-icon img[b-55edcrhtbr] {
-    border-radius: 50%;
-}
-
-.search[b-55edcrhtbr] {
+.faq-container[b-55edcrhtbr] {
+    width: 90%;
+    min-height:100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-.backbtn[b-55edcrhtbr] {
-    margin-top: 1rem;
+h1.title[b-55edcrhtbr] {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    width: 100%;
 }
-
-    .backbtn i[b-55edcrhtbr] {
-        background-color: #d0cdc5;
-        padding: 15px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-.search[b-55edcrhtbr] {
-    margin-bottom: 2rem;
-}
-
-    .search input[b-55edcrhtbr] {
-        padding: 20px;
-        width: 70%;
-        outline: none;
-        border: 1px solid #d0cdc5;
-        border-right: none;
-        border-radius: 1rem 0rem 0rem 1rem;
-        font-size: 15px;
-    }
-
-        .search input:hover[b-55edcrhtbr] {
-            border: 1px solid black;
-            border-right: none;
-        }
-
-        .search input[b-55edcrhtbr]::selection {
-            background-color: black;
-            color: white;
-        }
-
-        .search input:focus[b-55edcrhtbr] {
-            border: 1px solid rgb(85, 85, 85);
-        }
-
-    .search button[b-55edcrhtbr] {
-        padding: 20px;
-        outline: none;
-        border: 1px solid black;
-        background-color: black;
-        color: white;
-        border-radius: 0rem 1rem 1rem 0rem;
-        cursor: pointer;
-        font-weight: 500;
-    }
-
-        .search button:hover[b-55edcrhtbr] {
-            font-weight: 600;
-        }
-
-.links[b-55edcrhtbr] {
+.faq-list[b-55edcrhtbr] {
+    background-color: white;
+    border: 1px solid rgba(156, 155, 155, 0.5);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    padding: 2rem;
+    border-radius: 1rem;
     display: grid;
     gap: 1rem;
 }
 
-    .links .link[b-55edcrhtbr] {
-        background-color: #d0cdc5;
-        padding: 20px 40px;
-        cursor: pointer;
-        border-radius: 1rem;
+.faq[b-55edcrhtbr] {
+    background-color: whitesmoke;
+    border: 1px solid rgba(156, 155, 155, 0.5);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 1.3rem;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+    text-decoration:none;
+    color:black;
+    text-transform:capitalize;
+    font-size:25px;
+}
+    .faq:hover[b-55edcrhtbr] {
+        color: white;
+        background-color: #0a5169;
+        box-shadow: none;
+        transform: scale(98%);
     }

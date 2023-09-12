@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace SolutionPortalBeta.Shared
 {
-    internal class FAQModel
+    public class FAQModel
     {
         public int Id { get; set; }
 
         [Required]
         public string Title { get; set; }
 
-        [Required]
+        //[Required]
         public string Description { get; set; }
         [Required]
         public string Content { get; set; }

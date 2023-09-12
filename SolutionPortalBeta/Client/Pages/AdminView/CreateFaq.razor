@@ -1,0 +1,83 @@
+﻿@page "/createfaq"
+@inject HttpClient Http
+@inject IJSRuntime JsRuntime
+@inject IFaqService FaqService
+@using SolutionPortalBeta.Shared
+
+@*<div class="containerr">
+    <div class="top bckgmt"><div class="title">Register Company</div></div>
+    <div class="main">
+        <div>
+            <label for="companyName">Title</label>
+            <input type="text"
+                   name="faqtitle"
+                   id=""
+                   placeholder="Enter FAQ title" @bind="faq.Title"/>
+        </div>
+        <div>
+            <label for="companyName">Description</label>
+            <input type="text"
+                   name="faqdesc"
+                   id=""
+                   placeholder="Enter FAQ description" @bind="faq.Description"/>
+        </div>
+        <div>
+            <label for="companyName">Content</label>
+            <textarea type="text"
+                   name="faqcnt"
+                   id=""
+                   placeholder="Enter FAQ content" @bind="faq.Content"/>
+        </div>
+    </div>
+    <div class="button">
+        <button class="bckgmt" @onclick="Save">Submit</button>
+    </div>
+</div>*@
+<div class="create-faq">
+    <h1 class="title">Create FAQ</h1>
+    <div class="create-faq-form">
+        <form action="">
+            <div class="form-group">
+                <label for="name">FAQ Title:</label>
+                <input type="text" id="faq-title" class="form-control" @bind="faq.Title" />
+            </div>
+            <div class="form-group">
+                <label for="name">FAQ Description:</label>
+                <input type="text" id="alias" class="form-control" @bind="faq.Description" />
+            </div>
+            <div class="form-group">
+                <label for="name">FAQ Content:</label>
+                <textarea rows="10" @bind="faq.Content"></textarea>
+            </div>
+            <button @onclick="Save">Create</button>
+        </form>
+    </div>
+</div>
+
+@code {
+    FAQModel faq = new FAQModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+    }
+    protected async Task Save()
+    {
+        if(faq is not null)
+        {
+            await FaqService.AddFAQ(faq);
+            await JsRuntime.InvokeVoidAsync("alert", "e go");
+        }
+        
+        //if (company != null)
+        //{
+        //    company.Name = rre;
+        //    await JsRuntime.InvokeVoidAsync("alert", rre);
+        //    await JsRuntime.InvokeVoidAsync("alert", "oga e work!");
+        //    await CompanyService.CreateCompany(company);
+        //}
+        //else
+        //{
+        //    await JsRuntime.InvokeVoidAsync("alert", "oga e no work!");
+        //}
+    }
+}

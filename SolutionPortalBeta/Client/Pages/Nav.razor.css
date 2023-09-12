@@ -1,0 +1,35 @@
+﻿.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notif {
+    cursor: pointer;
+}
+
+    .notif:hover span {
+        background-color: #05829e;
+        color: white;
+    }
+
+    .notif span {
+        color: #05829e;
+        border-radius: 50%;
+        padding: 0.3rem;
+        display: grid;
+        place-items: center;
+    }
+
+@media screen and (max-width: 720px) {
+    .right {
+        gap: 0.3rem;
+    }
+}

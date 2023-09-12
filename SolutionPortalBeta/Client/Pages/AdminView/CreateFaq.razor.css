@@ -1,0 +1,86 @@
+﻿h1.title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    /* width: 100%; */
+}
+
+.create-faq {
+    background-color: whitesmoke;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.create-faq-form {
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+    .create-faq-form form {
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        display: grid;
+        gap: 2rem;
+        width: 100%;
+        place-items: center;
+        background-color: white;
+        border: 1px solid rgba(156, 155, 155, 0.5);
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        width: 95%;
+        padding: 2rem;
+        border-radius: 1rem;
+        display: grid;
+        gap: 1rem;
+    }
+
+.form-group {
+    display: grid;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 1rem;
+    width: 100%;
+}
+
+    .form-group input,
+    textarea {
+        border: 1px solid rgba(156, 155, 155, 0.5);
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        padding: 0.6rem 1rem;
+        border-radius: 0.4rem;
+        outline: none;
+        font-size: 16px;
+        resize: none;
+        width: 100%;
+    }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            box-shadow: none;
+        }
+
+    .form-group textarea::-webkit-scrollbar {
+        width: 10px !important;
+        border-radius: 0.4rem;
+    }
+
+    .form-group textarea::-webkit-scrollbar-track {
+        box-shadow: inset 0px 6px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 0.4rem;
+    }
+
+    .form-group textarea::-webkit-scrollbar-thumb {
+        background-color: rgb(95, 158, 160);
+        height: 90px;
+        border-radius: 10px;
+    }
+
+@media screen and (max-width: 850px) {
+    .create-faq-form {
+        width: 100%;
+    }
+}

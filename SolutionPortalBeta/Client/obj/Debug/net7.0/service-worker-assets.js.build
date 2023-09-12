@@ -105,7 +105,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-xgnFoRSIaYMtS9nWKCAdx3KFtp\/+W158TLxoeD6o+W4=",
+      "hash": "sha256-C2La1MKefd2JYouV1DSmF8M3r7vRvpOn8vSD\/ntpc7g=",
       "url": "SolutionPortalBeta.Client.styles.css"
     },
     {
@@ -933,15 +933,11 @@
       "url": "_framework\/SolutionPortalBeta.Shared.dll"
     },
     {
-      "hash": "sha256-Mt5oxKZ8detCBFqgUDHCwxAK0PDTVk1QROCIGowV2eU=",
-      "url": "_framework\/SolutionPortalBeta.Shared.pdb"
-    },
-    {
-      "hash": "sha256-EF6iPpoZhT6T2hRkr3JpUyd69KDoYTLHpNZa9K4tE9s=",
+      "hash": "sha256-Bk1blw+VNbYu4Td55Mc1RMQL8P6GNv\/PPijfCeQ5qa0=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
-      "hash": "sha256-jVPRRlI1yhNkFwiZ0HVUeSdOdQvX5p70cxzqJN48iHQ=",
+      "hash": "sha256-33DgIIb9ypkEn9ncDv9U+eI119w8NHlGyDSIIAPf9QI=",
       "url": "_framework\/SolutionPortalBeta.Client.pdb"
     },
     {
@@ -949,13 +945,37 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-xUUC5auGWExrQz4LZwGSKJ009\/MeMlH1Kd++NSlavp0=",
+      "hash": "sha256-MXs1cvCV5Wt0Rmx4cZPjYqCKdCngtEsVdYEzHY2QGzc=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-1oUwdVR9fjA+\/WA1TZEaL\/GO26WCzaL6WdkaLl3Pnpg=",
+      "url": "_framework\/Humanizer.dll"
+    },
+    {
+      "hash": "sha256-L2BGV\/ly\/u6FZm\/sarX9mP17SooQtb9tjFXJaP5J3j0=",
+      "url": "_framework\/Microsoft.EntityFrameworkCore.Design.dll"
+    },
+    {
+      "hash": "sha256-B0TdRx9UHLaqCgo9FpzuHTDWhEoJj8hfvwo02yw8v0Y=",
+      "url": "_framework\/Microsoft.EntityFrameworkCore.Relational.dll"
+    },
+    {
+      "hash": "sha256-GtQ8eMd\/lfhUiu8KNzgZ99JT2rbjhhm8nq8+Zg32014=",
+      "url": "_framework\/Microsoft.Extensions.DependencyModel.dll"
+    },
+    {
+      "hash": "sha256-57img5VLX+wAnl9OVpb+sxtMXVadVaRjPPWtsObQbOw=",
+      "url": "_framework\/Mono.TextTemplating.dll"
+    },
+    {
+      "hash": "sha256-Wux4xpM0\/BzRySb0qchXJg3S4D\/xc56W3vHWgpa4a4s=",
+      "url": "_framework\/System.CodeDom.dll"
     },
     {
       "hash": "sha256-\/n8hxridi+BE7KMcprL53dUE3gYZvzuPp3syUZ07ims=",
       "url": "_content\/BlazorInputFile\/inputfile.js"
     }
   ],
-  "version": "onXnHg4C"
+  "version": "qxp7kDE8"
 };

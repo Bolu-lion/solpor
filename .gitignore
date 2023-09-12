@@ -15,3 +15,5 @@ launch.json
 task.json
 /.vs/SolutionPortalBeta/FileContentIndex/b4698c3c-57e8-43a3-9c08-b59b90d8ddeb.vsidx
 *.vsidx
+/SolutionPortalBeta/Client/obj/Debug/net7.0/SolutionPortalBeta.Client.csproj.AssemblyReference.cache
+/SolutionPortalBeta/Server/obj/Debug/net7.0/SolutionPortalBeta.Server.csproj.AssemblyReference.cache

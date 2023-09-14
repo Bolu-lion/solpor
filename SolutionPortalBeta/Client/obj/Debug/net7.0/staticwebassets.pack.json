@@ -1,127 +1,127 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\build-gz\\lf549Q+L.gz",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\build-gz\\X5vHlt0l.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\SolutionPortalBeta.Client.styles.css",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\scopedcss\\bundle\\SolutionPortalBeta.Client.styles.css",
       "PackagePath": "staticwebassets\\SolutionPortalBeta.Client.styles.css"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker-assets.js",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker-assets.js",
       "PackagePath": "staticwebassets\\service-worker-assets.js"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\icon-512.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\icon-512.png",
       "PackagePath": "staticwebassets\\icon-512.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo.png",
       "PackagePath": "staticwebassets\\images\\R3_Logo.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo_Dark.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo_Dark.png",
       "PackagePath": "staticwebassets\\images\\R3_Logo_Dark.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\bg-sidebar-desktop.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\bg-sidebar-desktop.png",
       "PackagePath": "staticwebassets\\images\\bg-sidebar-desktop.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\bg-sidebar-mobile.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\bg-sidebar-mobile.png",
       "PackagePath": "staticwebassets\\images\\bg-sidebar-mobile.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\bg-sidebar-mobile2.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\bg-sidebar-mobile2.png",
       "PackagePath": "staticwebassets\\images\\bg-sidebar-mobile2.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\hh.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\hh.png",
       "PackagePath": "staticwebassets\\images\\hh.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\leftty.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\leftty.png",
       "PackagePath": "staticwebassets\\images\\leftty.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\lg.png",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\lg.png",
       "PackagePath": "staticwebassets\\images\\lg.png"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\nic.jpg",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\nic.jpg",
       "PackagePath": "staticwebassets\\images\\nic.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\index.html",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\manifest.json",
+      "Id": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
     },
     {

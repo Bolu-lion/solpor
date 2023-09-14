@@ -36,3 +36,5 @@ C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Shared\obj\Debug\net7.0\Sol
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Shared\obj\Debug\net7.0\ref\SolutionPortalBeta.Shared.dll
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Shared\bin\Debug\net7.0\SolutionPortalBeta.Shared.runtimeconfig.json
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Shared\obj\Debug\net7.0\SolutionPortalBeta.Shared.genruntimeconfig.cache
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Shared\bin\Debug\net7.0\SolutionPortalBeta.Shared.runtimeconfig.json
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Shared\obj\Debug\net7.0\SolutionPortalBeta.Shared.genruntimeconfig.cache

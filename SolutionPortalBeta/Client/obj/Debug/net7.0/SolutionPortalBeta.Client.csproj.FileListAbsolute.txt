@@ -2664,3 +2664,27 @@ C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\bui
 >>>>>>> a9b4f77aca75fe05471e3f128cd2296e58425d16
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\CreateFaq.razor.rz.scp.css
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\ViewComplaint.razor.rz.scp.css
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Humanizer.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.DependencyModel.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Mono.TextTemplating.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\System.CodeDom.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.EntityFrameworkCore.Relational.dll.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\System.CodeDom.dll.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.DependencyModel.dll.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.EntityFrameworkCore.Design.dll.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Humanizer.dll.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\Mono.TextTemplating.dll.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\Humanizer.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\hCddv65J.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\EvmnUCCK.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\4DryhW78.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\eSpOhuCR.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\v2uD6Bib.gz
+C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\8g+kVBAZ.gz

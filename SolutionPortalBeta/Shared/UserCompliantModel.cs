@@ -27,7 +27,10 @@ namespace SolutionPortalBeta.Shared
 
         [Required]
         [Display(Name ="Is Completed")]
-        public bool IsCompleted { get; set; } = false;
+        public bool IsCompleted { get; set; } 
+        
+        [Display(Name ="Response")]
+        public string? Response { get; set; }
 
         [Display(Name = "Attachments")]
         public List<Attachment>? Attachments { get; set; }

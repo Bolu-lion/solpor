@@ -1,8 +1,8 @@
-﻿@page "/viewcomplaint"
+﻿@* @page "/viewcomplaint" *@
 @inject NavigationManager nav
 @using SolutionPortalBeta.Shared
 @inject HttpClient Http
-@* @inject IUserComplaintService UserCompliant *@
+@inject IUserComplaintService UserCompliantService;
 
 <div class="modal-container @modalDisplay">
     <div class="modal">
@@ -28,9 +28,9 @@
                 </div>
                 <div class="modal-res">
                     <h3>Response</h3>
-                    <textarea rows="10"></textarea>
+                    <textarea rows="10" @bind="userCompliant.Response">@Response</textarea>
                 </div>
-                <button>Submit</button>
+                <button @onclick="SubmitComplaint">Submit</button>
             </div>
         </div>
     </div>
@@ -54,6 +54,8 @@
     public bool Status { get; set; }
     [Parameter]
     public int CId {get; set;}
+    [Parameter]
+    public string Response {get; set;}
     private void ShowModal()
     {
         modalDisplay = "block";
@@ -64,6 +66,11 @@
         nav.NavigateTo("/admin");
     }
     private async Task SubmitComplaint(){
-        @* await IUserComplaintService.UpdateComplaint *@
+        userCompliant.Title = Title;
+        userCompliant.DateCreated = Date;
+        userCompliant.Description = Description;
+        userCompliant.Id = CId;
+        userCompliant.IsCompleted = true;
+        await UserCompliantService.UpdateComplaint(CId, userCompliant);
     }
 }

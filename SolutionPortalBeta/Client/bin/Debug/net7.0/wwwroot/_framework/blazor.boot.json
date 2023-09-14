@@ -211,15 +211,15 @@
       "mscorlib.dll": "sha256-t1RT9mknsQ54H+sVa1vtMhjv3D8ZjiAGoLzHvuIObPw=",
       "netstandard.dll": "sha256-5SHKPh1PcuJjq4lIo7ymdIyhb9d3++oMAjr46auhUSc=",
       "System.Private.CoreLib.dll": "sha256-eH+XIsCUG5oZ0k8AIzNtRLTCLiV\/8Zv0RFCPMsIkdYY=",
-      "SolutionPortalBeta.Shared.dll": "sha256-eDJOTvQ34HeKfJEbeRfcLKEgEAxXVyvjOaWO9IOM3Fk=",
-      "SolutionPortalBeta.Client.dll": "sha256-GApDZcA1rSdOyUhmgcvgwc0EMD12PfNlm+HOTPiPmeU="
+      "SolutionPortalBeta.Shared.dll": "sha256-\/p6sz\/KwUJry9c4OF8DgzruzhtTj8uaVoi1KjEFDWZM=",
+      "SolutionPortalBeta.Client.dll": "sha256-Oe+1Q0UJ4h2R7tkxgHyqLoZ6EkVwfKLCA4yisPSSMf0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "SolutionPortalBeta.Shared.pdb": "sha256-1yNAXPpvGrjDwatF1DFWZHsyUG0jnswzg0dA+mGeU4E=",
-      "SolutionPortalBeta.Client.pdb": "sha256-UpsPbZ8XktHuIe8axQ2IXp7YO+dIBpnU9QV+AGkdhGE="
+      "SolutionPortalBeta.Shared.pdb": "sha256-1BSQXQZ3JPPyyQPv5fjtKDejGG5KdK+POLqqovOuvQg=",
+      "SolutionPortalBeta.Client.pdb": "sha256-3lcqJdtwxD1NdI2ncXghvTvVgK22bCsWBhJE+IDaaTw="
     },
     "runtime": {
       "dotnet.7.0.9.xyvtova2q0.js": "sha256-dUIY5Mz0ozZWqtTfBb7ArJKbdh5IIp8BXeq6UjK4u\/c=",

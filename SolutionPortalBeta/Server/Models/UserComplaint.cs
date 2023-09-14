@@ -15,7 +15,7 @@ namespace SolutionPortalBeta.Server.Models
 		[Required]
 		public DateTime DateCreated { get; set; } = DateTime.Now.Date;
 		[Required]
-		public bool IsCompleted { get; set; } = false;
+		public bool IsCompleted { get; set; }
 		public string? Response { get; set; }
         public List<Attachment>? Attachments { get; set; }
     }

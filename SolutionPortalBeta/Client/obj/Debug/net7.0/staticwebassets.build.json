@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0VXZXukmeJmwnnsrmGA8VRXC3GQFCaHQsQ8d3FRu+NU=",
+  "Hash": "sdwPhVCKAvEX3yUnnlIolkYfzBZRyg3Gf0dFx+9p2DE=",
   "Source": "SolutionPortalBeta.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -153,23 +153,6 @@
       "OriginalItemSpec": "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.14.1\\lib\\net6.0\\Humanizer.dll"
     },
     {
-      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "SolutionPortalBeta.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.9\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "SolutionPortalBeta.Client",
       "SourceType": "Computed",
@@ -219,6 +202,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.9\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "SolutionPortalBeta.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.9\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Markdig.dll",
@@ -7429,40 +7429,6 @@
       "OriginalItemSpec": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\SolutionPortalBeta.Client.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.js",
-      "SourceId": "SolutionPortalBeta.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\",
-      "BasePath": "/",
-      "RelativePath": "service-worker.js",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorServiceWorker",
-      "AssetTraitValue": "ServiceWorkerJs",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot\\service-worker.js"
-    },
-    {
-      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
-      "SourceId": "SolutionPortalBeta.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\",
-      "BasePath": "/",
-      "RelativePath": "service-worker.js",
-      "AssetKind": "Publish",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorServiceWorker",
-      "AssetTraitValue": "ServiceWorkerJs",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\service-worker.published.js"
-    },
-    {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker-assets.js",
       "SourceId": "SolutionPortalBeta.Client",
       "SourceType": "Computed",
@@ -7495,6 +7461,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net7.0\\service-worker-assets.js.build"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.js",
+      "SourceId": "SolutionPortalBeta.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorServiceWorker",
+      "AssetTraitValue": "ServiceWorkerJs",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot\\service-worker.js"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
+      "SourceId": "SolutionPortalBeta.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\Debug\\net7.0\\service-worker\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorServiceWorker",
+      "AssetTraitValue": "ServiceWorkerJs",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\service-worker.published.js"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\app.css",
@@ -7546,6 +7546,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "SolutionPortalBeta.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -7648,23 +7665,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "SolutionPortalBeta.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
@@ -7871,23 +7871,6 @@
       "OriginalItemSpec": "wwwroot\\images\\nic.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo.png",
-      "SourceId": "SolutionPortalBeta.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "images/R3_Logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\R3_Logo.png"
-    },
-    {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo_Dark.png",
       "SourceId": "SolutionPortalBeta.Client",
       "SourceType": "Discovered",
@@ -7903,6 +7886,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\R3_Logo_Dark.png"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\images\\R3_Logo.png",
+      "SourceId": "SolutionPortalBeta.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/R3_Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\R3_Logo.png"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\wwwroot\\index.html",

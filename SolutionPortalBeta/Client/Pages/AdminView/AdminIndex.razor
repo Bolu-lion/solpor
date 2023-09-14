@@ -51,7 +51,7 @@
                     {
                         <div class="c-list-item" @onclick="() => setModal( p.Id, p.Title, p.Description, p.DateCreated, p.IsCompleted )">
                             <div class="t-row">
-                                <h2>@p.Description</h2>
+                                <h2>@p.Title</h2>
                                 <small>@p.DateCreated</small>
                             </div>
                             <span class="status">@CheckStatus(p.IsCompleted)</span>
@@ -74,8 +74,6 @@
     public string ComplaintDescription {get; set;}
     public DateTime ComplaintDate {get; set;}
     public bool CompliantStatus {get; set;}
-
-
     public void setModal(int Id, string ModalTitle, string ModalDescription, DateTime ModalDate, bool ModalStatus)
     {
         viewModal = !viewModal;
@@ -85,15 +83,12 @@
         ComplaintDate= ModalDate;
         CompliantStatus = ModalStatus ;
     }
-
     List<UserCompliantModel> complaintList = new List<UserCompliantModel>();
-
     protected override async Task OnInitializedAsync()
     {
         var response = await _httpClient.GetAsync("api/UserComplaint/");
         complaintList = await response.Content.ReadFromJsonAsync<List<UserCompliantModel>>();
     }
-
     private string CheckStatus(bool Status)
     {
         if (Status)
@@ -105,7 +100,6 @@
             return "Pending";
         }
     }
-
     public void moveto()
     {
         _nav.NavigateTo("faqlist");
@@ -114,7 +108,6 @@
     {
         _nav.NavigateTo("viewcomplaint");
     }
-
     public async Task GetCompliantsByDate(DateTime SelectedDate)
     {
         var response = await _httpClient.GetAsync("api/UserComplaint/" + SelectedDate);

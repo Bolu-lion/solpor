@@ -2,6 +2,7 @@
 @inject NavigationManager nav
 @using SolutionPortalBeta.Shared
 @inject HttpClient Http
+@* @inject IUserComplaintService UserCompliant *@
 
 <div class="modal-container @modalDisplay">
     <div class="modal">
@@ -37,7 +38,6 @@
 
 
 @code {
-
     private UserCompliantModel userCompliant = new UserCompliantModel();
     protected override async Task OnInitializedAsync()
     {
@@ -54,21 +54,16 @@
     public bool Status { get; set; }
     [Parameter]
     public int CId {get; set;}
-    
-
     private void ShowModal()
     {
         modalDisplay = "block";
     }
-
     private void CloseModal()
     {
         modalDisplay = "none";
         nav.NavigateTo("/admin");
     }
-
     private async Task SubmitComplaint(){
-         
-
+        @* await IUserComplaintService.UpdateComplaint *@
     }
 }

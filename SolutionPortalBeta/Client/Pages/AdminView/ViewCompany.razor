@@ -1,0 +1,61 @@
+@using SolutionPortalBeta.Shared
+@inject HttpClient Http
+@inject NavigationManager nav
+
+<div class="modal-container @modalDisplay">
+    <div class="modal">
+    <div class="closebtn">
+        <span class="material-symbols-rounded" @onclick="CloseModal"> close </span>
+    </div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>@companyName </h1>
+            <span class="material-symbols-rounded">edit</span>
+        </div>
+        <div class="modal-main">
+        <div class="modal-desc">
+            <label for="description">Alias :</label>
+            <h3 id="alias">@companyAlias</h3>
+        </div>
+        <div class="modal-res">
+            <h3>Departments</h3>
+            <div class="departments">
+            <ul>
+                @foreach( var dept in departments.OrderBy(dept => dept.Id)){
+                    <li>@dept.Name</li>
+                }
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public int id { get; set; }
+    [Parameter]
+    public int companyId { get; set; }
+    [Parameter]
+    public string companyName { get; set; }
+    [Parameter]
+    public string companyAlias { get; set; }
+    List<DepartmentModel> departments = new List<DepartmentModel>();
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetAsync($"api/department/company/{companyId}");
+        departments = await response.Content.ReadFromJsonAsync<List<DepartmentModel>>();
+    }
+    private string modalDisplay = "none";
+    private void ShowModal()
+    {
+        modalDisplay = "block";
+    }
+    private void CloseModal()
+    {
+        modalDisplay = "none";
+        nav.NavigateTo("/companies");
+    }
+    
+}

@@ -28,9 +28,16 @@
                 </div>
                 <div class="modal-res">
                     <h3>Response</h3>
-                    <textarea rows="10" @bind="userCompliant.Response">@Response</textarea>
+                    @if(Response is null){
+                        <textarea rows="10" @bind="userCompliant.Response">@Response</textarea>
+                    }else{
+                        <textarea rows="10" @bind="userCompliant.Response" disabled>@Response</textarea>
+                    }
                 </div>
-                <button @onclick="SubmitComplaint">Submit</button>
+                @if(Response is null){
+                    <button @onclick="SubmitComplaint">Submit</button>
+                }
+                
             </div>
         </div>
     </div>

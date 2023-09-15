@@ -1,50 +1,51 @@
 ﻿@page "/createdepartment/{companyName}/{id:int}"
 @inject IJSRuntime JSRuntime
 @using SolutionPortalBeta.Shared
+@inject NavigationManager nav
 @inject HttpClient Http
 @inject IDepartmentService DepartmentService
 
-@*<div class="containerd">
-    <div class="top bckgmt"><div class="title">Create Department</div></div>
-    <h4>@companyName</h4>
-    <div class="main">
-        <label for="companyName">Department Name</label>
-        <div class="inpttxt">
-            <input type="text"
-                   name="companyName"
-                   id=""
-                   placeholder="Enter department name" 
-                   @bind="department.Name"/>
-            <input type="text"
-                   name="companyName"
-                   id=""
-                   placeholder="Enter department username"
-            @bind="department.UserName" />
-            <div class="button">
-                <button class="bckgmt" @onclick="save">Add</button>
-            </div>
-        </div>
-    </div>
-    <div class="dept-list">
-        @foreach( var dept in departments.OrderBy(dept => dept.Id))
-        {
-            <div class="dept-name">@dept.Name</div>
-        }
-    </div>
-    <div class="button">
-        <button class="bckgmt">Submit</button>
-    </div>
-</div>*@
-<div class="create-com">
-    <h1 class="title">Create Company</h1>
+@* <div class="create-com">
+    <h1 class="title">Create Department</h1>
     <div class="create-com-form">
         <form action="">
             <div class="form-group">
                 <label for="name">Department Name:</label>
                 <input type="text" id="name" class="form-control" />
+            </div><h3>Departments</h3>
+            <div class="dept-list">  
+                @foreach( var dept in departments.OrderBy(dept => dept.Id))
+                {
+                    <ul>
+                        <div class="dept-name">@dept.Name</div>
+                    </ul>
+                }
             </div>
             <button>Add Department</button>
         </form>
+    </div>
+</div> *@
+<div class="modal-container ">
+    <div class="modal">
+        <div class="modal-content">
+            <div class="closebtn">
+                <span class="material-symbols-rounded" @onclick="CloseModal"> close </span>
+            </div>
+            <div class="modal-header">
+                <h3>Create Department</h3>
+            </div>
+            <div class="modal-main">
+                <div class="modal-res">
+                   <label for="name">Department Name:</label>
+                <input type="text" id="name" class="form-control" @bind="department.Name"/>
+                </div>
+                <div class="modal-res">
+                   <label for="name">Department Username:</label>
+                <input type="text" id="alias" class="form-control" @bind="department.UserName" />
+                </div>
+                <button @onclick="save">Create Department</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -63,7 +64,6 @@
         var response = await Http.GetAsync($"api/department/company/{id}");
         departments = await response.Content.ReadFromJsonAsync<List<DepartmentModel>>();
     }
-
     protected async Task save()
     {
         var depid = id;
@@ -71,7 +71,18 @@
         {
             department.CompanyId = id;
             await DepartmentService.AddDepartment(department);
+            nav.NavigateTo("/companies");
             await JSRuntime.InvokeVoidAsync("alert", "oga e work!");
         }
+    }
+    private string modalDisplay = "none";
+     private void ShowModal()
+    {
+        modalDisplay = "block";
+    }
+    private void CloseModal()
+    {
+        modalDisplay = "none";
+        nav.NavigateTo("/companies");
     }
 }

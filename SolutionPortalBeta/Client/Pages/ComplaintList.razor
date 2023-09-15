@@ -1,38 +1,8 @@
-﻿@page "/complaintlist"
+@page "/complaints"
 @using SolutionPortalBeta.Shared;
-@inject HttpClient _httpClient;
+@inject HttpClient _httpClient
 
-@*<div class="admin-main">
-    <Sidebar/>
-    <div>
-        <div class="top bckgm"><div class="title">Complaints</div></div>
-        <div class="recent-orders">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>Complaint Description</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var p in complaintList.OrderByDescending(p => p.Id))
-                    {
-                        <tr>
-                            <td>@p.Title</td>
-                            <td>@p.Description</td>
-                            <td class="warning">@CheckStatus(p.IsCompleted)</td>
-                            <td>@p.DateCreated</td>
-                            <td class="primary"><a href="#">Details</a></td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>*@
-<div class="admin-main">
-    <Sidebar/>
+
     <div class="comp-list">
         <h1 class="title">Complaints</h1>
         <div class="recent-orders">
@@ -47,7 +17,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var p in complaintList.OrderByDescending(p => p.Id))
+                    @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(7))
                     {
                         <tr>
                             <td>@p.Title</td>
@@ -61,11 +31,11 @@
             </table>
         </div>
     </div>
-</div>
 
-@code {
+
+@code{
     List<UserCompliantModel> complaintList = new List<UserCompliantModel>();
-    public string statusClass { get; set; } 
+    public string statusClass;
 
     protected override async Task OnInitializedAsync()
     {

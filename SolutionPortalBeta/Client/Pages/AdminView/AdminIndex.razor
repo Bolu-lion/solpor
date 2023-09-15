@@ -49,7 +49,7 @@
                 else{
                     @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
                     {
-                        <div class="c-list-item" @onclick="() => setModal( p.Id, p.Title, p.Description, p.DateCreated, p.IsCompleted )">
+                        <div class="c-list-item" @onclick="() => setModal( p.Id, p.Title, p.Description, p.DateCreated, p.IsCompleted, p.Response )">
                             <div class="t-row">
                                 <h2>@p.Title</h2>
                                 <small>@p.DateCreated</small>
@@ -60,7 +60,7 @@
                 }
                 @if (viewModal)
                 {
-                    <ViewComplaint CId="@ComplaintId" Title="@ComplaiantTitle" Description="@ComplaintDescription" Date="@ComplaintDate" Status="@CompliantStatus" />
+                    <ViewComplaint CId="@ComplaintId" Title="@ComplaiantTitle" Description="@ComplaintDescription" Date="@ComplaintDate" Status="@CompliantStatus" Response="@CompliantResponse"/>
                 }
             </div><a href="complaintlist">Show All</a>
         </div>
@@ -74,7 +74,8 @@
     public string ComplaintDescription {get; set;}
     public DateTime ComplaintDate {get; set;}
     public bool CompliantStatus {get; set;}
-    public void setModal(int Id, string ModalTitle, string ModalDescription, DateTime ModalDate, bool ModalStatus)
+    public string CompliantResponse {get; set;}
+    public void setModal(int Id, string ModalTitle, string ModalDescription, DateTime ModalDate, bool ModalStatus, string ModalResponse)
     {
         viewModal = !viewModal;
         ComplaintId = Id;
@@ -82,6 +83,7 @@
         ComplaintDescription = ModalDescription;
         ComplaintDate= ModalDate;
         CompliantStatus = ModalStatus ;
+        CompliantResponse = ModalResponse;
     }
     List<UserCompliantModel> complaintList = new List<UserCompliantModel>();
     protected override async Task OnInitializedAsync()

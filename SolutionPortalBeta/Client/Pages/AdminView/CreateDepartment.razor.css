@@ -1,107 +1,237 @@
-﻿.containerd {
+﻿/* 
+h1.title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+}
+
+.create-com {
+    background-color: whitesmoke;
+    height: 100vh;
+    width:100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 2rem;
     gap: 2rem;
 }
 
-    .containerd .top {
-        
-        padding: 1rem 2rem;
-        width: 70%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 10px;
-    }
-
-        .containerd .top .title {
-            font-size: 40px;
-            color: white;
-            font-weight: 700;
-        }
-
-.main {
-    background-color: white;
-    padding: 1.7rem 3rem;
-    display: grid;
-    gap: 0.8rem;
-    border-radius: 10px;
-    width: 70%;
-    box-shadow: 0px 19px 23px 7px rgba(0, 0, 0, 0.1);
+.create-com-form {
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
-    .main label {
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    .main .inpttxt {
-        display: flex;
-    }
-
-        .main .inpttxt input {
-            padding: .6rem 1.5rem;
-            border-radius: 0.7rem 0rem 0rem 0.7rem;
-            border: 1px solid lightgray;
-            border-right: none;
-            outline: none;
-            height:80%;
-            font-size: 20px;
-            width: 90%;
-        }
-
-        .main .inpttxt .button {
-            width: 10%;
-         
-            display: flex;
-        }
-
-            .main .inpttxt .button button {
-                height: 80%;
-                width: 100%;
-                border-radius: 0rem 0.7rem 0.7rem 0rem;
-            }
-
-.containerd .button {
-    display: flex;
-    justify-content: flex-end;
-    width: 70%;
-}
-
-    .containerd .button button {
-        width:15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem 1.5rem;
-        height: 3.5rem;
-        outline: none;
-        background-blend-mode: darken;
-        border: none;
-        color: white;
-        font-size: 25px;
-        font-weight: 700;
-        border-radius: 10px;
+    .create-com-form form {
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        display: grid;
+        gap: 2rem;
+        width: 100%;
+        background-color: white;
+        border: 1px solid rgba(156, 155, 155, 0.5);
         box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
+        width: 95%;
+        padding: 2rem;
+        border-radius: 1rem;
+        display: grid;
+        gap: 1rem;
     }
 
-        .containerd .button button:hover {
-            color: black;
-        }
-
-.dept-list {
-    width: 70%;
-    padding: 2rem;
-    border-radius: 10px;
+.form-group {
     display: grid;
-    gap: 0.5rem;
-    background-color: white;
-    box-shadow: 0px 19px 23px 7px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: 500;
+    gap: 1rem;
+    width: 100%;
 }
 
-    .dept-list div {
-        font-size: 25px;
+    .form-group input {
+        border: 1px solid rgba(156, 155, 155, 0.5);
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        padding: 0.6rem 1rem;
+        border-radius: 0.4rem;
+        outline: none;
+        font-size: 16px;
+        width: 100%;
     }
+
+        .form-group input:focus {
+            box-shadow: none;
+        }
+
+.dept-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+    .dept-add .form-group {
+        width: 100%;
+    }
+
+@media screen and (max-width: 850px) {
+    .create-com-form {
+        width: 100%;
+    }
+} */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.234);
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+}
+.none {
+  display: none;
+}
+.modal {
+  background-color: whitesmoke;
+  width: 50%;
+  height: 50%;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.closebtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-container span {
+  background-color: rgb(95, 158, 160);
+  border-radius: 0.2rem;
+  display: grid;
+  place-items: center;
+  padding: 0.1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.modal-content {
+  width: 95%;
+  height: 95%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.modal-header h3 {
+  font-size: 30px;
+  flex: 1;
+}
+.modal-header .time-stat {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.modal-header .time-stat p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.modal-header .time-stat small {
+  font-size: 12px;
+}
+
+.modal-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.modal-desc {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.modal-desc label {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.modal-desc textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  height: 120px;
+  overflow: auto;
+}
+
+.modal-atch {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.modal-atchs {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.modal-res {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.modal-res label {
+  font-size: 17px;
+  font-weight: 500;
+  width: 100%;
+  /* font-family: "Space Grotesk", sans-serif; */
+}
+
+.modal-res input {
+  width: 100%;
+  resize: none;
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
+
+.modal-main button {
+  width: 20%;
+}
+input {
+  border: 1px solid rgba(156, 155, 155, 0.5);
+  padding: 1rem;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

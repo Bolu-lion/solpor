@@ -3,38 +3,24 @@
 @inject HttpClient _httpClient
 @inject NavigationManager _nav
 
-@*<div class="admin-main">
-    <Sidebar/>
-    <div>
-        <div class="top bckgm"><h1 class="title">Company List</h1></div>
-        <div class="create-btn"><button class="bckgmd" @onclick="gotocreate">Create Company</button></div>
-        <div class="list-container">
-            @foreach (var company in companies.OrderBy(company => company.id))
-            {
-                <div>
-                    <p>@company.Name</p>
-                    <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Add Department</a>
-                    <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Update Company</a>
-                </div>
-            }
-        </div>
-    </div>
-</div>*@
 <div class="admin-main">
     <Sidebar />
+    @if(viewCreateModal){<CreateCompany/>}
+    @if(viewModal){<ViewCompany companyId="@companyId" companyName="@companyName" companyAlias="@companyAlias"/>}
+    @if(viewDeptModal){<CreateDepartment id="@companyId"/>}
     <div class="company-container">
         <h1 class="title">Company List</h1>
         <div class="create-btn">
-            <button @onclick="gotocreate">Create Company</button>
+            <button @onclick="setCreateModal">Create Company</button>
         </div>
         <div class="company-list">
             @foreach (var company in companies.OrderBy(company => company.id).Take(5))
             {
-                <div class="company">
+                <div class="company" @onclick="()=>setViewModal(company.id, company.Name, company.Alias)">
                     <h3>@company.Name</h3>
                     <div class="manage-comp">
-                        <a class="mg-btn" href="createdepartment/@company.Name/@company.id">Add Department</a>
-                        <a class="mg-btn" href="createdepartment/@company.Name/@company.id">Update Company</a>
+                        <a class="mg-btn" @onclick="()=>setDeptModal(company.id)">Add Department</a>
+                        <a class="mg-btn" >Manage Company</a>
                     </div>
                 </div>
             }
@@ -43,6 +29,9 @@
     </div>
 </div>  
 @code {
+    public int companyId { get; set; }
+    public string companyName { get; set; }
+    public string companyAlias { get; set; }
     List<CompanyModel> companies = new List<CompanyModel>();
     public void gotocreate()
     {
@@ -53,4 +42,22 @@
         var response = await _httpClient.GetAsync("api/Company/");
         companies = await response.Content.ReadFromJsonAsync<List<CompanyModel>>();
     }
+    public bool viewCreateModal = false;
+    public bool viewModal = false;
+    public bool viewDeptModal = false;
+    public void setCreateModal(){
+        viewCreateModal = !viewCreateModal;
+    }
+    public void setViewModal(int id, string name, string alias){
+        viewModal = !viewModal;
+        companyId = id;
+        companyName = name;
+        companyAlias = alias;
+    }
+    public void setDeptModal(int id){
+        viewDeptModal = !viewDeptModal;
+        companyId = id;
+    }
 }
+
+@* href="createdepartment/@company.Name/@company.id"  *@

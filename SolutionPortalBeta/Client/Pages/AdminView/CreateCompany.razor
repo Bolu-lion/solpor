@@ -1,79 +1,55 @@
 ﻿@page "/createcompany"
 @using SolutionPortalBeta.Shared
 @inject HttpClient Http
+@inject NavigationManager nav
 @inject IJSRuntime JsRuntime
 @inject IDepartmentService DepartmentService
 @inject ICompanyService CompanyService
 
-@*<div class="admin-main">
-    <h1>Create Company</h1>
-    <EditForm Model="@company" OnValidSubmit="CreateCompanyx">
-        <!-- Company information fields -->
-        <div class="form-group">
-            <label for="name">Company Name:</label>
-            <InputText id="name" @bind-Value="company.Name" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label for="name">Company Alias:</label>
-            <InputText id="name" @bind-Value="company.Alias" class="form-control" />
-        </div>
-        <!-- Department input fields -->
-        <h3>Departments</h3>
-        <div class="form-group">
-            <label for="departmentName">Department Name:</label>
-            <InputText id="departmentName" @bind-Value="departmentName" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label for="departmentName">Department Username:</label>
-            <InputText id="departmentName" @bind-Value="departmentAlias" class="form-control" />
-        </div>
-        <button type="button" class="btn btn-primary" @onclick="AddDepartment">Add Department</button>
-        <ul>
-            @foreach (var department in Departments.Keys)
-            {
-                <li>@department</li>
-            }
-        </ul>
-        <button type="submit" class="btn btn-success">Create Company</button>
-    </EditForm>
-</div>*@
-<div class="create-com">
-    <div>
-        <h1 class="title">Create Company</h1>
-    </div>
-    <div class="create-com-form">
-        <form>
-            <div class="form-group">
-                <label for="name">Company Name:</label>
+<div class="modal-container @modalDisplay">
+    <div class="modal">
+        <div class="modal-content">
+            <div class="closebtn">
+                <span class="material-symbols-rounded" @onclick="CloseModal"> close </span>
+            </div>
+            <div class="modal-header">
+                <h3>Create Company</h3>
+            </div>
+            <div class="modal-main">
+                <div class="modal-res">
+                   <label for="name">Company Name:</label>
                 <input type="text" id="name" class="form-control" @bind="company.Name"/>
-            </div>
-            <div class="form-group">
-                <label for="name">Company Alias:</label>
+                </div>
+                <div class="modal-res">
+                   <label for="name">Company Alias:</label>
                 <input type="text" id="alias" class="form-control" @bind="company.Alias" />
+                </div>
+                <button @onclick="CreateCompanyx">Create Company</button>
             </div>
-@*            <h3>Add Departments</h3>
-            <div class="dept-add">
-                <div class="form-group">
-                    <label for="departmentName">Department Name:</label>
-                    <input type="text" id="departmentName" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="name">Department Username:</label>
-                    <input type="text" id="name" class="form-control" />
-                </div>
-                
-            </div>*@
-            <button type="submit" @onclick="CreateCompanyx">Create Company</button>
-        </form>
+        </div>
     </div>
 </div>
+
 @code {
     private CompanyModel company = new CompanyModel();
     public DepartmentModel department = new DepartmentModel();
     private string departmentName = "";
     private string departmentAlias = "";
     Dictionary<string, string> Departments = new Dictionary<string, string>();
-
+    protected override async Task OnInitializedAsync()
+    {
+        ShowModal();
+    }
+    private string modalDisplay = "none";
+    private void ShowModal()
+    {
+        modalDisplay = "block";
+    }
+    private void CloseModal()
+    {
+        modalDisplay = "none";
+        nav.NavigateTo("/companies");
+    }
     private void AddDepartment()
     {
         if (!string.IsNullOrWhiteSpace(departmentName) && !string.IsNullOrWhiteSpace(departmentAlias))
@@ -82,7 +58,6 @@
             department.Name = departmentName;
             department.UserName = departmentAlias;
             company.Departments.Add(department);
-
         }
         departmentName = "";
         departmentAlias = "";
@@ -90,6 +65,7 @@
 
     private async Task CreateCompanyx()
     {
+        CloseModal();
         await CompanyService.CreateCompany(company);
         
         if (company?.id > 0)

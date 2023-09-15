@@ -62,66 +62,65 @@ main .recent-orders .topp{
     justify-content: space-between;
 }*/
 h1.title[b-3z5ydb55y6] {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 40px;
-    width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  width: 100%;
 }
 
 .comp-list[b-3z5ydb55y6] {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .recent-orders[b-3z5ydb55y6] {
-    background-color: white;
-    border: 1px solid rgba(156, 155, 155, 0.5);
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    width: 95%;
-    padding: 2rem;
-    border-radius: 1rem;
-    display: grid;
-    gap: 1rem;
+  background-color: white;
+  border: 1px solid rgba(156, 155, 155, 0.5);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 table[b-3z5ydb55y6] {
-    background-color: whitesmoke;
-    border: 1px solid rgba(156, 155, 155, 0.5);
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    padding: 0.6rem 1rem;
-    border-radius: 0.7rem;
-    border-spacing: 0px;
+  background-color: whitesmoke;
+  border: 1px solid rgba(156, 155, 155, 0.5);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem 1rem;
+  border-radius: 0.7rem;
+  border-spacing: 0px;
 }
 
 th[b-3z5ydb55y6],
 td[b-3z5ydb55y6] {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid grey;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid grey;
 }
 
 th[b-3z5ydb55y6] {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 td[b-3z5ydb55y6] {
-    /*cursor: pointer;*/
-    font-size:15px;
-}
-
-tbody tr:hover[b-3z5ydb55y6] {
-    background-color:;
+  /*cursor: pointer;*/
+  font-size: 15px;
 }
 
 a[b-3z5ydb55y6] {
-    text-decoration: none;
-    color: cadetblue;
-    font-weight: 500;
-    font-size:13px;
+  text-decoration: none;
+  color: cadetblue;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .primary a:hover[b-3z5ydb55y6] {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+.warning[b-3z5ydb55y6]{
+  color: rgb(221, 168, 10);
 }

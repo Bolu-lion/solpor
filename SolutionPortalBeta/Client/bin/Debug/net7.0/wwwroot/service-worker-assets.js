@@ -106,7 +106,11 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "hash": "sha256-z7FpfK+7THwQxuvoSQ5KXmaUGMJIy8lJhJWPhfvzKxw=",
+=======
+      "hash": "sha256-nEhu6z+nlefwnJ\/Fsmd7+j+EcWMKke+KUBQzSDLznlk=",
+>>>>>>> Stashed changes
 =======
       "hash": "sha256-nEhu6z+nlefwnJ\/Fsmd7+j+EcWMKke+KUBQzSDLznlk=",
 >>>>>>> Stashed changes
@@ -966,11 +970,19 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "hash": "sha256-H6vRPSQfszdl0eVNlVFGjtNj7Bopss2HAE71D8UilEg=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
       "hash": "sha256-0VQlm04aLsUPfniUx9Uw9\/fov0evY2yi1Hvx9jclZ1U=",
+=======
+      "hash": "sha256-gdY2Olc5nf\/IABL\/piXDVITw7TZcBLvwjdRTXLSVuZQ=",
+      "url": "_framework\/SolutionPortalBeta.Client.dll"
+    },
+    {
+      "hash": "sha256-glbLNiDWUhPBjExR6Frlq9AQsKhcdhYjY+cYkLbNy7Y=",
+>>>>>>> Stashed changes
 =======
       "hash": "sha256-gdY2Olc5nf\/IABL\/piXDVITw7TZcBLvwjdRTXLSVuZQ=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
@@ -986,7 +998,11 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "hash": "sha256-G3AcZ7LTVYFVzN1xLyxvudz0GHoLVu7QL+c7aJ+TmRo=",
+=======
+      "hash": "sha256-ZDffMZ5lLOsgz+aYKWszyE9wARqR2KKL9DpuGT1wqI8=",
+>>>>>>> Stashed changes
 =======
       "hash": "sha256-ZDffMZ5lLOsgz+aYKWszyE9wARqR2KKL9DpuGT1wqI8=",
 >>>>>>> Stashed changes
@@ -998,7 +1014,11 @@
     }
   ],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "version": "QlbOI0ZJ"
+=======
+  "version": "hEa935qE"
+>>>>>>> Stashed changes
 =======
   "version": "hEa935qE"
 >>>>>>> Stashed changes

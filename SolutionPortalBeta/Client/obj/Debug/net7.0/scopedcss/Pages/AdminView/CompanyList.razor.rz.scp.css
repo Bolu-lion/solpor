@@ -141,6 +141,18 @@ h1.title[b-51ajcx9lwx] {
         color: white;
     }
 
+<<<<<<< Updated upstream
+=======
+    .manage-comp .mg-btn-d[b-51ajcx9lwx] {
+        text-decoration:none;
+        background-color: RGB(255,14,14);
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        color: white;
+    }
+
+>>>>>>> Stashed changes
 .mg-btn:hover[b-51ajcx9lwx], .mg-btn-d:hover[b-51ajcx9lwx]{
     transform: scale(95%);
 >>>>>>> Stashed changes

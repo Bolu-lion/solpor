@@ -1,8 +1,14 @@
 ﻿/* 
 h1.title {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     font-family: "Space Grotesk", sans-serif;
     font-size: 40px;
+=======
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  /* width: 100%; */
+>>>>>>> Stashed changes
 =======
   font-family: "Space Grotesk", sans-serif;
   font-size: 40px;
@@ -78,6 +84,7 @@ h1.title {
 }
 
 @media screen and (max-width: 850px) {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     .create-com-form {
         width: 100%;
@@ -240,6 +247,10 @@ input {
   to {
     top: 0;
     opacity: 1;
+=======
+  .create-com-form {
+    width: 100%;
+>>>>>>> Stashed changes
 =======
   .create-com-form {
     width: 100%;

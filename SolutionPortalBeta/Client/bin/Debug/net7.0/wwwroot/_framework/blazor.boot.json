@@ -44,6 +44,7 @@
       "System.CodeDom.dll": "sha256-Wux4xpM0\/BzRySb0qchXJg3S4D\/xc56W3vHWgpa4a4s=",
       "System.IO.Pipelines.dll": "sha256-P\/MqD0fCBd5bgTM16JC1QC\/Zz7s+CwViyzmDFkBG4\/c=",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "Microsoft.CSharp.dll": "sha256-U6GApEYCN2mL3EI15VnWWUFsotGT\/ewpFLyNWspdrIE=",
       "Microsoft.VisualBasic.Core.dll": "sha256-PvfX4mKCDhgAYT87QXFsfjILPfoWt544sKvQoQO88BQ=",
       "Microsoft.VisualBasic.dll": "sha256-NarXFrnwur4ZHt6YiGPHsbqW+L2\/aVe8wZ7YzdwcpiI=",
@@ -215,6 +216,8 @@
       "SolutionPortalBeta.Shared.dll": "sha256-\/p6sz\/KwUJry9c4OF8DgzruzhtTj8uaVoi1KjEFDWZM=",
       "SolutionPortalBeta.Client.dll": "sha256-mAMReYHlRxbFSHroeemBZxv4tr9iflOX8ZcqbyTz+D0="
 =======
+=======
+>>>>>>> Stashed changes
       "Microsoft.CSharp.dll": "sha256-Gvu0ys3sPcXXThnuUy8Z3\/uWnOTZ3pUq4N8YecQxUkg=",
       "Microsoft.VisualBasic.Core.dll": "sha256-NgHi32oNWYqlx3qh9Ymr25vNbGYqSUHO97hvnaMjAmI=",
       "Microsoft.VisualBasic.dll": "sha256-pOqZggfsMgKLFmdVM4cfSI+VyZvmvHt9ty4xl41wGbs=",
@@ -385,6 +388,9 @@
       "System.Private.CoreLib.dll": "sha256-dDw5nzGJhW1jOjGfSJcs\/Mi4KQ+DZygXnoK+vJ+jHyk=",
       "SolutionPortalBeta.Shared.dll": "sha256-bUpn\/Qdk5zBR\/IOkSQg7YKwrEgWBYcdM6Zm9Fq1xbKw=",
       "SolutionPortalBeta.Client.dll": "sha256-fXouOX6EzyQcOk+YiRdoiWkmrVmAdQOHYfKpU\/D+kFs="
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
     "extensions": null,
@@ -392,8 +398,13 @@
     "libraryInitializers": null,
     "pdb": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "SolutionPortalBeta.Shared.pdb": "sha256-1BSQXQZ3JPPyyQPv5fjtKDejGG5KdK+POLqqovOuvQg=",
       "SolutionPortalBeta.Client.pdb": "sha256-nIEjasc7+DqHNCCI9q5QSJWcIWIbJ72T+60gg9sIGP4="
+=======
+      "SolutionPortalBeta.Shared.pdb": "sha256-hWJgEEoIpEFAhfmmykWHR2o9Rij98vDo3TCBVPHvGU0=",
+      "SolutionPortalBeta.Client.pdb": "sha256-ZL5bgfStm7VtFz+m+ZiZU+MDwdq1ZV+VFWzslSovcfY="
+>>>>>>> Stashed changes
 =======
       "SolutionPortalBeta.Shared.pdb": "sha256-hWJgEEoIpEFAhfmmykWHR2o9Rij98vDo3TCBVPHvGU0=",
       "SolutionPortalBeta.Client.pdb": "sha256-ZL5bgfStm7VtFz+m+ZiZU+MDwdq1ZV+VFWzslSovcfY="

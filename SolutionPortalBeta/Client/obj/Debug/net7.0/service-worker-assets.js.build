@@ -106,7 +106,11 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "hash": "sha256-6dgRYRyDVDJ2HgcUVjl5RHFjp8Azlr\/W3irip528Q8I=",
+=======
+      "hash": "sha256-nEhu6z+nlefwnJ\/Fsmd7+j+EcWMKke+KUBQzSDLznlk=",
+>>>>>>> Stashed changes
 =======
       "hash": "sha256-nEhu6z+nlefwnJ\/Fsmd7+j+EcWMKke+KUBQzSDLznlk=",
 >>>>>>> Stashed changes
@@ -962,11 +966,23 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "hash": "sha256-mAMReYHlRxbFSHroeemBZxv4tr9iflOX8ZcqbyTz+D0=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
       "hash": "sha256-nIEjasc7+DqHNCCI9q5QSJWcIWIbJ72T+60gg9sIGP4=",
+=======
+      "hash": "sha256-hWJgEEoIpEFAhfmmykWHR2o9Rij98vDo3TCBVPHvGU0=",
+      "url": "_framework\/SolutionPortalBeta.Shared.pdb"
+    },
+    {
+      "hash": "sha256-gdY2Olc5nf\/IABL\/piXDVITw7TZcBLvwjdRTXLSVuZQ=",
+      "url": "_framework\/SolutionPortalBeta.Client.dll"
+    },
+    {
+      "hash": "sha256-glbLNiDWUhPBjExR6Frlq9AQsKhcdhYjY+cYkLbNy7Y=",
+>>>>>>> Stashed changes
 =======
       "hash": "sha256-hWJgEEoIpEFAhfmmykWHR2o9Rij98vDo3TCBVPHvGU0=",
       "url": "_framework\/SolutionPortalBeta.Shared.pdb"
@@ -986,7 +1002,11 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "hash": "sha256-lIe8ilV5JaXYp7KC\/l74cb5pT1V9nFlif3CRrAUKX7I=",
+=======
+      "hash": "sha256-ZDffMZ5lLOsgz+aYKWszyE9wARqR2KKL9DpuGT1wqI8=",
+>>>>>>> Stashed changes
 =======
       "hash": "sha256-ZDffMZ5lLOsgz+aYKWszyE9wARqR2KKL9DpuGT1wqI8=",
 >>>>>>> Stashed changes
@@ -998,7 +1018,11 @@
     }
   ],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "version": "pCzmhk9H"
+=======
+  "version": "hEa935qE"
+>>>>>>> Stashed changes
 =======
   "version": "hEa935qE"
 >>>>>>> Stashed changes

@@ -3,7 +3,11 @@
 // be reflected on the first load after each change).
 self.addEventListener('fetch', () => { });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* Manifest version: pCzmhk9H */
+=======
+/* Manifest version: hEa935qE */
+>>>>>>> Stashed changes
 =======
 /* Manifest version: hEa935qE */
 >>>>>>> Stashed changes

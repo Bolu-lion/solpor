@@ -13,6 +13,7 @@
             <div class="form-group">
                 <label for="name">Department Name:</label>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 <input type="text" id="name" class="form-control" />
             </div><h3>Departments</h3>
             <div class="dept-list">  
@@ -22,6 +23,9 @@
                         <div class="dept-name">@dept.Name</div>
                     </ul>
                 }
+=======
+                <input type="text" id="name" class="form-control" @bind="department.Name" />
+>>>>>>> Stashed changes
 =======
                 <input type="text" id="name" class="form-control" @bind="department.Name" />
 >>>>>>> Stashed changes
@@ -76,13 +80,19 @@
             department.CompanyId = id;
             await DepartmentService.AddDepartment(department);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             nav.NavigateTo("/companies");
             await JSRuntime.InvokeVoidAsync("alert", "oga e work!");
 =======
+=======
+>>>>>>> Stashed changes
             await JSRuntime.InvokeVoidAsync("alert", "Department created Successfully");
             
             //not redirecting properly
             nav.NavigateTo("/companies", true,true);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         }
     }

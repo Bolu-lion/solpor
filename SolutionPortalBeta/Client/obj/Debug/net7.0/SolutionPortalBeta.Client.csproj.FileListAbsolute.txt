@@ -2511,7 +2511,7 @@ C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\
 <<<<<<< Updated upstream
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\ComplaintList.razor.rz.scp.css
 C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\scopedcss\Pages\AdminView\ViewCompany.razor.rz.scp.css
-=======
+>>>>>>> Stashed changes
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\dotnet.7.0.11.l70fa365mj.js
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\bin\Debug\net7.0\wwwroot\_framework\dotnet.7.0.11.l70fa365mj.js.gz
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\epDuXqZl.gz
@@ -2692,4 +2692,3 @@ C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\bui
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\jGtB+I+e.gz
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\v6qbqO+x.gz
 C:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\obj\Debug\net7.0\build-gz\v4U7aTzO.gz
->>>>>>> Stashed changes

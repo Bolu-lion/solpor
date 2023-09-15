@@ -70,7 +70,10 @@
                 <button @onclick="CreateCompanyx">Create Company</button>
             </div>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
            <h3>Add Departments</h3>
             <div class="dept-add">
                 <div class="form-group">
@@ -87,6 +90,9 @@
                  }
             </div>
             <button type="submit" @onclick="CreateCompanyx">Create Company</button>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         </div>
     </div>
@@ -115,6 +121,7 @@
     private void AddDepartment()
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         if (!string.IsNullOrWhiteSpace(departmentName) && !string.IsNullOrWhiteSpace(departmentAlias))
         {
             Departments.Add(departmentName, departmentAlias);
@@ -123,12 +130,17 @@
             company.Departments.Add(department);
         }
 =======
+=======
+>>>>>>> Stashed changes
 
             Departments.Add(departmentName, departmentAlias);
             @* department.Name = departmentName;
             department.UserName = departmentAlias; *@
 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         departmentName = "";
         departmentAlias = "";
@@ -137,8 +149,12 @@
     private async Task CreateCompanyx()
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         CloseModal();
         await CompanyService.CreateCompany(company);
+=======
+       var CompanyID = await CompanyService.CreateCompany(company);
+>>>>>>> Stashed changes
 =======
        var CompanyID = await CompanyService.CreateCompany(company);
 >>>>>>> Stashed changes

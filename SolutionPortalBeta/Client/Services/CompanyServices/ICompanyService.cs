@@ -7,7 +7,7 @@ namespace SolutionPortalBeta.Client.Services.CompanyServices
         List<CompanyModel> Companies { get; set; }
         Task GetCompanies();
         Task<CompanyModel?> GetCompanyById(int Id);
-        Task CreateCompany(CompanyModel company);
+        Task<int> CreateCompany(CompanyModel company);
         Task UpdateCompany(int id, CompanyModel company);
         Task DeleteCompany(int id);
     }

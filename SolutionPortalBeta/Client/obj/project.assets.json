@@ -47,10 +47,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.10": {
+      "Microsoft.AspNetCore.Authorization/7.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.10",
+          "Microsoft.AspNetCore.Metadata": "7.0.11",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
           "Microsoft.Extensions.Options": "7.0.1"
         },
@@ -65,11 +65,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.10": {
+      "Microsoft.AspNetCore.Components/7.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.10",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.10"
+          "Microsoft.AspNetCore.Authorization": "7.0.11",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.11"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -82,7 +82,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.10": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.11": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
@@ -170,7 +170,7 @@
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.10": {
+      "Microsoft.AspNetCore.Metadata/7.0.11": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -789,10 +789,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.10": {
+      "Microsoft.AspNetCore.Authorization/7.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.10",
+          "Microsoft.AspNetCore.Metadata": "7.0.11",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
           "Microsoft.Extensions.Options": "7.0.1"
         },
@@ -807,11 +807,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.10": {
+      "Microsoft.AspNetCore.Components/7.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.10",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.10"
+          "Microsoft.AspNetCore.Authorization": "7.0.11",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.11"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -824,7 +824,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.10": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.11": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
@@ -912,7 +912,7 @@
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.10": {
+      "Microsoft.AspNetCore.Metadata/7.0.11": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -1538,10 +1538,10 @@
         "readme.md"
       ]
     },
-    "Microsoft.AspNetCore.Authorization/7.0.10": {
-      "sha512": "ZAAQZfho51GaJ+Pr2e6TVSDQu8lQ09xHJW67OZwuKtcWbgE4LaKmz6U5z7TYTctWxPQD5uZC1+U1hZUcn0g5Zw==",
+    "Microsoft.AspNetCore.Authorization/7.0.11": {
+      "sha512": "3zCVWaDXNO7o8mjzOoIwfB8yYqV3+t4rLp+/dB4Db4BbUKS1MK2mnXBiDST6s1QaVMEuEz+pXv58JXeh3Pv7mw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authorization/7.0.10",
+      "path": "microsoft.aspnetcore.authorization/7.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1553,14 +1553,14 @@
         "lib/net7.0/Microsoft.AspNetCore.Authorization.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.7.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.7.0.11.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components/7.0.10": {
-      "sha512": "BX8U5jpbMG8jBecMGrjl1ZjxxFUpJCcGiIaunP4EFSQKxomM7mjjfskkbQhruOy8c60aeiacRx86gXGQ0uK6TA==",
+    "Microsoft.AspNetCore.Components/7.0.11": {
+      "sha512": "+BbcKgUUrsdt9cu5XyVmTR3BpYKoPUbGYU8VNmG36+K8jkm82z4cIu5q0AOGINEIfiNfY+Pd9uqT/MnUeTC0YQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components/7.0.10",
+      "path": "microsoft.aspnetcore.components/7.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1568,14 +1568,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net7.0/Microsoft.AspNetCore.Components.dll",
         "lib/net7.0/Microsoft.AspNetCore.Components.xml",
-        "microsoft.aspnetcore.components.7.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.components.7.0.11.nupkg.sha512",
         "microsoft.aspnetcore.components.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Analyzers/7.0.10": {
-      "sha512": "F1BPBk1koIKmUDGEoH/4qZaGI2+9T9HbGWtvaoWRyyOIsa2/AIJ1aWk08TGkFQuVExSHqJgi3Wb82ApnXDFJZA==",
+    "Microsoft.AspNetCore.Components.Analyzers/7.0.11": {
+      "sha512": "s6kRCZsUuPQraMgruPRAr3Tz9rX4JpISkfKjjyA7VE4epnEtV/6QFpl4VTIr5TlR4iQhpVUBZKoKMEEgKcVp7w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.analyzers/7.0.10",
+      "path": "microsoft.aspnetcore.components.analyzers/7.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1584,7 +1584,7 @@
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
         "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
-        "microsoft.aspnetcore.components.analyzers.7.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.7.0.11.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
@@ -1788,10 +1788,10 @@
         "tools/x86/aspnetcorev2_inprocess.dll"
       ]
     },
-    "Microsoft.AspNetCore.Metadata/7.0.10": {
-      "sha512": "czsM8xLZdCyATOWwaSUf8k9/D0Il6RTmUh7QQpQDD/J1KeVMd0C4L6tDpb1U+OMmECDG1xjrKnXBJP0SoeCjhg==",
+    "Microsoft.AspNetCore.Metadata/7.0.11": {
+      "sha512": "G1sQeLED6V+KoPj/6f6dtMvSOskRs38fo79hOQmuEpt+JA1dvZM//c15Hk3rQ+qqQ2D80IGAdlet2u2zlV6OXw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.metadata/7.0.10",
+      "path": "microsoft.aspnetcore.metadata/7.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1803,7 +1803,7 @@
         "lib/net7.0/Microsoft.AspNetCore.Metadata.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
-        "microsoft.aspnetcore.metadata.7.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.7.0.11.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
@@ -2622,6 +2622,7 @@
     "net7.0": [
       "BlazorInputFile >= 0.2.0",
       "Markdig >= 0.32.0",
+      "Microsoft.AspNetCore.Components >= 7.0.11",
       "Microsoft.AspNetCore.Components.Authorization >= 7.0.10",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.10",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.10",
@@ -2632,24 +2633,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj",
       "projectName": "SolutionPortalBeta.Client",
-      "projectPath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Client\\obj\\",
+      "projectPath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\SolutionPortalBeta.Client.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Client\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2657,14 +2653,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj": {
-              "projectPath": "C:\\Users\\USER\\source\\repos\\Bolu-lion\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj"
+            "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\R3\\solpor\\SolutionPortalBeta\\Shared\\SolutionPortalBeta.Shared.csproj"
             }
           }
         }
@@ -2686,6 +2683,10 @@
           "Markdig": {
             "target": "Package",
             "version": "[0.32.0, )"
+          },
+          "Microsoft.AspNetCore.Components": {
+            "target": "Package",
+            "version": "[7.0.11, )"
           },
           "Microsoft.AspNetCore.Components.Authorization": {
             "target": "Package",
@@ -2729,7 +2730,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[7.0.9, 7.0.9]"
+            "version": "[7.0.11, 7.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -2737,7 +2738,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23330.10\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

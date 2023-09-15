@@ -77,7 +77,7 @@
         userCompliant.DateCreated = Date;
         userCompliant.Description = Description;
         userCompliant.Id = CId;
-        userCompliant.IsCompleted = true;
+        userCompliant.IsCompleted = Convert.ToBoolean(1);
         await UserCompliantService.UpdateComplaint(CId, userCompliant);
     }
 }

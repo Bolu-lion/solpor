@@ -355,6 +355,7 @@ h1.title[b-51ajcx9lwx] {
   color: white;
 }
 
+<<<<<<< Updated upstream
 .mg-btn:hover[b-51ajcx9lwx] {
   transform: scale(95%);
 }
@@ -594,6 +595,176 @@ input[b-kv8hjw2cwh] {
   to {
     top: 0;
     opacity: 1;
+=======
+    .manage-comp .mg-btn-d[b-51ajcx9lwx] {
+        text-decoration:none;
+        background-color: RGB(255,14,14);
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        color: white;
+    }
+
+.mg-btn:hover[b-51ajcx9lwx], .mg-btn-d:hover[b-51ajcx9lwx]{
+    transform: scale(95%);
+}
+/* /Pages/AdminView/CreateCompany.razor.rz.scp.css */
+/*.containerr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+    .containerr .top {
+       
+        padding: 1rem 2rem;
+        width: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+        .containerr .top .title {
+            font-size: 50px;
+            color: white;
+            font-weight: 700;
+        }
+
+.main {
+    background-color: white;
+    padding: 1.7rem 3rem 2rem;
+    display: grid;
+    gap: 0.8rem;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0px 19px 23px 7px rgba(0, 0, 0, 0.1);
+}
+    .main div{
+        display:grid;
+        gap:1rem;
+    }
+
+    .main label {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .main input {
+        padding: 1rem 1.5rem;
+        border-radius: 0.7rem;
+        border: 1px solid lightgray;
+        outline: none;
+        font-size: 20px;
+        width:100%;
+    }
+
+.containerr .button {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+    .containerr .button button {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        height: 3.5rem;
+        outline: none;
+        background-blend-mode: darken;
+        border: none;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        border-radius: 10px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+        .containerr .button button:hover {
+            color: black;
+        }*/
+h1.title[b-kv8hjw2cwh] {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  /* width: 100%; */
+}
+
+.create-com[b-kv8hjw2cwh] {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.create-com-form[b-kv8hjw2cwh] {
+  width: 80%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.create-com-form .form[b-kv8hjw2cwh] {
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(156, 155, 155, 0.5);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group[b-kv8hjw2cwh] {
+  display: grid;
+  font-size: 20px;
+  font-weight: 500;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form-group input[b-kv8hjw2cwh] {
+  border: 1px solid rgba(156, 155, 155, 0.5);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-group input:focus[b-kv8hjw2cwh] {
+  box-shadow: none;
+}
+
+.dept-add[b-kv8hjw2cwh] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.dept-add .form-group[b-kv8hjw2cwh] {
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .create-com-form[b-kv8hjw2cwh] {
+    width: 100%;
+>>>>>>> Stashed changes
   }
 }
 /* /Pages/AdminView/CreateDepartment.razor.rz.scp.css */

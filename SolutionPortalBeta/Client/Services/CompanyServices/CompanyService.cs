@@ -18,10 +18,11 @@ namespace SolutionPortalBeta.Client.Services.CompanyServices
         }
         public List<CompanyModel> Companies { get; set; } = new List<CompanyModel>();
 
-        public async Task CreateCompany(CompanyModel company)
+        public async Task<int> CreateCompany(CompanyModel company)
         {
             await _http.PostAsJsonAsync("api/Company", company);
             _navigationManager.NavigateTo("companies");
+            return company.id;
         }
 
         public async Task DeleteCompany(int id)

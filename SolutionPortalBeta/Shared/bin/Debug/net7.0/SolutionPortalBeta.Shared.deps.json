@@ -296,6 +296,12 @@
       "System.Net.Http.Json/7.0.1": {
         "dependencies": {
           "System.Text.Json": "7.0.2"
+        },
+        "runtime": {
+          "lib/net7.0/System.Net.Http.Json.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.423.11508"
+          }
         }
       },
       "System.Text.Encodings.Web/7.0.0": {},

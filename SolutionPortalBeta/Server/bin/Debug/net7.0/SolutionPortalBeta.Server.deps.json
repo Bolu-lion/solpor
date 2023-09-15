@@ -10,6 +10,7 @@
         "dependencies": {
           "BlazorInputFile": "0.2.0",
           "Markdig": "0.32.0",
+          "Microsoft.AspNetCore.Components": "7.0.11",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "7.0.10",
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.Design": "7.0.11",
@@ -62,7 +63,7 @@
       },
       "BlazorInputFile/0.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.10",
+          "Microsoft.AspNetCore.Components": "7.0.11",
           "Microsoft.AspNetCore.Components.Web": "7.0.10"
         },
         "runtime": {
@@ -125,36 +126,36 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.10": {
+      "Microsoft.AspNetCore.Authorization/7.0.11": {
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.10",
+          "Microsoft.AspNetCore.Metadata": "7.0.11",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
           "Microsoft.Extensions.Options": "7.0.1"
         },
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
             "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.1023.36439"
+            "fileVersion": "7.0.1123.42502"
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.10": {
+      "Microsoft.AspNetCore.Components/7.0.11": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.10",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.10"
+          "Microsoft.AspNetCore.Authorization": "7.0.11",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.11"
         },
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
             "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.1023.36439"
+            "fileVersion": "7.0.1123.42502"
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.10": {},
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.11": {},
       "Microsoft.AspNetCore.Components.Authorization/7.0.10": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.10",
-          "Microsoft.AspNetCore.Components": "7.0.10"
+          "Microsoft.AspNetCore.Authorization": "7.0.11",
+          "Microsoft.AspNetCore.Components": "7.0.11"
         },
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.Components.Authorization.dll": {
@@ -165,7 +166,7 @@
       },
       "Microsoft.AspNetCore.Components.Forms/7.0.10": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.10"
+          "Microsoft.AspNetCore.Components": "7.0.11"
         },
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -176,7 +177,7 @@
       },
       "Microsoft.AspNetCore.Components.Web/7.0.10": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.10",
+          "Microsoft.AspNetCore.Components": "7.0.11",
           "Microsoft.AspNetCore.Components.Forms": "7.0.10",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.JSInterop": "7.0.10",
@@ -212,11 +213,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.10": {
+      "Microsoft.AspNetCore.Metadata/7.0.11": {
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
             "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.1023.36439"
+            "fileVersion": "7.0.1123.42502"
           }
         }
       },
@@ -729,7 +730,14 @@
           }
         }
       },
-      "System.Diagnostics.DiagnosticSource/7.0.2": {},
+      "System.Diagnostics.DiagnosticSource/7.0.2": {
+        "runtime": {
+          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.423.11508"
+          }
+        }
+      },
       "System.Drawing.Common/5.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "5.0.0"
@@ -801,6 +809,12 @@
       "System.Net.Http.Json/7.0.1": {
         "dependencies": {
           "System.Text.Json": "7.0.2"
+        },
+        "runtime": {
+          "lib/net7.0/System.Net.Http.Json.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.423.11508"
+          }
         }
       },
       "System.Numerics.Vectors/4.5.0": {},
@@ -959,6 +973,7 @@
         "dependencies": {
           "BlazorInputFile": "0.2.0",
           "Markdig": "0.32.0",
+          "Microsoft.AspNetCore.Components": "7.0.11",
           "Microsoft.AspNetCore.Components.Authorization": "7.0.10",
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.10",
           "Microsoft.EntityFrameworkCore": "7.0.11",
@@ -1051,26 +1066,26 @@
       "path": "markdig/0.32.0",
       "hashPath": "markdig.0.32.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authorization/7.0.10": {
+    "Microsoft.AspNetCore.Authorization/7.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZAAQZfho51GaJ+Pr2e6TVSDQu8lQ09xHJW67OZwuKtcWbgE4LaKmz6U5z7TYTctWxPQD5uZC1+U1hZUcn0g5Zw==",
-      "path": "microsoft.aspnetcore.authorization/7.0.10",
-      "hashPath": "microsoft.aspnetcore.authorization.7.0.10.nupkg.sha512"
+      "sha512": "sha512-3zCVWaDXNO7o8mjzOoIwfB8yYqV3+t4rLp+/dB4Db4BbUKS1MK2mnXBiDST6s1QaVMEuEz+pXv58JXeh3Pv7mw==",
+      "path": "microsoft.aspnetcore.authorization/7.0.11",
+      "hashPath": "microsoft.aspnetcore.authorization.7.0.11.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components/7.0.10": {
+    "Microsoft.AspNetCore.Components/7.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BX8U5jpbMG8jBecMGrjl1ZjxxFUpJCcGiIaunP4EFSQKxomM7mjjfskkbQhruOy8c60aeiacRx86gXGQ0uK6TA==",
-      "path": "microsoft.aspnetcore.components/7.0.10",
-      "hashPath": "microsoft.aspnetcore.components.7.0.10.nupkg.sha512"
+      "sha512": "sha512-+BbcKgUUrsdt9cu5XyVmTR3BpYKoPUbGYU8VNmG36+K8jkm82z4cIu5q0AOGINEIfiNfY+Pd9uqT/MnUeTC0YQ==",
+      "path": "microsoft.aspnetcore.components/7.0.11",
+      "hashPath": "microsoft.aspnetcore.components.7.0.11.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Analyzers/7.0.10": {
+    "Microsoft.AspNetCore.Components.Analyzers/7.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-F1BPBk1koIKmUDGEoH/4qZaGI2+9T9HbGWtvaoWRyyOIsa2/AIJ1aWk08TGkFQuVExSHqJgi3Wb82ApnXDFJZA==",
-      "path": "microsoft.aspnetcore.components.analyzers/7.0.10",
-      "hashPath": "microsoft.aspnetcore.components.analyzers.7.0.10.nupkg.sha512"
+      "sha512": "sha512-s6kRCZsUuPQraMgruPRAr3Tz9rX4JpISkfKjjyA7VE4epnEtV/6QFpl4VTIr5TlR4iQhpVUBZKoKMEEgKcVp7w==",
+      "path": "microsoft.aspnetcore.components.analyzers/7.0.11",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.7.0.11.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Components.Authorization/7.0.10": {
       "type": "package",
@@ -1107,12 +1122,12 @@
       "path": "microsoft.aspnetcore.components.webassembly.server/7.0.10",
       "hashPath": "microsoft.aspnetcore.components.webassembly.server.7.0.10.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Metadata/7.0.10": {
+    "Microsoft.AspNetCore.Metadata/7.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-czsM8xLZdCyATOWwaSUf8k9/D0Il6RTmUh7QQpQDD/J1KeVMd0C4L6tDpb1U+OMmECDG1xjrKnXBJP0SoeCjhg==",
-      "path": "microsoft.aspnetcore.metadata/7.0.10",
-      "hashPath": "microsoft.aspnetcore.metadata.7.0.10.nupkg.sha512"
+      "sha512": "sha512-G1sQeLED6V+KoPj/6f6dtMvSOskRs38fo79hOQmuEpt+JA1dvZM//c15Hk3rQ+qqQ2D80IGAdlet2u2zlV6OXw==",
+      "path": "microsoft.aspnetcore.metadata/7.0.11",
+      "hashPath": "microsoft.aspnetcore.metadata.7.0.11.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

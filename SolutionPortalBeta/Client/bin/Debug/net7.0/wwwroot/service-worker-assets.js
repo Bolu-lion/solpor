@@ -105,7 +105,11 @@
       "url": "manifest.json"
     },
     {
+<<<<<<< Updated upstream
       "hash": "sha256-z7FpfK+7THwQxuvoSQ5KXmaUGMJIy8lJhJWPhfvzKxw=",
+=======
+      "hash": "sha256-nEhu6z+nlefwnJ\/Fsmd7+j+EcWMKke+KUBQzSDLznlk=",
+>>>>>>> Stashed changes
       "url": "SolutionPortalBeta.Client.styles.css"
     },
     {
@@ -925,8 +929,8 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-dUIY5Mz0ozZWqtTfBb7ArJKbdh5IIp8BXeq6UjK4u\/c=",
-      "url": "_framework\/dotnet.7.0.9.xyvtova2q0.js"
+      "hash": "sha256-RtIVigdAD1mUvR4pxoKyD8kcQgw4INP81v+PVSqkeQY=",
+      "url": "_framework\/dotnet.7.0.11.l70fa365mj.js"
     },
     {
       "hash": "sha256-dKqztlnWPN3rvLJRCI444rLYX55dtIQt\/DQkFslO+z4=",
@@ -953,19 +957,27 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-\/p6sz\/KwUJry9c4OF8DgzruzhtTj8uaVoi1KjEFDWZM=",
+      "hash": "sha256-bUpn\/Qdk5zBR\/IOkSQg7YKwrEgWBYcdM6Zm9Fq1xbKw=",
       "url": "_framework\/SolutionPortalBeta.Shared.dll"
     },
     {
-      "hash": "sha256-1BSQXQZ3JPPyyQPv5fjtKDejGG5KdK+POLqqovOuvQg=",
+      "hash": "sha256-hWJgEEoIpEFAhfmmykWHR2o9Rij98vDo3TCBVPHvGU0=",
       "url": "_framework\/SolutionPortalBeta.Shared.pdb"
     },
     {
+<<<<<<< Updated upstream
       "hash": "sha256-H6vRPSQfszdl0eVNlVFGjtNj7Bopss2HAE71D8UilEg=",
       "url": "_framework\/SolutionPortalBeta.Client.dll"
     },
     {
       "hash": "sha256-0VQlm04aLsUPfniUx9Uw9\/fov0evY2yi1Hvx9jclZ1U=",
+=======
+      "hash": "sha256-gdY2Olc5nf\/IABL\/piXDVITw7TZcBLvwjdRTXLSVuZQ=",
+      "url": "_framework\/SolutionPortalBeta.Client.dll"
+    },
+    {
+      "hash": "sha256-glbLNiDWUhPBjExR6Frlq9AQsKhcdhYjY+cYkLbNy7Y=",
+>>>>>>> Stashed changes
       "url": "_framework\/SolutionPortalBeta.Client.pdb"
     },
     {
@@ -973,7 +985,11 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
+<<<<<<< Updated upstream
       "hash": "sha256-G3AcZ7LTVYFVzN1xLyxvudz0GHoLVu7QL+c7aJ+TmRo=",
+=======
+      "hash": "sha256-ZDffMZ5lLOsgz+aYKWszyE9wARqR2KKL9DpuGT1wqI8=",
+>>>>>>> Stashed changes
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -981,5 +997,9 @@
       "url": "_content\/BlazorInputFile\/inputfile.js"
     }
   ],
+<<<<<<< Updated upstream
   "version": "QlbOI0ZJ"
+=======
+  "version": "hEa935qE"
+>>>>>>> Stashed changes
 };

@@ -26,9 +26,10 @@ namespace SolutionPortalBeta.Server.Controllers
 			return await _userComplaintService.GetComplaint(id);
 		}
 		[HttpPost]
-		public async Task<UserComplaint> AddComplaint([FromBody] UserComplaint userComplaint)
+		public async Task<int> AddComplaint([FromBody] UserComplaint userComplaint)
 		{
-			return await _userComplaintService.AddComplaint(userComplaint);
+			await _userComplaintService.AddComplaint(userComplaint);
+			return userComplaint.Id;
 		}
 		[HttpGet("{date}")]
 		public async Task<List<UserComplaint>>GetByDate(string date)

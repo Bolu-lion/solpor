@@ -69,7 +69,7 @@ namespace SolutionPortalBeta.Server.Controllers
             return await _departmentService.GetDepartmentById(id);
         }
         [HttpPost]
-        public async Task<Department?> AddDepartment([FromBody] Department department)
+        public async Task<Department?> AddDepartment( [FromBody] Department department)
         {
             //var createdDepartment = await _departmentService.AddDepartment(department);
             //return Ok(createdDepartment);

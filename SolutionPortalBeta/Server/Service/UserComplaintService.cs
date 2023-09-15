@@ -39,6 +39,7 @@ namespace SolutionPortalBeta.Server.Service
             {
                 data.Response = userComplaint.Response;
 				userComplaint.IsCompleted = true;
+				data.IsCompleted = userComplaint.IsCompleted;
                 await _userComplaint.UpdateAsync(data);
                 return true;
             }

@@ -1,0 +1,40 @@
+@page "/updatecompany/{id:int}"
+@inject HttpClient _httpClient
+@inject ICompanyService CompanyService
+@inject IJSRuntime JSRuntime
+@inject NavigationManager nav
+@using SolutionPortalBeta.Shared
+
+<div>
+    <input @bind="CompanyName"/>
+    <input @bind="CompanyAlias"/>
+    <button @onclick="OnUpdateCompany"></button>
+</div>
+
+@code{
+[Parameter]
+public int id {get; set;}
+
+private CompanyModel company = new CompanyModel();
+
+private string? CompanyName {get; set;}
+private string? CompanyAlias {get; set;}
+
+ protected override async Task OnInitializedAsync()
+    {
+        var response = await CompanyService.GetCompanyById(id);
+        if(response is not null)
+        {
+        CompanyName=response.Name;
+        CompanyAlias = response.Alias;
+        }
+    }
+
+protected async Task OnUpdateCompany(){
+    company.Name = CompanyName;
+    company.Alias = CompanyAlias;
+    await CompanyService.UpdateCompany(id, company);
+    await JSRuntime.InvokeVoidAsync("alert", "Company Successfully Updated");
+        nav.NavigateTo("companies");
+}
+}

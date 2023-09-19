@@ -3,23 +3,6 @@
 @inject HttpClient _httpClient
 @inject NavigationManager _nav
 
-@*<div class="admin-main">
-    <Sidebar/>
-    <div>
-        <div class="top bckgm"><h1 class="title">Company List</h1></div>
-        <div class="create-btn"><button class="bckgmd" @onclick="gotocreate">Create Company</button></div>
-        <div class="list-container">
-            @foreach (var company in companies.OrderBy(company => company.id))
-            {
-                <div>
-                    <p>@company.Name</p>
-                    <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Add Department</a>
-                    <a href="createdepartment/@company.Name/@company.id" class="bckgmt">Update Company</a>
-                </div>
-            }
-        </div>
-    </div>
-</div>*@
 <div class="admin-main">
     <Sidebar />
     <div class="company-container">
@@ -34,7 +17,8 @@
                     <h3>@company.Name</h3>
                     <div class="manage-comp">
                         <a class="mg-btn" href="createdepartment/@company.Name/@company.id">Add Department</a>
-                        <a class="mg-btn" href="createdepartment/@company.Name/@company.id">Update Company</a>
+                        <a class="mg-btn" href="updatecompany/@company.id">Update Company</a>
+                        <a class="mg-btn" href="deletecompany/@company.id">Delete Company</a>
                     </div>
                 </div>
             }

@@ -1,0 +1,34 @@
+@page "/deletecompany/{id:int}"
+@inject ICompanyService CompanyService 
+@inject IJSRuntime JSRuntime
+
+<h2>Are you sure you want to delete the company with the foillowing details:</h2>
+<div>
+    <label for="companyName">Company Name</label>
+    <input type="text" id="compamyName" @bind="CompanyName" disabled/>
+
+    <label for="companyAlias">Company Alias</label>
+    <input type="text" id="compamyAlias" @bind="CompanyAlias" disabled/>
+</div>
+<div><button @onclick="OnDeleteCompany" >Update Company</button></div>
+
+@code{
+    [Parameter]
+    public int id {get; set;}
+
+    private string CompanyName {get; set;}
+    private string CompanyAlias {get; set;}
+
+    protected override async Task OnInitializedAsync(){
+        var response = await CompanyService.GetCompanyById(id);
+        if(response is not null){
+       CompanyName = response.Name;
+       CompanyAlias = response.Alias;
+       }
+    }
+
+    protected async Task OnDeleteCompany(){
+        await CompanyService.DeleteCompany(id);
+        await JSRuntime.InvokeVoidAsync("alert", "Company Successfully Deleted");
+    }
+    }

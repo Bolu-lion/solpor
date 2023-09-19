@@ -1,0 +1,43 @@
+@page "/updatecompany/{id:int}"
+@inject ICompanyService CompanyService
+@using SolutionPortalBeta.Shared
+@inject IJSRuntime JSRuntime
+
+<h2>Update Company</h2>
+<div>
+    <label for="companyName">Company Name</label>
+    <input type="text" id="compamyName" @bind="CompanyName"/>
+
+    <label for="companyAlias">Company Alias</label>
+    <input type="text" id="compamyAlias" @bind="CompanyAlias"/>
+</div>
+<div><button @onclick="onUpdateCompany" >Update Company</button></div>
+
+@code{
+    [Parameter]
+    public int id{get; set;}
+
+    private string CompanyName {get; set;}
+    private string CompanyAlias {get; set;}
+    private CompanyModel company = new CompanyModel();
+
+protected override async Task OnInitializedAsync()
+    {
+       var response = await CompanyService.GetCompanyById(id);
+       if(response is not null){
+       CompanyName = response.Name;
+       CompanyAlias = response.Alias;
+       }
+    }
+
+    protected async Task onUpdateCompany(){
+        if(CompanyName.Trim().Length > 0){
+            company.Name = CompanyName;
+            company.Alias = CompanyAlias;
+            company.id = id;
+        await CompanyService.UpdateCompany(id, company);
+        await JSRuntime.InvokeVoidAsync("alert", "Company has been Updated");
+        }
+    }
+}
+

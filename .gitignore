@@ -33,3 +33,7 @@ SolutionPortalBeta/Server/obj/Debug/net7.0/SolutionPortalBeta.Server.csproj.Asse
 SolutionPortalBeta/Server/obj/Debug/net7.0/SolutionPortalBeta.Server.GeneratedMSBuildEditorConfig.editorconfig
 SolutionPortalBeta/Shared/obj/Debug/net7.0/SolutionPortalBeta.Shared.csproj.AssemblyReference.cache
 .gitignore
+SolutionPortalBeta/Server/appsettings.json
+SolutionPortalBeta/Shared/obj/
+SolutionPortalBeta/Client/bin/
+SolutionPortalBeta/Server/AppDbContext/ApplicationDbContext.cs

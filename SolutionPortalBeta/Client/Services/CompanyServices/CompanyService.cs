@@ -26,7 +26,7 @@ namespace SolutionPortalBeta.Client.Services.CompanyServices
 
         public async Task DeleteCompany(int id)
         {
-            var result = await _http.DeleteAsync($"api/Company/{id}");
+            await _http.DeleteAsync($"api/Company/{id}");
             _navigationManager.NavigateTo("companies");
         }
 

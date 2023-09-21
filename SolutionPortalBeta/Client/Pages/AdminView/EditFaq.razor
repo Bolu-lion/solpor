@@ -1,0 +1,56 @@
+@page "/editfaq/{id:int}"
+@inject IFaqService FaqService
+@using SolutionPortalBeta.Shared
+@inject IJSRuntime JSRuntime
+@inject NavigationManager nav
+
+<div class="create-faq">
+    <h1 class="title">Edit FAQ</h1>
+    <div class="create-faq-form">
+        <form action="">
+            <div class="form-group">
+                <label for="name">FAQ Title:</label>
+                <input type="text" id="faq-title" class="form-control" @bind="faqTitle" />
+            </div>
+            <div class="form-group">
+                <label for="name">FAQ Description:</label>
+                <input type="text" id="alias" class="form-control" @bind="faqDescription" />
+            </div>
+            <div class="form-group">
+                <label for="name">FAQ Content:</label>
+                <textarea rows="10" @bind="faqContent"></textarea>
+            </div>
+            <button @onclick="OnFaqUpdate">Update</button>
+        </form>
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public int id {get; set;}
+    private string faqTitle{get; set;}
+    private string faqDescription {get; set;}
+    private string faqContent {get; set;}
+    private FAQModel faq = new FAQModel();
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await FaqService.GetFAQbyId(id);
+        if(result is not null){
+        faqTitle = result.Title;
+        faqDescription = result.Description;
+        faqContent = result.Content;
+        }
+    }
+
+    protected async Task OnFaqUpdate(){
+        if(faqTitle.Trim().Length > 0 && faqDescription.Trim().Length > 0 && faqContent.Trim().Length > 0){
+            faq.Title = faqTitle;
+            faq.Description = faqDescription;
+            faq.Content = faqContent;
+            faq.Id = id;
+            await FaqService.UpdateFAQ(id,faq);
+            await JSRuntime.InvokeVoidAsync("alert", "FAQ successfully updated");
+        }
+    }
+
+}

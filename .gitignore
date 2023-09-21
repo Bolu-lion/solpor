@@ -36,4 +36,5 @@ SolutionPortalBeta/Shared/obj/Debug/net7.0/SolutionPortalBeta.Shared.csproj.Asse
 SolutionPortalBeta/Server/appsettings.json
 SolutionPortalBeta/Shared/obj/
 SolutionPortalBeta/Client/bin/
+SolutionPortalBeta/Shared/obj/Debug/net7.0/
 SolutionPortalBeta/Server/AppDbContext/ApplicationDbContext.cs

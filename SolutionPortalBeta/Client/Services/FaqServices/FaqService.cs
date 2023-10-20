@@ -24,9 +24,10 @@ namespace SolutionPortalBeta.Client.Services.FaqServices
             _navigationManager.NavigateTo("faqlist");
         }
 
-        public Task DeleteFAQ(int id)
+        public async Task DeleteFAQ(int id)
         {
-            throw new NotImplementedException();
+            await _http.DeleteAsync($"api/Faq/{id}");
+            _navigationManager.NavigateTo("faqlist");
         }
 
         public async Task GetAllFAQs()
@@ -45,9 +46,10 @@ namespace SolutionPortalBeta.Client.Services.FaqServices
             return null;
         }
 
-        public Task UpdateFAQ(int id, FAQModel faq)
+        public async Task UpdateFAQ(int id, FAQModel faq)
         {
-            throw new NotImplementedException();
+            await _http.PutAsJsonAsync($"api/Faq/{id}", faq);
+            _navigationManager.NavigateTo("admin");
         }
     }
 }

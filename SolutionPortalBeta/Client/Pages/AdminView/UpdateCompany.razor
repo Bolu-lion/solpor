@@ -1,39 +1,46 @@
 @page "/updatecompany/{id:int}"
 @inject HttpClient _httpClient
 @inject ICompanyService CompanyService
+@using SolutionPortalBeta.Shared
 @inject IJSRuntime JSRuntime
 @inject NavigationManager nav
 @using SolutionPortalBeta.Shared
 
+<h2>Update Company</h2>
 <div>
-    <input @bind="CompanyName"/>
-    <input @bind="CompanyAlias"/>
-    <button @onclick="OnUpdateCompany">Update</button>
+    <label for="companyName">Company Name</label>
+    <input type="text" id="compamyName" @bind="CompanyName"/>
+
+    <label for="companyAlias">Company Alias</label>
+    <input type="text" id="compamyAlias" @bind="CompanyAlias"/>
 </div>
+<div><button @onclick="onUpdateCompany" >Update Company</button></div>
 
 @code{
-[Parameter]
-public int id {get; set;}
+    [Parameter]
+    public int id{get; set;}
 
-private CompanyModel company = new CompanyModel();
+    private string CompanyName {get; set;}
+    private string CompanyAlias {get; set;}
+    private CompanyModel company = new CompanyModel();
 
-private string? CompanyName {get; set;}
-private string? CompanyAlias {get; set;}
-
- protected override async Task OnInitializedAsync(){
-    var response = await CompanyService.GetCompanyById(id);
-    if(response is not null)
+protected override async Task OnInitializedAsync()
     {
-        CompanyName=response.Name;
-        CompanyAlias = response.Alias;
+       var response = await CompanyService.GetCompanyById(id);
+       if(response is not null){
+       CompanyName = response.Name;
+       CompanyAlias = response.Alias;
+       }
+    }
+
+    protected async Task onUpdateCompany(){
+        if(CompanyName.Trim().Length > 0){
+            company.Name = CompanyName;
+            company.Alias = CompanyAlias;
+            company.id = id;
+        await CompanyService.UpdateCompany(id, company);
+        await JSRuntime.InvokeVoidAsync("alert", "Company has been Updated");
+        }
     }
 }
 
-protected async Task OnUpdateCompany(){
-    company.Name = CompanyName;
-    company.Alias = CompanyAlias;
-    await CompanyService.UpdateCompany(id, company);
-    await JSRuntime.InvokeVoidAsync("alert", "Company Successfully Updated");
-        nav.NavigateTo("companies");
-}
-}

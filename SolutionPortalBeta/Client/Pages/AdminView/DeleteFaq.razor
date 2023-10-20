@@ -1,0 +1,53 @@
+@page "/deletefaq/{id:int}"
+@using SolutionPortalBeta.Shared
+@inject IFaqService FaqService
+@inject IJSRuntime JSRuntime
+
+
+
+<div class="create-faq">
+    <h1 class="title">Delete FAQ</h1>
+    <div class="create-faq-form">
+        <h2>Are you sure you want to Delete the Faq with the following details</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="name">FAQ Title:</label>
+                <input type="text" id="faq-title" class="form-control" @bind="faqTitle" />
+            </div>
+            <div class="form-group">
+                <label for="name">FAQ Description:</label>
+                <input type="text" id="alias" class="form-control" @bind="faqDescription" />
+            </div>
+            <div class="form-group">
+                <label for="name">FAQ Content:</label>
+                <textarea rows="10" @bind="faqContent"></textarea>
+            </div>
+            <button @onclick="onFaqDelete">Delete</button>
+        </form>
+    </div>
+</div>
+
+
+@code{
+    [Parameter]
+    public int id {get; set;}
+
+    private string faqTitle{get; set;}
+    private string faqDescription {get; set;}
+    private string faqContent {get; set;}
+    private FAQModel faq = new FAQModel();
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await FaqService.GetFAQbyId(id);
+        if(result is not null){
+        faqTitle = result.Title;
+        faqDescription = result.Description;
+        faqContent = result.Content;
+        }
+    }
+
+    protected async Task onFaqDelete(){
+        await  FaqService.DeleteFAQ(id);
+        await JSRuntime.InvokeVoidAsync("alert", "FAQ successfully updated");
+    }
+}

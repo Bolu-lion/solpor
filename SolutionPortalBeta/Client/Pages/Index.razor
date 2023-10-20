@@ -1,5 +1,6 @@
 ﻿@page "/home"
 @using SolutionPortalBeta.Shared
+@using SolutionPortalBeta.Client.Pages.AdminView
 @inject NavigationManager _nav
 @inject HttpClient _httpClient
 
@@ -17,7 +18,10 @@
             <div class="articles">
                 @if (fAQs.Count == 0)
                 {
-                    <p>Loading</p>
+                    <div class="loading">
+                        <p>Loading...</p>
+                        <div class="spinner"></div>
+                    </div>
                 }
                 else
                 {
@@ -41,11 +45,14 @@
             <div class="recents">
                 @if (complaintList.Count == 0)
                 {
-                    <p>Loading</p>
+                    <div class="loading">
+                        <p >Loading...</p>
+                        <div class="spinner"></div>
+                    </div>
                 }else{
                     @foreach (var p in complaintList.OrderByDescending(p => p.Id).Take(5))
                     {
-                        <div class="recent">
+                        <div class="recent" @onclick="() => setModal( p.Id, p.Title, p.Description, p.DateCreated, p.IsCompleted, p.Response )">
                             <div class="recent-head">
                                 <span class="time">
                                     @p.DateCreated
@@ -57,8 +64,12 @@
                             <h3>@p.Title</h3>
                         </div>
                     }
+                    <a href="/complaints">Show All</a>
                 }
-                <a href="/complaints">Show All</a>
+                @if (viewModal)
+                {
+                    <ViewComplaint CId="@ComplaintId" Title="@ComplaiantTitle" Description="@ComplaintDescription" Date="@ComplaintDate" Status="@CompliantStatus" Response="@CompliantResponse"/>
+                }
             </div>
         </div>
     </div>
@@ -66,6 +77,13 @@
 
 @code {
     List<FAQModel> fAQs = new List<FAQModel>();
+    public bool viewModal = false;
+    public int ComplaintId { get; set; }
+    public string ComplaiantTitle { get; set; }
+    public string ComplaintDescription { get; set; }
+    public DateTime ComplaintDate { get; set; }
+    public bool CompliantStatus { get; set; }
+    public string CompliantResponse { get; set; }
     List<UserCompliantModel> complaintList = new List<UserCompliantModel>();
     private void navToForm()
     {
@@ -113,4 +131,14 @@
         "Check history on an item",
         "How to make sales order"
     };
+    public void setModal(int Id, string ModalTitle, string ModalDescription, DateTime ModalDate, bool ModalStatus, string ModalResponse)
+    {
+        viewModal = !viewModal;
+        ComplaintId = Id;
+        ComplaiantTitle = ModalTitle;
+        ComplaintDescription = ModalDescription;
+        ComplaintDate = ModalDate;
+        CompliantStatus = ModalStatus;
+        CompliantResponse = ModalResponse;
+    }
 }

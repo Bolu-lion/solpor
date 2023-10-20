@@ -200,14 +200,32 @@ h2 {
 .recent:hover small.status-pending {
     color: yellow;
 }
+.spinner {
+    border: 5px solid silver;
+    border-top: 5px solid #337AB7;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 700ms linear infinite;
+}
+.loading{
+    display:flex;
+    gap:.7rem
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
 
 @media screen and (max-width: 1050px) {
   .main {
     height: 100;
-  }
-
-  .main-container {
-    padding-bottom: 2rem;
   }
 
   .section {
@@ -219,13 +237,18 @@ h2 {
   }
 
   .main-container {
-    display: grid;
+    display: flex;
+    flex-direction:column;
     width: 100%;
+    padding-bottom:2rem;
   }
 
   .recent-con {
     width: 100%;
   }
+    .recent{
+        
+    }
 }
 
 @media screen and (max-width: 720px) {

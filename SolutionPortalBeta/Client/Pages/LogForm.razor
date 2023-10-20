@@ -8,9 +8,18 @@
 <div class="f-container">
     <h1>Log Complaint</h1>
     <form Model="complaint" class="logform" @onsubmit="Save">
-        <div class="forminput">
-            <label>Complaint Title</label>
-            <input type="text" required @bind="complaint.Title" />
+        <div class="form-top">
+            <div class="forminput">
+                <label>Complaint Title</label>
+                <input type="text" required @bind="complaint.Title" />
+            </div>
+            <select>
+                <option default disabled>Choose Category</option>
+                <option>Password lock</option>
+                <option>Password lock</option>
+                <option>Password lock</option>
+                <option>Password lock</option>
+            </select>
         </div>
         <div class="forminput">
             <label>Complaint Description</label>
@@ -19,7 +28,8 @@
         <div class="forminput">
             <div class="filein">
                 <label>Attachments (@fileNames.Count)</label>
-                <InputFile multiple OnChange="getFileName" />
+                <input type="file" placeholder="Attachments"/>
+                @* <InputFile multiple OnChange="getFileName" /> *@
             </div>
             <div class="input-file">
                 @foreach (var fileName in fileNames)

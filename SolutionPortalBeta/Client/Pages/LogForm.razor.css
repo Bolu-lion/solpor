@@ -177,6 +177,30 @@ textarea {
     place-items: center;
 }
 
+.form-top{
+    display:flex;
+    width:95%;
+    justify-content:flex-end;
+    align-items:end;
+    gap:1rem;
+}
+    .form-top .forminput{
+        width:90%;
+    }
+    .form-top select {
+        outline: none;
+        border: none;
+        box-shadow: 0px 7px 15px -3px rgba(0,0,0,0.1);
+        padding: .3rem;
+        font-size: 1rem;
+        border-radius: .7rem;
+        min-height:max-content;
+        cursor:pointer;
+        height:3rem;
+    }
+    .form-top select option{
+        cursor:pointer;
+    }
     .forminput label {
         font-size: 20px;
         font-weight: 600;
@@ -190,7 +214,7 @@ textarea {
     .forminput input,
     .forminput textarea {
         border: 1px solid rgba(156, 155, 155, 0.5);
-        padding: 0.3rem 0.7rem;
+        padding: 0.7rem 0.7rem;
         font-size: 17px;
         outline: none;
         border-radius: 0.3rem;

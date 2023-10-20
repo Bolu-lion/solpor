@@ -75,15 +75,10 @@
         {
             department.CompanyId = id;
             await DepartmentService.AddDepartment(department);
-<<<<<<< Updated upstream
-            nav.NavigateTo("/companies");
-            await JSRuntime.InvokeVoidAsync("alert", "oga e work!");
-=======
             await JSRuntime.InvokeVoidAsync("alert", "Department created Successfully");
             
             //not redirecting properly
             nav.NavigateTo("/companies", true,true);
->>>>>>> Stashed changes
         }
     }
     private string modalDisplay = "none";

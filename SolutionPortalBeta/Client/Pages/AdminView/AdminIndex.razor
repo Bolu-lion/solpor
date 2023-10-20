@@ -8,7 +8,7 @@
     <Sidebar />
     <section>
         <div class="stats">
-            <div class="total">
+            <div class="total" @onclick="viewTotalComplaints">
                 <span class="material-symbols-outlined"> analytics </span>
                 <div class="middle">
                     <div class="left">
@@ -18,7 +18,7 @@
                     <small>Last 24 Hours</small>
                 </div>
             </div>
-            <div class="resolved">
+            <div class="resolved" @onclick="viewTotalComplaints">
                 <span class="material-symbols-outlined"> done </span>
                 <div class="middle">
                     <div class="left">
@@ -28,7 +28,7 @@
                     <small class="text-muted">Last 24 Hours</small>
                 </div>
             </div>
-            <div class="unresolved">
+            <div class="unresolved" @onclick="viewTotalComplaints">
                 <span class="material-symbols-outlined"> priority_high </span>
                 <div class="middle">
                     <div class="left">
@@ -114,5 +114,9 @@
     {
         var response = await _httpClient.GetAsync("api/UserComplaint/" + SelectedDate);
         complaintList = await response.Content.ReadFromJsonAsync<List<UserCompliantModel>>();
+    }
+    public void viewTotalComplaints()
+    {
+        _nav.NavigateTo("complaintlist");
     }
 }

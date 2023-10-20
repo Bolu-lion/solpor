@@ -730,14 +730,7 @@
           }
         }
       },
-      "System.Diagnostics.DiagnosticSource/7.0.2": {
-        "runtime": {
-          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.423.11508"
-          }
-        }
-      },
+      "System.Diagnostics.DiagnosticSource/7.0.2": {},
       "System.Drawing.Common/5.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "5.0.0"
@@ -809,12 +802,6 @@
       "System.Net.Http.Json/7.0.1": {
         "dependencies": {
           "System.Text.Json": "7.0.2"
-        },
-        "runtime": {
-          "lib/net7.0/System.Net.Http.Json.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.423.11508"
-          }
         }
       },
       "System.Numerics.Vectors/4.5.0": {},

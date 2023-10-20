@@ -9,113 +9,113 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = SolutionPortalBeta.Client
 build_property.RootNamespace = SolutionPortalBeta.Client
-build_property.ProjectDir = c:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client\
+build_property.ProjectDir = C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\user\Documents\R3\solpor\SolutionPortalBeta\Client
+build_property.MSBuildProjectDirectory = C:\Users\USER\source\repos\Bolu-lion\solpor\SolutionPortalBeta\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/App.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/DeleteCompany.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/DeleteCompany.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XERlbGV0ZUNvbXBhbnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/UpdateCompany.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/UpdateCompany.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XFVwZGF0ZUNvbXBhbnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/BackTo.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/BackTo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFja1RvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Shared/SurveyPrompt.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/_Imports.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/AdminIndex.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/AdminIndex.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XEFkbWluSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-tlor3qs2yp
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/CompanyList.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/CompanyList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XENvbXBhbnlMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-51ajcx9lwx
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/CreateCompany.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/CreateCompany.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XENyZWF0ZUNvbXBhbnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-kv8hjw2cwh
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/CreateDepartment.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/CreateDepartment.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XENyZWF0ZURlcGFydG1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-7u3ru2c3vi
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/CreateFaq.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/CreateFaq.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XENyZWF0ZUZhcS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-60rwi1kqsc
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/FaqList.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/FaqList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XEZhcUxpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-8e4v93fhdr
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/ListOfComplaints.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/ListOfComplaints.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XExpc3RPZkNvbXBsYWludHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-3z5ydb55y6
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/Sidebar.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/Sidebar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XFNpZGViYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-dalomws2ey
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/ViewCompany.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/ViewCompany.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XFZpZXdDb21wYW55LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-cu3q81eh29
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/AdminView/ViewComplaint.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/AdminView/ViewComplaint.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5WaWV3XFZpZXdDb21wbGFpbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-l91eoogrch
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/ComplaintList.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/ComplaintList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGxhaW50TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-lrklbbua1g
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/Faq.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Faq.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmFxLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-55edcrhtbr
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/Index.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rff38p5woc
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/LogBtn.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/LogBtn.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nQnRuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-jt67obe6kc
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/LogForm.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/LogForm.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nRm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-qvmdl33rat
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/Login.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-mkjkmvv6jb
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/Nav.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Nav.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmF2LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-qtq3fvzey5
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Pages/Post.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Pages/Post.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-v6n8fxrjad
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Shared/MainLayout.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-5btdualfb3
 
-[c:/Users/user/Documents/R3/solpor/SolutionPortalBeta/Client/Shared/NavMenu.razor]
+[C:/Users/USER/source/repos/Bolu-lion/solpor/SolutionPortalBeta/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0fv3rupxng

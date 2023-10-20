@@ -1,7 +1,8 @@
 ﻿@inject IJSRuntime JsRuntime
+@inject NavigationManager nav
 
 <div class="nav">
-    <div class="logo">
+    <div class="logo" @onclick="toHome">
         <img src="images/R3_Logo_Dark.png" alt="logo" height=50 />
     </div>
     <div class="right">
@@ -38,5 +39,9 @@
     {
         public int Width { get; set; }
         public int Height { get; set; }
+    }
+    public void toHome()
+    {
+        nav.NavigateTo("home");
     }
 }

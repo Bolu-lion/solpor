@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\SolutionPortalBeta",
-    "\\SolutionPortalBeta\\Client"
+    "\\SolutionPortalBeta\\Client",
+    "\\SolutionPortalBeta\\Server"
   ],
   "SelectedNode": "\\SolutionPortalBeta.sln",
   "PreviewInSolutionExplorer": false

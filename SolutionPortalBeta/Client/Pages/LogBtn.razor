@@ -1,26 +1,114 @@
-﻿@inject NavigationManager _nav
+﻿@using SolutionPortalBeta.Shared;
+@inject NavigationManager _nav;
+@inject IJSRuntime JsRuntime;
+@inject HttpClient Http;
+@using System.IO;
 
-<button @onclick="navToForm">Log Complaint</button>
-@if (modal)
+<button @onclick="ShowModal">Log Complaint</button>
+@if (viewModal)
 {
-    <div class="modal">
-        <div class="modal-content">
-            <div class="closemodal">
-                <button class="close-modal" @onclick="toggleModal">
-                    <span class="material-symbols-rounded">close</span>
-                </button>
+    <div class="modal-container @modalDisplay">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="closebtn" @onclick="CloseModal">
+                    <span class="material-symbols-rounded"> close </span>
+                </div>
+                <div class="modal-header">
+                    <h3>Log Complaint</h3>
+                </div>
+                <div class="modal-main">
+                    <form Model="complaint" class="logform" @onsubmit="Save">
+                        <div class="form-top">
+                            <div class="forminput">
+                                <label>Complaint Title</label>
+                                <input type="text" required @bind="complaint.Title" />
+                            </div>
+                            <select>
+                                <option default>Choose Category</option>
+                                @foreach(var category in Enum.GetValues(typeof(Categories)))
+                                {
+                                    <option value="@category">@category</option>
+                                }
+                                
+                            </select>
+                        </div>
+
+                        <div class="forminput">
+                            <label>Complaint Description</label>
+                            <textarea rows=10 @bind="complaint.Description" />
+                        </div>
+                        <div class="forminput">
+                            <div class="filein">
+                                <label>Attachments (@fileNames.Count)</label>
+                                <input type="file" placeholder="Attachments" />
+                                @* <InputFile multiple OnChange="getFileName" /> *@
+                            </div>
+
+                            <div class="input-file">
+                                @foreach (var fileName in fileNames)
+                                {
+                                    <span>@fileName</span>
+                                }
+                            </div>
+                        </div>
+                        <button class="submit-modal" type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>
             </div>
-            <h1>Log Complaint</h1>
         </div>
     </div>
 }
 
 @code {
-    public bool modal = false;
-    public void setModal() { modal = !modal; }
-    public void toggleModal(){ setModal(); }
-    private void navToForm()
+    public bool viewModal = false;
+    private string modalDisplay = "none";
+    UserCompliantModel complaint = new UserCompliantModel();
+    public List<string> fileNames = new List<string>();
+    public int filecount;
+    protected override async Task OnInitializedAsync(){    }
+    public void goBack()
     {
-        _nav.NavigateTo("/logform");
+        _nav.NavigateTo("home");
+    }
+    protected async Task Save()
+    {
+        var response = await Http.PostAsJsonAsync("api/usercomplaint", complaint);
+        UserCompliantModel userCompliant = await response.Content.ReadFromJsonAsync<UserCompliantModel>();
+        JsRuntime.InvokeVoidAsync("alert", "Sent Successfully!");
+    }
+    private void ShowModal()
+    {
+        viewModal = !viewModal;
+        modalDisplay = "block";
+    }
+    private void CloseModal()
+    {
+        modalDisplay = "none";
+        // _nav.NavigateTo("/home");
+        complaint.Attachments = null;
+        complaint.Title = "";
+        complaint.Description = "";
+         
+    }
+    public void setModal()
+    {
+        viewModal = !viewModal;
+    }
+    private void getFileName(InputFileChangeEventArgs e)
+    {
+        filecount = e.FileCount;
+        var files = e.GetMultipleFiles(4);
+        foreach (var file in files)
+        {
+            fileNames.Add(file.Name);
+        }
+    }
+    enum Categories
+    {
+        Pasword,
+        Network,
+        General
     }
 }

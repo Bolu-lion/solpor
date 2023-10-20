@@ -21,7 +21,7 @@ namespace SolutionPortalBeta.Client.Services.FaqServices
         public async Task AddFAQ(FAQModel faq)
         {
             await _http.PostAsJsonAsync("api/Faq", faq);
-            _navigationManager.NavigateTo("companies");
+            _navigationManager.NavigateTo("faqlist");
         }
 
         public Task DeleteFAQ(int id)

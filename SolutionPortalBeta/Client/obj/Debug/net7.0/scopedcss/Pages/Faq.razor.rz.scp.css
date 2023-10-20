@@ -22,7 +22,38 @@ h1.title[b-55edcrhtbr] {
     display: grid;
     gap: 1rem;
 }
+.faq-header[b-55edcrhtbr] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+    width: 100%;
+}
+.back-title[b-55edcrhtbr] {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 
+.go-back[b-55edcrhtbr] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(95, 158, 160);
+}
+
+    .go-back:hover span[b-55edcrhtbr] {
+        transform: translateX(-2px);
+    }
+
+    .go-back span[b-55edcrhtbr] {
+        border-radius: 50%;
+        color: white;
+    }
 .faq[b-55edcrhtbr] {
     background-color: whitesmoke;
     border: 1px solid rgba(156, 155, 155, 0.5);

@@ -7,7 +7,6 @@ aside[b-dalomws2ey] {
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-
     aside .side-bar[b-dalomws2ey] {
         margin-top: 10px;
         height: 100%;
@@ -16,7 +15,6 @@ aside[b-dalomws2ey] {
         flex-direction: column;
         gap: 2rem;
     }
-
 .side-bar a[b-dalomws2ey] {
     display: flex;
     align-items: center;
@@ -32,7 +30,6 @@ aside[b-dalomws2ey] {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     font-family: "Space Grotesk", sans-serif;
 }
-
     .side-bar a:hover[b-dalomws2ey] {
         color: cadetblue;
         background-color: rgba(95, 158, 160, 0.29);

@@ -4,7 +4,16 @@
 @inject NavigationManager _nav
 
 <div class="faq-container">
-    <h1 class="title">FAQ List</h1>
+    <Nav />
+    <div class="faq-header">
+        <div class="back-title">
+            <div class="go-back" @onclick="navToHome">
+                <span class="material-symbols-rounded"> arrow_back </span>
+            </div>
+            <h1 class="title">FAQ List</h1>
+        </div>
+    </div>
+    
     <div class="faq-list">
         @foreach (var faq in fAQs.OrderBy(faq => faq.Id))
         {
@@ -24,7 +33,7 @@
     }
     private void navToHome()
     {
-        _nav.NavigateTo("/");
+        _nav.NavigateTo("/home");
     }
 
 }

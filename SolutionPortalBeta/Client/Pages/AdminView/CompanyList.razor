@@ -14,19 +14,14 @@
             <button @onclick="setCreateModal">Create Company</button>
         </div>
         <div class="company-list">
-            @foreach (var company in companies.OrderBy(company => company.id))
+            @foreach (var company in companies.OrderBy(company => company.id).Take(5))
             {
                 <div class="company" @onclick="()=>setViewModal(company.id, company.Name, company.Alias)">
                     <h3>@company.Name</h3>
                     <div class="manage-comp">
-<<<<<<< Updated upstream
-                        <a class="mg-btn" @onclick="()=>setDeptModal(company.id)">Add Department</a>
-                        <a class="mg-btn" >Manage Company</a>
-=======
                         <a class="mg-btn" href="createdepartment/@company.Name/@company.id">Add Department</a>
                         <a class="mg-btn" href="updatecompany/@company.id">Update Company</a>
                         <a class="mg-btn-d" href="deletecompany/@company.id">Delete Company</a>
->>>>>>> Stashed changes
                     </div>
                 </div>
             }

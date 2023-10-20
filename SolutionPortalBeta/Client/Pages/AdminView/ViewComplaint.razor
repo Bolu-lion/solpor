@@ -37,7 +37,6 @@
                 @if(Response is null){
                     <button @onclick="SubmitComplaint">Submit</button>
                 }
-                
             </div>
         </div>
     </div>
@@ -70,7 +69,7 @@
     private void CloseModal()
     {
         modalDisplay = "none";
-        nav.NavigateTo("/admin");
+        // nav.NavigateTo("/admin");
     }
     private async Task SubmitComplaint(){
         userCompliant.Title = Title;

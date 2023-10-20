@@ -7,7 +7,6 @@
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-
     aside .side-bar {
         margin-top: 10px;
         height: 100%;
@@ -16,7 +15,6 @@
         flex-direction: column;
         gap: 2rem;
     }
-
 .side-bar a {
     display: flex;
     align-items: center;
@@ -32,7 +30,6 @@
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     font-family: "Space Grotesk", sans-serif;
 }
-
     .side-bar a:hover {
         color: cadetblue;
         background-color: rgba(95, 158, 160, 0.29);

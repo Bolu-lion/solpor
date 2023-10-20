@@ -5,6 +5,7 @@
 @inject IFaqService FaqService
 
 <div class="post-container">
+    <Nav />
     <div class="post-main">
         <div class="post-header">
             <div class="back-title">
@@ -14,7 +15,9 @@
                 <h1 class="title">@title</h1>
             </div>
         </div>
-        <div class="post-content">@((MarkupString)content)</div>
+        <div class="post-content">
+            <div class="post-conmain">@((MarkupString)content)</div>
+        </div>
     </div>
 </div>
 @code {
@@ -24,17 +27,24 @@
     public string title {get; set;}
     public string content {get; set;}
 
-     FAQModel faq = new FAQModel();
+
+
+    FAQModel faq = new FAQModel();
 
     protected override async Task OnInitializedAsync(){
         var currentFaq = await FaqService.GetFAQbyId(Id);
         if(currentFaq != null){
-           
-         title = currentFaq.Title.ToString();
-         var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
-         content =Markdown.ToHtml(currentFaq.Content);
+
+            title = currentFaq.Title.ToString();
+            var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+            content =Markdown.ToHtml(currentFaq.Content);
+            var contentLength = content.Length;
+
         }
     }
+
+    
+
 
 
     private void navToHome()

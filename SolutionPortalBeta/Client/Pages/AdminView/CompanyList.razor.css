@@ -1,73 +1,4 @@
-﻿/*main {
-    padding: 2rem 4rem .5rem;
-    display:flex;
-    flex-direction:column;
-    gap:1rem;
-}
-main .top {
-    padding: 1rem 2rem;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-}
-
-    main .top .title {
-        font-size: 40px;
-        font-weight: 700;
-    }
-    main .create-btn{
-        display:flex;
-        justify-content:flex-end
-    }
-        main .create-btn button {
-            padding: 1rem;
-            border-radius: 10px;
-            outline:none;
-            border:none;
-            color:white;
-            width:15%;
-        }
-        main .create-btn button:hover{
-            font-weight:600;
-        }
-
-    main .list-container {
-        background-color: whitesmoke;
-        padding: 2rem 1.5rem;
-        border-radius: 10px;
-        display: grid;
-        gap: 1rem;
-    }
-        main .list-container div {
-            display: flex;
-            gap: 1rem;
-            justify-content:space-between;
-            align-items:center;
-            background-color: white;
-            padding:1rem;
-            border-radius:.7rem;
-        }
-        main .list-container div p{
-            font-size:30px;
-            font-weight:600;
-        }
-            main .list-container div a {
-                text-decoration: none;
-                color: white;
-                font-weight: 500;
-                font-size: 20px;
-                padding: 1rem;
-                border-radius: .7rem;
-                width:19%;
-                display:flex;
-                justify-content:center;
-                align-items:center;
-            }
-                main .list-container div a:hover {
-                    font-weight: 700;
-                }*/
-.company-container {
+﻿.company-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -109,6 +40,7 @@ h1.title {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  height:max-content;
   cursor: pointer;
 }
 .company:hover {
@@ -119,29 +51,44 @@ h1.title {
   gap: 1rem;
 }
 
-.manage-comp .mg-btn {
-  text-decoration: none;
-  background-color: rgb(95, 158, 160);
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  color: white;
-}
-
-<<<<<<< Updated upstream
-.mg-btn:hover {
-  transform: scale(95%);
-=======
-    .manage-comp .mg-btn-d {
-        text-decoration:none;
-        background-color: RGB(255,14,14);
+    .manage-comp .mg-btn {
+        text-decoration: none;
+        background-color: rgb(95, 158, 160);
         padding: 0.5rem;
         border-radius: 0.3rem;
         box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
         color: white;
+        font-size: 12px;
     }
+
+.mg-btn:hover {
+    transform: scale(95%);
+}
+.manage-comp .mg-btn-d {
+    text-decoration: none;
+    background-color: RGB(255,14,14);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 12px;
+}
 
 .mg-btn:hover, .mg-btn-d:hover{
     transform: scale(95%);
->>>>>>> Stashed changes
+}
+@media screen and (max-width: 900px) {
+    .company {
+        flex-direction:column;
+        align-items:flex-start;
+        overflow:hidden;
+    }
+    .manage-comp{
+        justify-content:center;
+        align-items:center;
+        width:100%;
+    }
+    .manage-comp .mg-btn, .manage-comp .mg-btn-d {
+        font-size: 12px;
+    }
 }
